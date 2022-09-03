@@ -47,14 +47,13 @@ export default function Home({ allPostsData }) {
       </section>
 
       <section>
-        <h2>Idea To Reality</h2>
-        <p>My reglious steps when taking an idea to a working product</p>
+        <h2>Steps from iddea To reality</h2>
         <ul>
-          <li>Brainstorm & draw on paper</li>
-          <li>Design Mockups with Figma</li>
-          <li>Develop an MVP</li>
-          <li>Test, fix & iterate</li>
+          <li>Brainstorm</li>
+          <li>Design UI in Figma</li>
+          <li>Develop UI & Functionality</li>
           <li>Deploy to firebase</li>
+          <li>Test, fix & iterate</li>
         </ul>
       </section>
 
