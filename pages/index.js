@@ -18,15 +18,45 @@ export default function Home({ allPostsData }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Jerry Gagliano - Montreal Fullstack Web Developer</title>
-        <meta name="description" content="Fullstack web developer from Montreal. Developing progressive web apps using Angulars and Firebase" />
+        <title>Jerry Gagliano - Fullstack Web Developer from Montreal</title>
+        <meta name="description" content="Jerry  Gagliano is a frontend & backend developer from Montreal, Quebec. Passionate about developing apps with React, Angular, Node.js and Firebase." />
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=no"></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main className={styles.main}>      
+        <h1>
+          Hi, I'm Jerry Gagliano not your ordinary Fullstack Developer.
+        </h1>
 
+        <h3>
+          With over 20 years of web development specialized in developing frontend & backend web applications bring
+          ideas to reality.
+        </h3>
       </main>
+
+      <section>
+        <h2>Daily tech skills</h2>
+        <ul>
+          <li>Angular</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Firebase</li>
+          <li>HTML/CSS/Javascript</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Idea To Reality</h2>
+        <p>My reglious steps when taking an idea to a working product</p>
+        <ul>
+          <li>Brainstorm & draw on paper</li>
+          <li>Design Mockups with Figma</li>
+          <li>Develop an MVP</li>
+          <li>Test, fix & iterate</li>
+          <li>Deploy to firebase</li>
+        </ul>
+      </section>
 
       <section>
         <h2>Blog</h2>
