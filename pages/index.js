@@ -30,7 +30,7 @@ export default function Home({ allPostsData }) {
         </h1>
 
         <h3>
-          With over 20 years of web development specialized in developing frontend & backend web applications bring
+          20 years of web development specialized in designing, developing frontend & backend web applications bringing
           ideas to reality.
         </h3>
       </main>
@@ -39,21 +39,19 @@ export default function Home({ allPostsData }) {
         <h2>Daily tech skills</h2>
         <ul>
           <li>Angular</li>
-          <li>React</li>
+          <li>React.js</li>
           <li>Node.js</li>
           <li>Firebase</li>
-          <li>HTML/CSS/Javascript</li>
+          <li>HTML/CSS/Javascript(ES6+)</li>
         </ul>
       </section>
 
       <section>
-        <h2>Steps from iddea To reality</h2>
+        <h2>I am able to</h2>
         <ul>
-          <li>Brainstorm</li>
-          <li>Design UI in Figma</li>
-          <li>Develop UI & Functionality</li>
-          <li>Deploy to firebase</li>
-          <li>Test, fix & iterate</li>
+          <li>1. Design</li>
+          <li>2. Develop</li>
+          <li>3. Deploy</li>
         </ul>
       </section>
 

@@ -1,24 +1,82 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+:root {
+  --primary: #2C58A6;
+  --secondary: #5BC7B2;
+
+  --ff-primary: "Poppins", sans-serif;
+  /** --ff-secondary: "Montserrat", sans-serif;
+  --ff-logo: "Dosis", sans-serif; */
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
+/**
+Reset CSS
+*/
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: var(--ff-primary);
+}
+
+body {
+  text-rendering: optimizeSpeed;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/**
+* User has dark them set on their device
+*/
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
