@@ -4,6 +4,7 @@ import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
 import utilStyles from '../styles/utils.module.css';
+import Header  from '../components/header/header';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -19,43 +20,24 @@ export default function Home({ allPostsData }) {
     <div className={styles.container}>
       <Head>
         <title>Jerry Gagliano - Fullstack Web Developer from Montreal</title>
-        <meta name="description" content="Jerry  Gagliano is a frontend & backend developer from Montreal, Quebec. Passionate about developing apps with React, Angular, Node.js and Firebase." />
+        <meta name="description" content="Jerry Gagliano fullstack developer from Montreal, Quebec. Passionate about developing apps with React, Angular, Node.js and Firebase." />
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=no"></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>      
-        <h1>
-          Hi, I'm Jerry Gagliano not your ordinary Fullstack Developer.
-        </h1>
+      <div className={styles.topSection}>
+        <Header/>
 
-        <h3>
-          20 years of web development specialized in designing, developing frontend & backend web applications bringing
-          ideas to reality.
-        </h3>
+        <section className={styles.heroSection}>
+
+        </section>
+      </div>
+      <main className={styles.main}>      
+       
       </main>
 
-      <section>
-        <h2>Daily tech skills</h2>
-        <ul>
-          <li>Angular</li>
-          <li>React.js</li>
-          <li>Node.js</li>
-          <li>Firebase</li>
-          <li>HTML/CSS/Javascript(ES6+)</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>I am able to</h2>
-        <ul>
-          <li>1. Design</li>
-          <li>2. Develop</li>
-          <li>3. Deploy</li>
-        </ul>
-      </section>
-
-      <section>
+    
+      {/* <section>
         <h2>Blog</h2>
         <ul>
           {allPostsData.map(({ id, date, title }) => (
@@ -72,7 +54,7 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
-      </section>
+      </section> */}
 
       <footer className={styles.footer}>
         {/* <a

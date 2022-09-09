@@ -1,14 +1,23 @@
 :root {
-  --primary: #2C58A6;
-  --secondary: #5BC7B2;
+  --primary: #F06817;
+  --secondary: 21201F;
+
+  --primary-background: #21201F;
+  --secondary-background: #121111;
+  --third-background: #312E2E;
 
   --ff-primary: "Poppins", sans-serif;
-  /** --ff-secondary: "Montserrat", sans-serif;
-  --ff-logo: "Dosis", sans-serif; */
-
+  --primary-text: white;
+  --secondary-text: 
   --fw-regular: 400;
+  --fw-medium: 500;
   --fw-semi-bold: 500;
   --fw-bold: 700;
+
+  --fw-italic-regular: 400;
+  --fw-italic-medium: 500;
+  --fw-italic-semi-bold: 500;
+  --fw-italic-bold: 700;
 }
 
 /**
@@ -42,6 +51,7 @@ html,
 body {
   height: 100%;
   font-family: var(--ff-primary);
+  background-color: var(--primary-background);
 }
 
 body {
@@ -74,7 +84,7 @@ select {
 */
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    color-scheme: var(--primary-background);
   }
 
   body {
