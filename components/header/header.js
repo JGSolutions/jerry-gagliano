@@ -6,9 +6,7 @@ export default function Header() {
     return (
         <header className={styles.header}>
             <div className={styles.logoContainer}>
-
                 <img src="/jg-logo.svg"></img>
-
                 <nav className={styles.nav}>
                     <ul role='list' className={styles.menu}>
                         <li>
@@ -34,7 +32,7 @@ export default function Header() {
                 </nav>
             </div>
 
-            <Button></Button>
+            <Button>My Resume</Button>
         </header>
     )
 }
