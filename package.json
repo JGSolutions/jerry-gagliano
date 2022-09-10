@@ -9,17 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "bootstrap": "^5.2.1",
     "date-fns": "^2.29.2",
     "gray-matter": "^4.0.3",
     "next": "12.3.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1"
   },
   "devDependencies": {
     "@types/node": "18.7.16",
-    "@types/react": "18.0.18",
+    "@types/react": "18.0.19",
     "eslint": "8.23.0",
     "eslint-config-next": "12.3.0",
     "typescript": "4.8.3"
