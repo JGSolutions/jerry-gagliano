@@ -1,4 +1,32 @@
 .header {
-    height: 56px;
+    height: 64px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 960px;
+}
+
+.logoContainer {
+    display: flex;
+}
+
+.nav {
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding-right: 24px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--primary-text);
 }

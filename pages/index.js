@@ -17,7 +17,7 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Jerry Gagliano - Fullstack Web Developer from Montreal</title>
         <meta name="description" content="Jerry Gagliano fullstack developer from Montreal, Quebec. Passionate about developing apps with React, Angular, Node.js and Firebase." />

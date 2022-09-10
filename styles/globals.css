@@ -7,7 +7,13 @@
   --third-background: #312E2E;
 
   --ff-primary: "Poppins", sans-serif;
+  
   --primary-text: white;
+  --secondary-text: white;
+
+  --caption-font: 12px;
+  --sm-font: 14px;
+  --reg-font: 16px;
 
   --fw-regular: 400;
   --fw-medium: 500;

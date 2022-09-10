@@ -1,5 +1,7 @@
+import styles from './button.module.css';
+
 export default function Button() {
     return (
-        <button>sdfsdfds</button>
+        <button className={styles.button}>sdfsdfds</button>
     )
 }
