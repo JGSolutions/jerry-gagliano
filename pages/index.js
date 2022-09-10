@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Date from '../components/date';
 import utilStyles from '../styles/utils.module.css';
 import Header  from '../components/header/header';
+import HeroSection from '../components/hero/hero'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -29,17 +30,7 @@ export default function Home({ allPostsData }) {
       <div className={styles.topSection}>
         <div class="container">
           <Header/>
-          <section className={styles.heroSection}>
-            <h1 className={styles.h1}>
-              Hi, I'm Jerry Gagliano. <br/>
-              <span className={styles.heroText}>
-                Bringing <span className={styles.heroTextHightlight}>ideas</span> to <span className={styles.heroTextHightlight}>reality!</span>
-              </span>
-            </h1>
-            <p className={styles.slogan}>
-              Full stack developer crafting solid and scalable frontend products with great user experiences.
-            </p>
-          </section>
+          <HeroSection/>
         </div>
       </div>
       {/* <div class="container">

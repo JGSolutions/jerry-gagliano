@@ -1,0 +1,30 @@
+.heroSection {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 70px;
+    padding-top: 100px;
+}
+  
+.h1 {
+    font-size: var(--xlarge-font);
+    text-align: center;
+}
+
+.heroText {
+    font-style: italic;
+    font-weight: var(--fw-bold);
+}
+
+.heroTextHightlight {
+    color: var(--primary);
+}
+
+.slogan {
+    margin-top: 60px;
+    max-width: 800px;
+    text-align: center;
+    font-size: var(--medium-font);
+}
