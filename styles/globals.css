@@ -7,23 +7,22 @@
   --third-background: #312E2E;
 
   --ff-primary: "Poppins", sans-serif;
-  
+
   --primary-text: white;
   --secondary-text: white;
 
   --caption-font: 12px;
   --sm-font: 14px;
   --reg-font: 16px;
+  --medium-font: 24px;
 
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semi-bold: 500;
   --fw-bold: 700;
 
-  --fw-italic-regular: 400;
-  --fw-italic-medium: 500;
-  --fw-italic-semi-bold: 500;
-  --fw-italic-bold: 700;
+
+  --header-height: 64px;
 }
 
 /**
@@ -95,6 +94,6 @@ select {
 
   body {
     color: white;
-    background: black;
+    background:  var(--primary-background);
   }
 }
