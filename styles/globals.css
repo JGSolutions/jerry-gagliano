@@ -1,6 +1,6 @@
 :root {
   --primary: #F06817;
-  --secondary: 21201F;
+  --secondary: #21201F;
 
   --primary-background: #21201F;
   --secondary-background: #121111;
@@ -8,7 +8,7 @@
 
   --ff-primary: "Poppins", sans-serif;
   --primary-text: white;
-  --secondary-text: 
+
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semi-bold: 500;
