@@ -6,6 +6,7 @@ import Date from '../components/date';
 import utilStyles from '../styles/utils.module.css';
 import Header  from '../components/header/header';
 import HeroSection from '../components/hero/hero'
+import TechStackItem from '../components/tech-stack-item/tech-stack-item'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -77,7 +78,28 @@ export default function Home({ allPostsData }) {
               </div>
             </div>
           </div>
-        </section>     
+        </section>
+
+        <section style={{ width: '100%', marginTop: '60px'}}>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2 className={styles.h2}>Frameworks & Libraries I Use</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <TechStackItem name="Angular" image="angular-logo.svg" description="dsdksk" url="https://angular.io"/>
+              </div>
+              <div class="col-4">
+                <TechStackItem name="Firebase" image="angular-logo.svg" description="dsdksk" url="https://firebase.google.com"/>
+              </div>
+              <div class="col-4">
+                <TechStackItem name="Angular" image="angular-logo.svg" description="dsdksk" url="https://angular.io" level="50%"/>
+              </div>
+            </div>
+          </div>
+        </section> 
       </main>
 
     

@@ -7,9 +7,10 @@
   --third-background: #312E2E;
 
   --ff-primary: "Poppins", sans-serif;
+  --ff-secondary: "Source Code Pro", sans-serif;
 
   --primary-text: white;
-  --secondary-text: white;
+  --secondary-text: #E0E0E0;
 
   --caption-font: 12px;
   --fs-small: 14px;
@@ -106,6 +107,11 @@ select {
 **/
 h1 {
   font-size: var(--fs-xlarge);
+}
+
+h2 {
+  font-size: var(--fs-large);
+  margin-bottom: 16px;
 }
 
 h3 {

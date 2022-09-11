@@ -33,6 +33,10 @@
   font-weight: var(--fw-semi-bold);
 }
 
+.h2 {
+  color: var(--primary);
+}
+
 /* .code {
   background: #fafafa;
   border-radius: 5px;

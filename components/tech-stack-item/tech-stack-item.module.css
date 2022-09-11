@@ -1,0 +1,38 @@
+.section {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    background-color: var(--secondary-background);
+    padding: 16px;
+}
+
+.description {
+    font-size: var(--fs-small);
+    font-weight: var(--fw-regular);
+}
+
+.url {
+    font-family: var(--ff-secondary);
+    color: var( --secondary-text);
+    text-decoration: none;
+}
+
+.url:hover {
+    text-decoration: underline;
+}
+
+.progress {
+    background-color: #D9D9D9;
+    height: 6px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.level {
+    background-color: var(--primary);
+    height: 6px;
+    border-radius: 6px;
+}
