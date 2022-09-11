@@ -13,6 +13,7 @@
 }
 
 .heroText {
+    /* font-size: clamp(36px, 5vw, var(--fs-xlarge)); */
     font-style: italic;
     font-weight: var(--fw-bold);
 }
@@ -28,4 +29,5 @@
     max-width: 700px;
     text-align: center;
     font-size: var(--fs-medium);
+    font-size: clamp(16px, 5vw, var(--fs-medium));
 }

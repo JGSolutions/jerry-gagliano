@@ -106,7 +106,7 @@ select {
 * My Custom Styles
 **/
 h1 {
-  font-size: var(--fs-xlarge);
+  font-size: clamp(36px, 5vw, var(--fs-xlarge));
 }
 
 h2 {
