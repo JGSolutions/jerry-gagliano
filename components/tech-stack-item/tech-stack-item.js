@@ -5,14 +5,18 @@ export default function TechStackItem({name, image, description, url, level}) {
     return (
         <div className={styles.section}>
             <img src={'/skills/' + image} width="40" />
+
             <h3>{name}</h3>
 
             <p className={styles.description}>
                 {description}
             </p>
 
-            <div className={styles.progress}>
-                <div className={styles.level} style={{ width: level }}></div>
+            <div className={styles.levelContainer}>
+                <p className={styles.levelHeader}>Skill level</p>
+                <div className={styles.progress}>
+                    <div className={styles.levelProgress} style={{ width: level }}></div>
+                </div>
             </div>
 
             <Link href={url}>

@@ -7,21 +7,34 @@
     border-radius: 6px;
     background-color: var(--secondary-background);
     padding: 16px;
+    margin-bottom: 6px;
 }
 
 .description {
     font-size: var(--fs-small);
     font-weight: var(--fw-regular);
+    margin-bottom: 6px;
 }
 
 .url {
     font-family: var(--ff-secondary);
+    font-size: var(--caption-font);
     color: var( --secondary-text);
     text-decoration: none;
 }
 
+.levelHeader {
+    font-family: var(--ff-secondary);
+    color: var( --secondary-text);
+    font-size: var(--caption-font);
+}
+
 .url:hover {
     text-decoration: underline;
+}
+
+.levelContainer {
+    margin-bottom: 6px;
 }
 
 .progress {
@@ -31,7 +44,7 @@
     width: 100%;
 }
 
-.level {
+.levelProgress {
     background-color: var(--primary);
     height: 6px;
     border-radius: 6px;

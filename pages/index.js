@@ -40,7 +40,7 @@ export default function Home({ allPostsData }) {
           <div class="container">
             <div class="row">
               <div class="col-md-6">
-                <div>
+                <div className={styles.skillContainer}>
                   <h3 className={styles.skillHeader}>UX/UI</h3>
                   <p>
                     Not 100% designer but understand the design patterns. Capable of designing an
@@ -49,7 +49,7 @@ export default function Home({ allPostsData }) {
                 </div>
               </div>
               <div class="col-md-6">
-                <div style={{ marginBottom: '16px'}}>
+                <div className={styles.skillContainer}>
                   <h3 className={styles.skillHeader}>Frontend</h3>
                   <p>
                     Build client-side applications with modern features and maintain semantic coding style
@@ -61,7 +61,7 @@ export default function Home({ allPostsData }) {
 
             <div class="row">
               <div class="col-md-6">
-                <div>
+                <div className={styles.skillContainer}>
                   <h3 className={styles.skillHeader}>Backend</h3>
                   <p>
                     Build scalable and maintainable apis using modern technology stacks such as Node.js, Express, and Firebase Cloud Functions.
@@ -69,7 +69,7 @@ export default function Home({ allPostsData }) {
                 </div>
               </div>
               <div class="col-md-6">
-                <div>
+                <div className={styles.skillContainer}>
                   <h3 className={styles.skillHeader}>Deploy</h3>
                   <p>
                     Maintaining the life cycle of a web product. Creating CI pipelines, tests, cloud environments.
@@ -84,22 +84,32 @@ export default function Home({ allPostsData }) {
           <div class="container">
             <div class="row">
               <div class="col">
-                <h2 className={styles.h2}>Frameworks & Libraries I Use</h2>
+                <h2 className={styles.h2}>Frameworks and Libraries I Use</h2>
               </div>
             </div>
             <div class="row">
-              <div class="col-4">
-                <TechStackItem name="Angular" image="angular-logo.svg" description="dsdksk" url="https://angular.io"/>
+              <div class="col-md-4">
+                <TechStackItem name="Angular" image="angular-logo.svg" description="Front-end framework creating spa complex web apps." url="https://angular.io" level="90%"/>
               </div>
-              <div class="col-4">
-                <TechStackItem name="Firebase" image="angular-logo.svg" description="dsdksk" url="https://firebase.google.com"/>
+              <div class="col-md-4">
+                <TechStackItem name="Firebase" image="firebase-logo.svg" description="Platform for hosting web apps and NoSQL data managment." url="https://firebase.google.com" level="85%"/>
               </div>
-              <div class="col-4">
-                <TechStackItem name="Angular" image="angular-logo.svg" description="dsdksk" url="https://angular.io" level="50%"/>
+              <div class="col-md-4">
+                <TechStackItem name="Node.js" image="nodejs-logo.svg" description="Create apis, manage data and heavy logic computations. " url="https://nodejs.org" level="80%"/>
               </div>
             </div>
           </div>
         </section> 
+
+        <section style={{ width: '100%', marginTop: '60px'}}>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                sdfds
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
     

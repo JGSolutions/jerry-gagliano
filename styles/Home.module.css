@@ -28,6 +28,10 @@
   flex-grow: 1;
 }
 
+.skillContainer {
+  margin-bottom: 16px;
+}
+
 .skillHeader {
   color: var(--primary);
   font-weight: var(--fw-semi-bold);
