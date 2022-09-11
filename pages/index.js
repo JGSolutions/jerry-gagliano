@@ -33,16 +33,51 @@ export default function Home({ allPostsData }) {
           <HeroSection/>
         </div>
       </div>
-      {/* <div class="container">
-        <div class="row">
-          <div class="col">
 
+      <main className={styles.main}> 
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div>
+                  <h3 className={styles.skillHeader}>UX/UI</h3>
+                  <p>
+                    Not 100% designer but understand the design patterns. Capable of designing an
+                    interface and bringing those ideas on a canvas.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div style={{ marginBottom: '16px'}}>
+                  <h3 className={styles.skillHeader}>Frontend</h3>
+                  <p>
+                    Build client-side applications with modern features and maintain semantic coding style
+                    among other best practices for SEO optimisation.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div>
+                  <h3 className={styles.skillHeader}>Backend</h3>
+                  <p>
+                    Build scalable and maintainable apis using modern technology stacks such as Node.js, Express, and Firebase Cloud Functions.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <h3 className={styles.skillHeader}>Deploy</h3>
+                  <p>
+                    Maintaining the life cycle of a web product. Creating CI pipelines, tests, cloud environments.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div> */}
-
-      <main className={styles.main}>      
-       
+        </section>     
       </main>
 
     

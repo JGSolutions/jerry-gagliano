@@ -12,16 +12,16 @@
   --secondary-text: white;
 
   --caption-font: 12px;
-  --sm-font: 14px;
-  --reg-font: 16px;
-  --medium-font: 24px;
-  --xlarge-font: 48px;
+  --fs-small: 14px;
+  --fs-regular: 16px;
+  --fs-medium: 20px;
+  --fs-large: 24px;
+  --fs-xlarge: 48px;
 
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semi-bold: 500;
   --fw-bold: 700;
-
 
   --header-height: 64px;
 }
@@ -96,5 +96,19 @@ select {
   body {
     color: white;
     background:  var(--primary-background);
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-regular);
   }
+}
+
+/**
+* My Custom Styles
+**/
+h1 {
+  font-size: var(--fs-xlarge);
+}
+
+h3 {
+  font-size: var(--fs-medium);
+  margin-bottom: 10px;
 }
