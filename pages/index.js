@@ -7,6 +7,7 @@ import utilStyles from '../styles/utils.module.css';
 import Header  from '../components/header/header';
 import HeroSection from '../components/hero/hero'
 import TechStackItem from '../components/tech-stack-item/tech-stack-item'
+import Button from '../components/button/button'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -101,13 +102,18 @@ export default function Home({ allPostsData }) {
           </div>
         </section> 
 
-        <section style={{ width: '100%', marginTop: '60px'}}>
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                sdfds
-              </div>
+        <section style={{ width: '100%', marginTop: '60px', display: 'flex',  justifyContent: 'center'}}>
+          <div className={styles.contact}>
+            <div>
+              <p>What's next</p>
+              <h1 className={styles.contactHeader}>Get In Touch!</h1>
             </div>
+
+            <p>
+              Always looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+            </p>
+
+            <Button>Let's Talk</Button>
           </div>
         </section>
       </main>
