@@ -1,0 +1,6 @@
+.footer {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: var(--third-background);
+}

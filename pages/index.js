@@ -8,6 +8,7 @@ import Header  from '../components/header/header';
 import HeroSection from '../components/hero/hero'
 import TechStackItem from '../components/tech-stack-item/tech-stack-item'
 import Button from '../components/button/button'
+import Footer from '../components/footer/footer'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -118,6 +119,7 @@ export default function Home({ allPostsData }) {
         </section>
       </main>
 
+      <Footer/>
     
       {/* <section>
         <h2>Blog</h2>
@@ -138,7 +140,6 @@ export default function Home({ allPostsData }) {
         </ul>
       </section> */}
 
-      <footer className={styles.footer}>
         {/* <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
@@ -149,7 +150,7 @@ export default function Home({ allPostsData }) {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a> */}
-      </footer>
+
     </div>
   )
 }
