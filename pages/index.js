@@ -31,7 +31,7 @@ export default function Home({ allPostsData }) {
 
       {/* header and hero sections --> */}
       <div className={styles.topSection}>
-        <div class="container">
+        <div className="container">
           <Header/>
           <HeroSection/>
         </div>
@@ -39,9 +39,9 @@ export default function Home({ allPostsData }) {
 
       <main className={styles.main}> 
         <section>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6">
                 <div className={styles.skillContainer}>
                   <h3 className={styles.skillHeader}>UX/UI</h3>
                   <p>
@@ -50,7 +50,7 @@ export default function Home({ allPostsData }) {
                   </p>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div className="col-md-6">
                 <div className={styles.skillContainer}>
                   <h3 className={styles.skillHeader}>Frontend</h3>
                   <p>
@@ -61,8 +61,8 @@ export default function Home({ allPostsData }) {
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-md-6">
+            <div className="row">
+              <div className="col-md-6">
                 <div className={styles.skillContainer}>
                   <h3 className={styles.skillHeader}>Backend</h3>
                   <p>
@@ -70,7 +70,7 @@ export default function Home({ allPostsData }) {
                   </p>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div className="col-md-6">
                 <div className={styles.skillContainer}>
                   <h3 className={styles.skillHeader}>Deploy</h3>
                   <p>
@@ -83,20 +83,20 @@ export default function Home({ allPostsData }) {
         </section>
 
         <section style={{ width: '100%', marginTop: '60px'}}>
-          <div class="container">
-            <div class="row">
-              <div class="col">
+          <div className="container">
+            <div className="row">
+              <div className="col">
                 <h2 className={styles.h2}>Frameworks and Libraries I Use</h2>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-4">
+            <div className="row">
+              <div className="col-md-4">
                 <TechStackItem name="Angular" image="angular-logo.svg" description="Front-end framework creating spa complex web apps." url="https://angular.io" level="90%"/>
               </div>
-              <div class="col-md-4">
+              <div className="col-md-4">
                 <TechStackItem name="Firebase" image="firebase-logo.svg" description="Platform for hosting web apps and NoSQL data managment." url="https://firebase.google.com" level="85%"/>
               </div>
-              <div class="col-md-4">
+              <div className="col-md-4">
                 <TechStackItem name="Node.js" image="nodejs-logo.svg" description="Create apis, manage data and heavy logic computations. " url="https://nodejs.org" level="80%"/>
               </div>
             </div>

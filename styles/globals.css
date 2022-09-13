@@ -59,6 +59,7 @@ body {
   height: 100%;
   font-family: var(--ff-primary);
   background-color: var(--primary-background);
+  color: #fff;
 }
 
 body {
