@@ -90,13 +90,13 @@ export default function Home({ allPostsData }) {
               </div>
             </div>
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-xs-6 col-md-6 col-lg-4">
                 <TechStackItem name="Angular" image="angular-logo.svg" description="Front-end framework creating spa complex web apps." url="https://angular.io" level="90%"/>
               </div>
-              <div className="col-md-4">
+              <div className="col-xs-6 col-md-6 col-lg-4">
                 <TechStackItem name="Firebase" image="firebase-logo.svg" description="Platform for hosting web apps and NoSQL data managment." url="https://firebase.google.com" level="85%"/>
               </div>
-              <div className="col-md-4">
+              <div className="col-xs-6 col-md-6 col-lg-4">
                 <TechStackItem name="Node.js" image="nodejs-logo.svg" description="Create apis, manage data and heavy logic computations. " url="https://nodejs.org" level="80%"/>
               </div>
             </div>
@@ -139,17 +139,6 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section> */}
-
-        {/* <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a> */}
 
     </div>
   )
