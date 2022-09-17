@@ -1,5 +1,5 @@
 import styles from './simple-blog-item.module.css'
-
+import FormatDate from '../date';
 
 export default function SimpleBlogItem({title, description, image, date, tags}) {
     return (
@@ -15,7 +15,9 @@ export default function SimpleBlogItem({title, description, image, date, tags}) 
                 <div className={styles.tags}>
                     {tags}
                 </div>
-                <div className={styles.date}>{date}</div>
+                <div className={styles.date}>
+                    <FormatDate dateString={date} />
+                </div>
             </div>
         </div>
     )

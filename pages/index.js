@@ -122,7 +122,7 @@ export default function Home({ allPostsData }) {
         <div style={{ width: '370px'}}>
           <SimpleBlogItem 
           title="Angular vs React"
-          date="Feb 22,2022"
+          date="Sat Sep 22 2022"
           tags="css,html"
           image="https://cdn-images-1.medium.com/max/1024/0*1MDT8N8E9HuYG7tV"
           description="Interesting debate developers face between when developing a web product">
