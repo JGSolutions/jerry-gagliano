@@ -9,6 +9,7 @@ import HeroSection from '../components/hero/hero'
 import TechStackItem from '../components/tech-stack-item/tech-stack-item'
 import Button from '../components/button/button'
 import Footer from '../components/footer/footer'
+import SimpleBlogItem from '../components/simple-blog-item/simple-blog-item'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -117,6 +118,17 @@ export default function Home({ allPostsData }) {
             <Button>Let's Talk</Button>
           </div>
         </section>
+
+        <div style={{ width: '370px'}}>
+          <SimpleBlogItem 
+          title="Angular vs React"
+          date="Feb 22,2022"
+          tags="css,html"
+          image="https://cdn-images-1.medium.com/max/1024/0*1MDT8N8E9HuYG7tV"
+          description="Interesting debate developers face between when developing a web product">
+
+          </SimpleBlogItem>
+        </div>
       </main>
 
       <Footer/>
