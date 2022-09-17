@@ -17,7 +17,7 @@ export default function Footer() {
                             />
                         </a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a href="https://twitter.com/jgsolutions?lang=en" target="_blank">
                             <Image
                                 src="/socialmedia/twitter.svg"
@@ -26,7 +26,7 @@ export default function Footer() {
                                 alt="jerry gagliano twitter"
                             />
                         </a>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </footer>
