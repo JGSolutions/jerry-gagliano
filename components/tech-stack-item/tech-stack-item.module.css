@@ -27,6 +27,7 @@
     font-family: var(--ff-secondary);
     color: var( --secondary-text);
     font-size: var(--caption-font);
+    margin-bottom: 6px;
 }
 
 .url:hover {

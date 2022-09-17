@@ -1,0 +1,9 @@
+.tag {
+    border: 1px solid var(  --primary-text);
+    background-color: transparent;
+    padding: 6px 16px;
+    border-radius: 6px;
+    color: var(--primary-text);
+    font-size: var( --caption-font);
+    font-weight: var(--fw-regular);
+}

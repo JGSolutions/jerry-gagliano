@@ -29,11 +29,14 @@
     font-weight: var(--fw-medium);
     font-size: var(--fs-small);
     width: 100%;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }
 
 .tags {
-    margin-bottom: 6px;
+    margin-bottom: 10px;
+    width: min-content;
+    gap: 6px;
+    display: flex;
 }
 
 .date {
