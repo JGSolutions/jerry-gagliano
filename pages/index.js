@@ -104,7 +104,7 @@ export default function Home({ allPostsData }) {
           </div>
         </section> 
 
-        <section style={{ width: '100%', marginTop: '60px', display: 'flex',  justifyContent: 'center'}}>
+        <section className={styles.contactSection}>
           <div className={styles.contact}>
             <div>
               <p>What's next</p>
@@ -119,7 +119,7 @@ export default function Home({ allPostsData }) {
           </div>
         </section>
 
-        <div style={{ width: '370px'}}>
+        {/* <div style={{ width: '370px'}}>
           <SimpleBlogItem 
           title="Angular vs React"
           date="Sat Sep 22 2022"
@@ -128,7 +128,7 @@ export default function Home({ allPostsData }) {
           description="Interesting debate developers face between when developing a web product">
 
           </SimpleBlogItem>
-        </div>
+        </div> */}
       </main>
 
       <Footer/>
