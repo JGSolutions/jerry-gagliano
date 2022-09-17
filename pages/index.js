@@ -1,15 +1,14 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { getSortedPostsData } from '../lib/posts';
-import Link from 'next/link';
-import Date from '../components/date';
-import utilStyles from '../styles/utils.module.css';
+// import Link from 'next/link';
+// import Date from '../components/date';
+// import utilStyles from '../styles/utils.module.css';
 import Header  from '../components/header/header';
 import HeroSection from '../components/hero/hero'
 import TechStackItem from '../components/tech-stack-item/tech-stack-item'
 import Button from '../components/button/button'
 import Footer from '../components/footer/footer'
-import SimpleBlogItem from '../components/simple-blog-item/simple-blog-item'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();

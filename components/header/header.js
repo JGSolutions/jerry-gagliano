@@ -1,6 +1,6 @@
 import styles from './header.module.css'
+import utilStyle from '../../styles/utils.module.css'
 import Link from 'next/link'
-import Button from '../button/button'
 
 export default function Header() {
     return (
@@ -32,7 +32,11 @@ export default function Header() {
                 </nav>
             </div>
 
-            <Button>My Resume</Button>
+            <Link href="CV.pdf" passHref>
+                <a className={utilStyle.button}  target="_blank" rel="noopener noreferrer">
+                    My Resume
+                </a>
+            </Link>
         </header>
     )
 }
