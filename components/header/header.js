@@ -7,7 +7,7 @@ export default function Header() {
         <header className={styles.header}>
             <div className={styles.logoContainer}>
                 <img src="/jg-logo.svg"></img>
-                <nav className={styles.nav}>
+                {/* <nav className={styles.nav}>
                     <ul role='list' className={styles.menu}>
                         <li>
                             <Link href="https://fitvitfitness.com">
@@ -29,7 +29,7 @@ export default function Header() {
                             </Link>
                         </li>
                     </ul>
-                </nav>
+                </nav> */}
             </div>
 
             <Link href="CV.pdf" passHref>

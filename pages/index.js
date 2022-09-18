@@ -3,12 +3,13 @@ import styles from '../styles/Home.module.css'
 import { getSortedPostsData } from '../lib/posts';
 // import Link from 'next/link';
 // import Date from '../components/date';
-// import utilStyles from '../styles/utils.module.css';
+import utilStyles from '../styles/utils.module.css';
 import Header  from '../components/header/header';
 import HeroSection from '../components/hero/hero'
 import TechStackItem from '../components/tech-stack-item/tech-stack-item'
 import Button from '../components/button/button'
 import Footer from '../components/footer/footer'
+// import { useRef, useEffect, useState } from 'react';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -20,6 +21,21 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
+  // const myRef = useRef(null);
+
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting) {
+  //         updateMyElementIsVisible(entry.isIntersecting);
+  //       }
+  //     });
+  //   });
+
+  //   observer.observe(myRef.current);
+  // }, []);
+
+  // const [myElementIsVisible, updateMyElementIsVisible] = useState();
   return (
     <div>
       <Head>
@@ -37,8 +53,30 @@ export default function Home({ allPostsData }) {
         </div>
       </div>
 
-      <main className={styles.main}> 
-        <section>
+      <main className={styles.main}>
+        <section style={{ width: '100%', marginBottom: '60px'}}>
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <h2 className={styles.h2}>Over the past 15 years,</h2>
+
+                <p className={utilStyles.paragraph}>
+                  of experience in web development building UI experiences and building tools for various companies. 
+                  First part of career spend my time as fullstack working with server technologies with databases.
+                  As frontend frameworks became the trend and SPA was in demand, my interest grew more towards building UI experiences.
+                </p>
+
+                <p className={utilStyles.paragraph}>
+                  Currently as a senior frontend developer at Sportlogiq the industry leader for NHL hockey data-collection and advanced analytics.
+                  Developing on the NHL analytics web product maintaining and building UI features.
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section style={{ width: '100%', marginBottom: '60px'}}>
           <div className="container">
             <div className="row">
               <div className="col-md-6">
@@ -82,7 +120,7 @@ export default function Home({ allPostsData }) {
           </div>
         </section>
 
-        <section style={{ width: '100%', marginTop: '60px'}}>
+        <section style={{ width: '100%', marginBottom: '60px'}}>
           <div className="container">
             <div className="row">
               <div className="col">

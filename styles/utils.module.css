@@ -14,3 +14,7 @@ a.button:hover {
   color: var(--primary);
   text-decoration: underline;
 }
+
+.paragraph {
+  margin-bottom: 16px;
+}
