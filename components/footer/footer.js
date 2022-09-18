@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className={styles.copyright}>Designed & Built by Jerry Gagliano</div>
                 <ul className={styles.socialMedia} role='list'>
                     <li>
-                        <a href="https://www.linkedin.com/in/jerry-gagliano-2501a38/?originalSubdomain=ca" target="_blank">
+                        <a href="https://www.linkedin.com/in/jerry-gagliano-2501a38/?originalSubdomain=ca" target="_blank" rel="noreferrer">
                             <Image
                                 src="/socialmedia/linkedin.svg"
                                 height={40}

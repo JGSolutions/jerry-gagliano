@@ -4,7 +4,7 @@ export default function HeroSection() {
     return (
         <section className={styles.heroSection}>
             <h1 className={styles.h1}>
-                Hi, I'm Jerry Gagliano. <br/>
+                Hi, I`&#39;m Jerry Gagliano. <br/>
                 <span className={styles.heroText}>
                 Bringing <span className={styles.heroTextHightlight}>ideas</span> to <span className={styles.heroTextHightlight}>reality!</span>
                 </span>

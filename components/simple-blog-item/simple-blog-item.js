@@ -3,14 +3,14 @@ import FormatDate from '../date';
 import TagItem from '../tag/tag';
 
 export default function SimpleBlogItem({title, description, image, date, tags}) {
-    const tagItems = tags.split(',').map((string) =>
-        <TagItem string={string}/>
+    const tagItems = tags.split(',').map((string, index) =>
+        <TagItem string={string} key={index}/>
     );
     return (
         <div className={styles.wrapper}>
             <div className={styles.titleSection}>{title}</div>
             <div className={styles.imageSection}>
-                <img src={image} />
+                <img src={image} alt={title}/>
             </div>
             <div className={styles.contentSection}>
                 <div className={styles.description}>

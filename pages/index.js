@@ -61,14 +61,14 @@ export default function Home({ allPostsData }) {
                 <h2 className={styles.h2}>Over the past 15 years,</h2>
 
                 <p className={utilStyles.paragraph}>
-                  of experience in web development building UI experiences and building tools for various companies. 
-                  First part of career spend my time as fullstack working with server technologies with databases.
-                  As frontend frameworks became the trend and SPA was in demand, my interest grew more towards building UI experiences.
+                  of experience in web development and building interfaces and tools for various companies. 
+                  First part of my career was a fullstack developer with server technologies and databases.
+                  As frontend frameworks became the trend and in demand, my interest grew more towards building UI experiences.
                 </p>
 
                 <p className={utilStyles.paragraph}>
-                  Currently as a senior frontend developer at Sportlogiq the industry leader for NHL hockey data-collection and advanced analytics.
-                  Developing on the NHL analytics web product maintaining and building UI features.
+                  Currently a senior frontend developer at Sportlogiq the industry leader for NHL hockey data-collection and advanced analytics.
+                  I maintain and build UI features on the NHL analytics web platform.
                 </p>
 
               </div>
@@ -104,7 +104,7 @@ export default function Home({ allPostsData }) {
                 <div className={styles.skillContainer}>
                   <h3 className={styles.skillHeader}>Backend</h3>
                   <p>
-                    Build scalable and maintainable apis using modern technology stacks such as Node.js, Express, and Firebase Cloud Functions.
+                    Capable of buildng scalable and maintainable apis using modern technology stacks such as Node.js, Express, and Firebase Cloud Functions.
                   </p>
                 </div>
               </div>
@@ -112,7 +112,7 @@ export default function Home({ allPostsData }) {
                 <div className={styles.skillContainer}>
                   <h3 className={styles.skillHeader}>Deploy</h3>
                   <p>
-                    Maintaining the life cycle of a web product. Creating CI pipelines, tests, cloud environments.
+                    Maintaining the life cycle of a digital product. Creating CI pipelines, tests, cloud environments.
                   </p>
                 </div>
               </div>
@@ -132,10 +132,26 @@ export default function Home({ allPostsData }) {
                 <TechStackItem name="Angular" image="angular-logo.svg" description="Front-end framework creating spa complex web apps." url="https://angular.io" level="90%"/>
               </div>
               <div className="col-xs-6 col-md-6 col-lg-4">
-                <TechStackItem name="Firebase" image="firebase-logo.svg" description="Platform for hosting web apps and NoSQL data managment." url="https://firebase.google.com" level="85%"/>
+                <TechStackItem name="Firebase" image="firebase-logo.svg" description="Platform for hosting web apps and NoSQL data managment." url="https://firebase.google.com" level="95%"/>
               </div>
               <div className="col-xs-6 col-md-6 col-lg-4">
-                <TechStackItem name="Node.js" image="nodejs-logo.svg" description="Create apis, manage data and heavy logic computations. " url="https://nodejs.org" level="80%"/>
+                <TechStackItem name="Node.js" image="nodejs-logo.svg" description="Create apis, manage data and heavy logic computations. " url="https://nodejs.org" level="90%"/>
+              </div>
+              <div className="col-xs-6 col-md-6 col-lg-4">
+                <TechStackItem 
+                name="RxJS" 
+                image="rxjs.svg" 
+                description="Reactive programming using observables. Making it easier to compose asynchronous calls." 
+                url="https://rxjs.dev/" 
+                level="80%"/>
+              </div>
+              <div className="col-xs-6 col-md-6 col-lg-4">
+                <TechStackItem 
+                name="Next.js" 
+                image="next-js.svg" 
+                description="React based framework generating server and static websites." 
+                url="https://nextjs.org/" 
+                level="60%"/>
               </div>
             </div>
           </div>
@@ -144,7 +160,7 @@ export default function Home({ allPostsData }) {
         <section className={styles.contactSection}>
           <div className={styles.contact}>
             <div>
-              <p>What's next</p>
+              <p>What&#39;s next</p>
               <h1 className={styles.contactHeader}>Get In Touch!</h1>
             </div>
 
@@ -152,7 +168,7 @@ export default function Home({ allPostsData }) {
               Always looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
             </p>
 
-            <Button>Let's Talk</Button>
+            <Button>Let`&#39;s Talk</Button>
           </div>
         </section>
 
