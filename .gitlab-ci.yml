@@ -1,0 +1,27 @@
+image: node:latest
+
+.deploy: &deploy
+- npm install -g firebase-tools
+- npm audit fix --force
+- firebase use jgsolutions-prod
+- npm install
+- npm run lint
+- npm run build
+
+cache:
+  paths:
+    - node_modules/
+
+stages:
+  - deploy
+
+production:
+  stage: deploy
+  before_script:
+    - *deploy
+  only:
+    - master
+  when: always
+  allow_failure: false
+  script:
+    - firebase deploy --only hosting --token "$FIREBASE_TOKEN"
