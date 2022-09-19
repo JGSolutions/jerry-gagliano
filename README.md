@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About
+
+A portfolio website of my web development career. A quick overview of my skill set and projects I work on. Also will blog about my web development and process and tips. :)
+
+Making this project public but please do not copy my work. You can get expired and copy snippets of code but don't copy the whole website :/
 
 ## Getting Started
 
