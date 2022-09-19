@@ -20,7 +20,7 @@ production:
   before_script:
     - *deploy
   only:
-    - master
+    - main
   when: always
   allow_failure: false
   script:
