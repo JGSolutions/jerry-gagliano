@@ -17,6 +17,16 @@ export default function Footer() {
                             />
                         </a>
                     </li>
+                    <li>
+                        <a href="https://github.com/JGSolutions" target="_blank" rel="noreferrer">
+                            <Image
+                                src="/socialmedia/github.svg"
+                                height={41}
+                                width={43}
+                                alt="jerry gagliano github"
+                            />
+                        </a>
+                    </li>
                     {/* <li>
                         <a href="https://twitter.com/jgsolutions?lang=en" target="_blank">
                             <Image

@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About
+
+A portfolio website of my web development career that I built. A overview of my skill set and projects I worked on. My site also contains a blog about web development and experiences that i have gone through. :)
+
+This project is public but please do not copy my work. You can get expired and use snippets of code :)
 
 ## Getting Started
 
@@ -11,6 +15,3 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Learn More
-
