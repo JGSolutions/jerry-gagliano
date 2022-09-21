@@ -46,7 +46,7 @@ export default function Home({ allPostsData }) {
       </Head>
 
       {/* header and hero sections --> */}
-      <div className={styles.topSection}>
+      <div className={utilStyles.topSection}>
         <div className="container">
           <Header/>
           <HeroSection/>
