@@ -17,6 +17,7 @@ a.button:hover {
 
 .paragraph {
   margin-bottom: 16px;
+  line-height: 30px;
 }
 
 .topSection {

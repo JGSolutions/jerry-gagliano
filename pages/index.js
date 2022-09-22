@@ -62,12 +62,12 @@ export default function Home({ allPostsData }) {
 
                 <p className={utilStyles.paragraph}>
                   of experience in web development and building interfaces and tools for various companies. 
-                  First part of my career was a fullstack developer with server technologies and databases.
-                  As frontend frameworks became the trend and in demand, my interest grew more towards building UI experiences.
+                  Started my career as a frontend and backend developer. As Javascript frameworks became in demand, my interest 
+                  grew more towards building UI and single page applications.
                 </p>
 
                 <p className={utilStyles.paragraph}>
-                  Currently a senior frontend developer at Sportlogiq the industry leader for NHL hockey data-collection and advanced analytics.
+                  I am currently a senior frontend developer at Sportlogiq the industry leader for NHL hockey data-collection and advanced analytics.
                   I maintain and build UI features on the NHL analytics web platform.
                 </p>
 
@@ -82,7 +82,7 @@ export default function Home({ allPostsData }) {
               <div className="col-md-6">
                 <div className={styles.skillContainer}>
                   <h3 className={styles.skillHeader}>UX/UI</h3>
-                  <p>
+                  <p className={utilStyles.paragraph}>
                     Not 100% designer but understand the design patterns. Capable of designing an
                     interface and bringing those ideas on a canvas.
                   </p>
@@ -91,8 +91,8 @@ export default function Home({ allPostsData }) {
               <div className="col-md-6">
                 <div className={styles.skillContainer}>
                   <h3 className={styles.skillHeader}>Frontend</h3>
-                  <p>
-                    Build client-side applications with modern features and maintain semantic coding style
+                  <p className={utilStyles.paragraph}>
+                    Building client-side applications with modern features and maintain semantic coding style
                     among other best practices for SEO optimisation.
                   </p>
                 </div>
@@ -103,15 +103,15 @@ export default function Home({ allPostsData }) {
               <div className="col-md-6">
                 <div className={styles.skillContainer}>
                   <h3 className={styles.skillHeader}>Backend</h3>
-                  <p>
+                  <p className={utilStyles.paragraph}>
                     Capable of buildng scalable and maintainable apis using modern technology stacks such as Node.js, Express, and Firebase Cloud Functions.
                   </p>
                 </div>
               </div>
               <div className="col-md-6">
                 <div className={styles.skillContainer}>
-                  <h3 className={styles.skillHeader}>Deploy</h3>
-                  <p>
+                  <h3 className={styles.skillHeader}>Deployments</h3>
+                  <p className={utilStyles.paragraph}>
                     Maintaining the life cycle of a digital product. Creating CI pipelines, tests, cloud environments.
                   </p>
                 </div>
@@ -141,7 +141,7 @@ export default function Home({ allPostsData }) {
                 <TechStackItem 
                 name="RxJS" 
                 image="rxjs.svg" 
-                description="Reactive programming using observables. Making it easier to compose asynchronous calls." 
+                description="Reactive programming using observables. Easier to compose asynchronous calls." 
                 url="https://rxjs.dev/" 
                 level="80%"/>
               </div>
@@ -164,7 +164,7 @@ export default function Home({ allPostsData }) {
               <h1 className={styles.contactHeader}>Get In Touch!</h1>
             </div>
 
-            <p>
+            <p className={utilStyles.paragraph}>
               Always looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
             </p>
 

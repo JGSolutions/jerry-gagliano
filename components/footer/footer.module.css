@@ -1,7 +1,5 @@
 .footer {
-    height: 70px;
     width: 100%;
-    display: flex;
     background-color: var(--third-background);
 }
 
@@ -18,11 +16,22 @@
 .copyright {
     font-family: var(--ff-secondary);
     font-size: var(--fs-small);
+    display: flex;
+    align-items: center;
+    height: 70px;
 }
 
 .socialMedia {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
-    gap: 30px;
-    width: 400px;
+    gap: 24px;
+    height: 70px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .socialMedia, .copyright {
+        justify-content: center;
+    }
 }
