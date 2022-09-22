@@ -6,11 +6,6 @@
 
 .main {
   padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .skillContainer {
@@ -24,9 +19,9 @@
 
 .contactSection {
   width: 100%; 
-  margin-top: 60px;
   display: flex;  
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .contact {
@@ -49,8 +44,7 @@
 
 @media (max-width: 600px) {
   .main {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 0 16px;
   }
 }
 
