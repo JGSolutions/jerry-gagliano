@@ -62,12 +62,12 @@ export default function Home({ allPostsData }) {
 
                 <p className={utilStyles.paragraph}>
                   of experience in web development and building interfaces and tools for various companies. 
-                  Start of my career focused backend development with server technologies and databases.
-                  As frontend frameworks became the trend and in demand, my interest grew more towards building UI experiences.
+                  Started my career as a frontend and backend developer. As Javascript frameworks became in demand, my interest 
+                  grew more towards building UI and single page applications.
                 </p>
 
                 <p className={utilStyles.paragraph}>
-                  Currently a senior frontend developer at Sportlogiq the industry leader for NHL hockey data-collection and advanced analytics.
+                  I am currently a senior frontend developer at Sportlogiq the industry leader for NHL hockey data-collection and advanced analytics.
                   I maintain and build UI features on the NHL analytics web platform.
                 </p>
 
