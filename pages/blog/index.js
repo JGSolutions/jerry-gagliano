@@ -6,7 +6,7 @@ export default function Blog() {
     return (
         <>
             <Head>
-                <title>Jerry Gagliano - Web development content and tips.</title>
+                <title>My experiences about Web development and tips.</title>
                 <meta name="description" content="Providing helpful web development content" />
                 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=no"></meta>
                 <link rel="icon" href="/favicon.ico" />
