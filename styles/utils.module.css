@@ -25,3 +25,14 @@ a.button:hover {
   width: 100%;
   height: auto;
 }
+
+.headerPageSection { 
+  padding: 40px 0;
+}
+
+.headerPageTitle {
+  font-style: italic;
+  font-weight: var(--fw-bold);
+  color: var(--primary);
+  font-size: var(--fs-xlarge);
+}
