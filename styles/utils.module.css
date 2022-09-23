@@ -30,9 +30,15 @@ a.button:hover {
   padding: 40px 0;
 }
 
+@media (max-width: 600px) {
+  .headerPageSection { 
+    padding: 40px 16px;
+  }
+}
+
 .headerPageTitle {
   font-style: italic;
   font-weight: var(--fw-bold);
   color: var(--primary);
-  font-size: var(--fs-xlarge);
+  font-size: clamp(36px, 5vw, var(--fs-xlarge));
 }

@@ -3,6 +3,7 @@ import styles from './blog.module.css';
 import Head from 'next/head'
 import Header  from '../../components/header/header';
 import Footer  from '../../components/footer/footer';
+import BlogItem from '../../components/blog-item/blog-item';
 
 export default function Blog() {
     return (
@@ -25,7 +26,16 @@ export default function Blog() {
                 </div>
             </div>
 
-            <main style={{ height: '100vh', minHeight: '600px'}}></main>
+            <main style={{ height: '100vh', minHeight: '600px'}}>
+                <div style={{maxWidth: '750px', width: '100%'}}>
+                    <BlogItem 
+                    image="https://www.freecodecamp.org/news/content/images/size/w2000/2019/10/react-vs-angular.png"
+                    title="Angular vs React" 
+                    description="dldl sdfsdj sdjfjsd jsjdfsd hsdhfsd" 
+                    tags="CSS,HTML" 
+                    date="Feb 22, 2022" />
+                </div>
+            </main>
             <Footer/>
         </>
     )
