@@ -21,7 +21,7 @@ export default function Blog() {
 
                     <section className={utilStyles.headerPageSection}>
                         <h1 className={utilStyles.headerPageTitle}>My Blog</h1>
-                        <p>Latest and updated news about projects, development tips and general experiences about the web.</p>
+                        <p className={utilStyles.headerPageSlogan}>Latest and updated news about projects, development tips and general experiences about the web.</p>
                     </section>
                 </div>
             </div>
