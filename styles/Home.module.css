@@ -5,7 +5,7 @@
 }
 
 .main {
-  padding: 4rem 0;
+  padding: 40px 0;
 }
 
 .skillContainer {
@@ -44,7 +44,7 @@
 
 @media (max-width: 600px) {
   .main {
-    padding: 0 16px;
+    padding: 40px 16px;
   }
 }
 

@@ -124,7 +124,7 @@ export default function Home({ allPostsData }) {
           <div className="container">
             <div className="row">
               <div className="col">
-                <h2 className={styles.h2}>Frameworks and Libraries I Use</h2>
+                <h2 className={styles.h2}>Tech Stacks I Use</h2>
               </div>
             </div>
             <div className="row">
