@@ -16,9 +16,8 @@ export default function Blog() {
             </Head>
 
             <div className={utilStyles.topSection}>
-                <div className="container">
+                <div className="container-lg">
                     <Header/>
-
                     <section className={utilStyles.headerPageSection}>
                         <h1 className={utilStyles.headerPageTitle}>My Blog</h1>
                         <p className={utilStyles.headerPageSlogan}>Latest and updated news about projects, development tips and general experiences about the web.</p>
@@ -27,18 +26,9 @@ export default function Blog() {
             </div>
 
             <main style={{ height: '100vh', marginTop: '24px'}}>
-                <div className="container">
+                <div className="container-lg">
                     <div className="row">
-                        <div className={`col-12 ${styles.column}`}>
-                            <BlogItem 
-                                image="https://www.freecodecamp.org/news/content/images/size/w2000/2019/10/react-vs-angular.png"
-                                title="Lessons Learned As A Designer-Founder" 
-                                author="Jerry Gagliano"
-                                description="In this article, Dave Feldman shares his lessons learned and the experiments has done as a multidisciplinary designer-founder-" 
-                                tags="CSS,HTML" 
-                                date="Feb 22, 2022" />
-                        </div>
-                        <div className={`col-12 ${styles.column}`}>
+                        <div className={`col col-12 ${styles.column}`}>
                             <BlogItem 
                                 image="https://www.freecodecamp.org/news/content/images/size/w2000/2019/10/react-vs-angular.png"
                                 title="Lessons Learned As A Designer-Founder" 

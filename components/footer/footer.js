@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <div className="container">
+            <div className="container-lg">
                 <div className="row">
                     <div className="col-xs-6 col-md-6">
                         <div className={styles.copyright}>Designed & Built by Jerry Gagliano</div>

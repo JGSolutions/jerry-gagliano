@@ -47,7 +47,7 @@ export default function Home({ allPostsData }) {
 
       {/* header and hero sections --> */}
       <div className={utilStyles.topSection}>
-        <div className="container">
+        <div className="container-lg">
           <Header/>
           <HeroSection/>
         </div>
@@ -55,7 +55,7 @@ export default function Home({ allPostsData }) {
 
       <main className={styles.main}>
         <section style={{ width: '100%', marginBottom: '60px'}}>
-          <div className="container">
+          <div className="container-lg">
             <div className="row">
               <div className="col">
                 <h2 className={styles.h2}>Over the past 15 years,</h2>
@@ -77,7 +77,7 @@ export default function Home({ allPostsData }) {
         </section>
 
         <section style={{ width: '100%', marginBottom: '60px'}}>
-          <div className="container">
+          <div className="container-lg">
             <div className="row">
               <div className="col-md-6">
                 <div className={styles.skillContainer}>
@@ -121,7 +121,7 @@ export default function Home({ allPostsData }) {
         </section>
 
         <section style={{ width: '100%', marginBottom: '60px'}}>
-          <div className="container">
+          <div className="container-lg">
             <div className="row">
               <div className="col">
                 <h2 className={styles.h2}>Frameworks and Libraries I Use</h2>
