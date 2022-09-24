@@ -26,16 +26,30 @@ export default function Blog() {
                 </div>
             </div>
 
-            <main style={{ height: '100vh', minHeight: '600px'}}>
-                <div style={{maxWidth: '900px', width: '100%'}}>
-                    <BlogItem 
-                    image="https://www.freecodecamp.org/news/content/images/size/w2000/2019/10/react-vs-angular.png"
-                    title="Lessons Learned As A Designer-Founder" 
-                    author="Jerry Gagliano"
-                    description="In this article, Dave Feldman shares his lessons learned and the experiments has done as a multidisciplinary designer-founder-" 
-                    tags="CSS,HTML" 
-                    date="Feb 22, 2022" />
+            <main style={{ height: '100vh', marginTop: '24px'}}>
+                <div className="container">
+                    <div className="row">
+                        <div className={`col-12 ${styles.column}`}>
+                            <BlogItem 
+                                image="https://www.freecodecamp.org/news/content/images/size/w2000/2019/10/react-vs-angular.png"
+                                title="Lessons Learned As A Designer-Founder" 
+                                author="Jerry Gagliano"
+                                description="In this article, Dave Feldman shares his lessons learned and the experiments has done as a multidisciplinary designer-founder-" 
+                                tags="CSS,HTML" 
+                                date="Feb 22, 2022" />
+                        </div>
+                        <div className={`col-12 ${styles.column}`}>
+                            <BlogItem 
+                                image="https://www.freecodecamp.org/news/content/images/size/w2000/2019/10/react-vs-angular.png"
+                                title="Lessons Learned As A Designer-Founder" 
+                                author="Jerry Gagliano"
+                                description="In this article, Dave Feldman shares his lessons learned and the experiments has done as a multidisciplinary designer-founder-" 
+                                tags="CSS,HTML" 
+                                date="Feb 22, 2022" />
+                        </div>
+                    </div>
                 </div>
+    
             </main>
             <Footer/>
         </>
