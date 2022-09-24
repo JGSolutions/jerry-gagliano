@@ -27,11 +27,12 @@ export default function Blog() {
             </div>
 
             <main style={{ height: '100vh', minHeight: '600px'}}>
-                <div style={{maxWidth: '750px', width: '100%'}}>
+                <div style={{maxWidth: '900px', width: '100%'}}>
                     <BlogItem 
                     image="https://www.freecodecamp.org/news/content/images/size/w2000/2019/10/react-vs-angular.png"
-                    title="Angular vs React" 
-                    description="dldl sdfsdj sdjfjsd jsjdfsd hsdhfsd" 
+                    title="Lessons Learned As A Designer-Founder" 
+                    author="Jerry Gagliano"
+                    description="In this article, Dave Feldman shares his lessons learned and the experiments has done as a multidisciplinary designer-founder-" 
                     tags="CSS,HTML" 
                     date="Feb 22, 2022" />
                 </div>
