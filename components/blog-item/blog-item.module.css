@@ -31,7 +31,7 @@
 }
 
 .titleSection {
-    font-size: 28px;
+    font-size: var(--fs-large);
     font-weight: var(--fw-semi-medium);
 }
 
@@ -73,7 +73,7 @@
     }
 
     .titleSection {
-        font-size: 22px;
+        font-size: var(--fs-medium);
     }
 
     .imageSection {

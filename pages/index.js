@@ -162,40 +162,8 @@ export default function Home() {
             <Button>Let&#39;s Talk</Button>
           </div>
         </section>
-
-        {/* <div style={{ width: '370px'}}>
-          <SimpleBlogItem 
-          title="Angular vs React"
-          date="Sat Sep 22 2022"
-          tags="css,html"
-          image="https://cdn-images-1.medium.com/max/1024/0*1MDT8N8E9HuYG7tV"
-          description="Interesting debate developers face between when developing a web product">
-
-          </SimpleBlogItem>
-        </div> */}
       </main>
-
       <Footer/>
-    
-      {/* <section>
-        <h2>Blog</h2>
-        <ul>
-          {allPostsData.map(({ id, date, title }) => (
-            <li key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              {id}
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section> */}
-
     </div>
   )
 }

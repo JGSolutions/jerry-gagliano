@@ -38,16 +38,16 @@ export default function Blog({ allPostsData }) {
             <main style={{ height: '100vh', marginTop: '24px'}}>
                 <div className="container-lg">
                     <div className="row">
-                    {allPostsData.map(({ id, date, title }) => (
+                    {allPostsData.map(({ id, date, updateDate, title, tags, author, description, coverImage }) => (
                         <div className={`col col-12 ${styles.column}`} key={id}>
                             <BlogItem 
-                                image="https://www.freecodecamp.org/news/content/images/size/w2000/2019/10/react-vs-angular.png"
+                                image={coverImage}
                                 title={title} 
-                                author="Jerry Gagliano"
-                                description="In this article, Dave Feldman shares his lessons learned and the experiments has done as a multidisciplinary designer-founder-" 
-                                tags="CSS,HTML"
-                                date="Feb 22, 2022"
-                                updatedDate="Feb 25, 2022" />
+                                author={author}
+                                description={description}
+                                tags={tags}
+                                date={date}
+                                updatedDate={updateDate} />
                         </div>
                     ))}
                     </div>

@@ -1,13 +1,12 @@
 ---
 title: 'Learn How to Pre-render Pages Using Static Generation with Next.js'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis'
-coverImage: '/assets/blog/hello-world/cover.jpg'
+description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis'
+coverImage: 'https://www.freecodecamp.org/news/content/images/size/w2000/2019/10/react-vs-angular.png'
 tags: 'CSS'
 date: '2020-03-16T05:35:07.322Z'
-updateDate: '2020-03-16T05:35:07.322Z'
-author:
-name: Jerry Gagliano
-picture: '/assets/blog/authors/tim.jpeg'
+updateDate: '2022-03-16T05:35:07.322Z'
+author: Jerry Gagliano
+picture: ''
 ---
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.

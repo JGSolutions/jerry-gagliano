@@ -33,7 +33,7 @@ export default function BlogItem({title, description, image, date, updatedDate, 
             </div>
 
             <div className={styles.imageSection}>
-                <img src={image} alt={title}/>
+                <img src={image} alt={title} className={styles.image}/>
             </div>
         </div>
     )
