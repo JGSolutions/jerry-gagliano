@@ -33,6 +33,13 @@
 .titleSection {
     font-size: var(--fs-large);
     font-weight: var(--fw-semi-medium);
+    color: var(--primary-text);
+    text-decoration: none;
+}
+
+.titleSection:hover {
+    color: var(--primary);
+    text-decoration: underline;
 }
 
 .imageSection {

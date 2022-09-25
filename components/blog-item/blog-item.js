@@ -1,8 +1,9 @@
 import styles from './blog-item.module.css'
 import FormatDate from '../date';
 import TagItem from '../tag/tag';
+import Link from 'next/link'
 
-export default function BlogItem({title, description, image, date, updatedDate, tags, author}) {
+export default function BlogItem({id, title, description, image, date, updatedDate, tags, author}) {
     const tagItems = tags.split(',').map((string, index) =>
         <TagItem string={string} key={index}/>
     );
@@ -10,18 +11,24 @@ export default function BlogItem({title, description, image, date, updatedDate, 
         <div className={styles.wrapper}>
             <div className={styles.content}>
                 <div className={styles.date}>
-                    by {author} -  <FormatDate dateString={date} />
+                    by {author} - <FormatDate dateString={date} />
                 </div>
 
-                <h3 className={styles.titleSection}>{title}</h3>
+                <Link href={`/posts/${id}`}>
+                    <a className={styles.titleSection}>
+                        <h3>{title}</h3>
+                    </a>
+                </Link>
 
                 <div className={styles.updatedDate}>
                     updated: <FormatDate dateString={updatedDate} />
                 </div>
 
-                <div className={styles.imageSectionMobile}>
-                    <img src={image} alt={title}  className={styles.image}/>
-                </div>
+                <Link href={`/posts/${id}`}>
+                    <a className={styles.imageSectionMobile}>
+                        <img src={image} alt={title}  className={styles.image}/>
+                    </a>
+                </Link>
 
                 <div className={styles.description}>
                     {description}

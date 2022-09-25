@@ -41,6 +41,7 @@ export default function Blog({ allPostsData }) {
                     {allPostsData.map(({ id, date, updateDate, title, tags, author, description, coverImage }) => (
                         <div className={`col col-12 ${styles.column}`} key={id}>
                             <BlogItem 
+                                id={id}
                                 image={coverImage}
                                 title={title} 
                                 author={author}
