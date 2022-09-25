@@ -2,7 +2,7 @@ import styles from './blog-item.module.css'
 import FormatDate from '../date';
 import TagItem from '../tag/tag';
 
-export default function BlogItem({title, description, image, date, tags, author}) {
+export default function BlogItem({title, description, image, date, updatedDate, tags, author}) {
     const tagItems = tags.split(',').map((string, index) =>
         <TagItem string={string} key={index}/>
     );
@@ -10,10 +10,18 @@ export default function BlogItem({title, description, image, date, tags, author}
         <div className={styles.wrapper}>
             <div className={styles.content}>
                 <div className={styles.date}>
-                    {author} <FormatDate dateString={date} />
+                    by {author} -  <FormatDate dateString={date} />
                 </div>
 
-                <div className={styles.titleSection}>{title}</div>
+                <h3 className={styles.titleSection}>{title}</h3>
+
+                <div className={styles.updatedDate}>
+                    updated: <FormatDate dateString={updatedDate} />
+                </div>
+
+                <div className={styles.imageSectionMobile}>
+                    <img src={image} alt={title}  className={styles.image}/>
+                </div>
 
                 <div className={styles.description}>
                     {description}

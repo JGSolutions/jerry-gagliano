@@ -34,8 +34,9 @@ export default function Blog() {
                                 title="Lessons Learned As A Designer-Founder" 
                                 author="Jerry Gagliano"
                                 description="In this article, Dave Feldman shares his lessons learned and the experiments has done as a multidisciplinary designer-founder-" 
-                                tags="CSS,HTML" 
-                                date="Feb 22, 2022" />
+                                tags="CSS,HTML"
+                                date="Feb 22, 2022"
+                                updatedDate="Feb 25, 2022" />
                         </div>
                     </div>
                 </div>
