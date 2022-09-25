@@ -6,8 +6,9 @@
 
 .details {
     border-radius: 8px;
-    margin: 16px 0;
-    padding: 24px;
+    margin: 24px 0;
+    padding: 16px;
+    width: auto;
     background-color: var(--third-background);
 }
 
