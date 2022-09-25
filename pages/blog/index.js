@@ -19,10 +19,8 @@ export default function Blog({ allPostsData }) {
     return (
         <>
             <Head>
-                <title>My experiences about Web development and tips.</title>
-                <meta name="description" content="Providing helpful web development content" />
-                <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=no"></meta>
-                <link rel="icon" href="/favicon.ico" />
+                <title>Jerry Gagliano&#39;s blog about web development and tips.</title>
+                <meta name="description" content="Providing my experiences and tips in working with the web." />
             </Head>
 
             <div className={utilStyles.topSection}>

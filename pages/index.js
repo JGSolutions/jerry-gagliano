@@ -31,9 +31,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Jerry Gagliano - Fullstack Web Developer from Montreal</title>
-        <meta name="description" content="Jerry Gagliano fullstack developer from Montreal, Quebec. Passionate about developing apps with React, Angular, Node.js and Firebase." />
-        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=no"></meta>
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Jerry Gagliano fullstack developer from Montreal. Passionate about developing apps with React, Angular, Node.js and Firebase." />
       </Head>
 
       {/* header and hero sections --> */}

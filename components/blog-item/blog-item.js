@@ -1,12 +1,11 @@
 import styles from './blog-item.module.css'
 import FormatDate from '../date';
-import TagItem from '../tag/tag';
 import Link from 'next/link'
+import { generateTagsElements } from '../../lib/utils'
 
 export default function BlogItem({id, title, description, image, date, updatedDate, tags, author}) {
-    const tagItems = tags.split(',').map((string, index) =>
-        <TagItem string={string} key={index}/>
-    );
+    const tagItems =  generateTagsElements(tags);
+
     return (
         <div className={styles.wrapper}>
             <div className={styles.content}>

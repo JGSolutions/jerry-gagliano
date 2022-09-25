@@ -1,0 +1,18 @@
+.authorDate {
+    color: var(--secondary-text);
+    font-family: var(--ff-secondary);
+    margin-bottom: 10px;
+}
+
+.details {
+    border-radius: 8px;
+    margin: 16px 0;
+    padding: 24px;
+    background-color: var(--third-background);
+}
+
+.tags {
+    width: min-content;
+    gap: 6px;
+    display: flex;
+}

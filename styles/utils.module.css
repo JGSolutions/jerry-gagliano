@@ -24,22 +24,24 @@ a.button:hover {
   background-color: var(--secondary-background);
   width: 100%;
   height: auto;
+  position: relative;
 }
 
 .headerPageSection { 
-  padding: 40px 0;
+  padding: 80px 0 50px 0;
 }
 
 @media (max-width: 600px) {
   .headerPageSection { 
-    padding: 40px 16px;
+    padding: 60px 16px;
   }
 }
 
 .headerPageTitle {
   font-weight: var(--fw-semi-medium);
   color: var(--primary);
-  font-size: clamp(36px, 5vw, var(--fs-xlarge));
+  margin-bottom: 10px;
+  font-size: var(--fs-large);
 }
 
 .headerPageSlogan {
