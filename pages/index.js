@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { getSortedPostsData } from '../lib/posts';
 // import Link from 'next/link';
 // import Date from '../components/date';
 import utilStyles from '../styles/utils.module.css';
@@ -11,16 +10,8 @@ import Button from '../components/button/button'
 import Footer from '../components/footer/footer'
 // import { useRef, useEffect, useState } from 'react';
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
 
-export default function Home({ allPostsData }) {
+export default function Home() {
   // const myRef = useRef(null);
 
   // useEffect(() => {

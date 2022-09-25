@@ -4,8 +4,18 @@ import Head from 'next/head'
 import Header  from '../../components/header/header';
 import Footer  from '../../components/footer/footer';
 import BlogItem from '../../components/blog-item/blog-item';
+import { getSortedPostsData } from '../../lib/posts';
 
-export default function Blog() {
+export async function getStaticProps() {
+    const allPostsData = getSortedPostsData();
+    return {
+        props: {
+            allPostsData,
+        },
+    };
+}
+
+export default function Blog({ allPostsData }) {
     return (
         <>
             <Head>
@@ -28,16 +38,18 @@ export default function Blog() {
             <main style={{ height: '100vh', marginTop: '24px'}}>
                 <div className="container-lg">
                     <div className="row">
-                        <div className={`col col-12 ${styles.column}`}>
+                    {allPostsData.map(({ id, date, title }) => (
+                        <div className={`col col-12 ${styles.column}`} key={id}>
                             <BlogItem 
                                 image="https://www.freecodecamp.org/news/content/images/size/w2000/2019/10/react-vs-angular.png"
-                                title="Lessons Learned As A Designer-Founder" 
+                                title={title} 
                                 author="Jerry Gagliano"
                                 description="In this article, Dave Feldman shares his lessons learned and the experiments has done as a multidisciplinary designer-founder-" 
                                 tags="CSS,HTML"
                                 date="Feb 22, 2022"
                                 updatedDate="Feb 25, 2022" />
                         </div>
+                    ))}
                     </div>
                 </div>
     
