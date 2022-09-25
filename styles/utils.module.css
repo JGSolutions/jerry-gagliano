@@ -37,7 +37,7 @@ a.button:hover {
 }
 
 .headerPageTitle {
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-semi-medium);
   color: var(--primary);
   font-size: clamp(36px, 5vw, var(--fs-xlarge));
 }
