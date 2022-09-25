@@ -1,8 +1,8 @@
 ---
 title: 'Learn How to Pre-render Pages Using Static Generation with Next.js'
-description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis'
+description: 'Quick opinion about angular vs react.'
 coverImage: 'https://www.freecodecamp.org/news/content/images/size/w2000/2019/10/react-vs-angular.png'
-tags: 'CSS'
+tags: 'CSS,HTML'
 date: '2020-03-16T05:35:07.322Z'
 updateDate: '2022-03-16T05:35:07.322Z'
 author: Jerry Gagliano
