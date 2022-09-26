@@ -6,9 +6,9 @@
 
 .details {
     border-radius: 8px;
-    margin: 24px 0;
+    margin: 24px 0 36px 0;
     padding: 16px;
-    width: auto;
+    width: max-content;
     background-color: var(--third-background);
 }
 
@@ -16,4 +16,23 @@
     width: min-content;
     gap: 6px;
     display: flex;
+}
+
+/*  article  formatting  */
+.article p {
+    margin-bottom: 24px;
+}
+
+.article  strong {
+    font-weight: var(--fw-bold);
+}
+
+.article ul {
+    list-style-type: decimal;
+    padding: 6px;
+    margin-bottom: 24px;
+}
+
+.article  li {
+    padding: 5px 10px;
 }

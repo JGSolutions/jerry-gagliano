@@ -59,18 +59,20 @@ export default function Post({ postData }) {
       <main>
         <div className="container-lg">
           <div className="row">
-            <section className={styles.details}>
-              <p className={styles.authorDate}>
-                By {postData.author} / <FormatDate dateString={postData.updateDate} />
-              </p>
-              <div className={styles.tags}>
-                {tags}
-              </div>
-            </section>
+            <div className="col">
+              <section className={styles.details}>
+                <p className={styles.authorDate}>
+                  By {postData.author} / <FormatDate dateString={postData.updateDate} />
+                </p>
+                <div className={styles.tags}>
+                  {tags}
+                </div>
+              </section>
 
-            <article>
-              <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-            </article>
+              <article className={styles.article}>
+                <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+              </article>
+            </div>
           </div>
         </div>
       </main>
