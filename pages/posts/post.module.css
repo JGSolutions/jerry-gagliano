@@ -32,6 +32,10 @@
     font-weight: var(--fw-bold);
 }
 
+.article  h2 {
+    font-weight: var(--fw-medium);
+}
+
 .article ul {
     list-style-type: decimal;
     padding: 6px;
