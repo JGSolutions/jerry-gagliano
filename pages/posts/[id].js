@@ -59,7 +59,7 @@ export default function Post({ postData }) {
       <main>
         <div className="container-lg">
           <div className="row">
-            <div className="col">
+            <div className="col-8">
               <section className={styles.details}>
                 <p className={styles.authorDate}>
                   By {postData.author} / <FormatDate dateString={postData.updateDate} />
@@ -73,6 +73,8 @@ export default function Post({ postData }) {
                 <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
               </article>
             </div>
+
+            <div className="col-4"></div>
           </div>
         </div>
       </main>

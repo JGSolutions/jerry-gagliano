@@ -19,6 +19,11 @@
 }
 
 /*  article  formatting  */
+.article {
+    line-height: 32px;
+    text-justify: newspaper;
+}
+
 .article p {
     margin-bottom: 24px;
 }
