@@ -8,7 +8,7 @@
     border-radius: 8px;
     margin: 24px 0 36px 0;
     padding: 16px;
-    width: max-content;
+    width: 100%;
     background-color: var(--third-background);
 }
 
@@ -20,8 +20,7 @@
 
 /*  article  formatting  */
 .article {
-    line-height: 32px;
-    text-justify: newspaper;
+    margin-top: 16px;
 }
 
 .article p {
@@ -44,4 +43,27 @@
 
 .article  li {
     padding: 5px 10px;
+}
+
+.articleText {
+    line-height: 32px;
+    text-justify: newspaper;
+}
+
+.content {
+    order: 1;
+}
+
+.sideContent {
+    order: 2;
+}
+
+@media (max-width: 767px) {
+    .content {
+        order: 2;
+    }
+    
+    .sideContent {
+        order: 1;
+    }
 }
