@@ -1,6 +1,6 @@
 ---
-title: 'Welcoming Myself to My First Blog!'
-description: 'Updated my portfolio site and finally will begin blogging my experiences.'
+title: 'Created my first blog post and you should too!'
+description: 'I write about creating my first blog post and what motivated me to do this.'
 coverImage: ''
 tags: 'Web'
 date: '2022-09-26T00:00:07.322Z'
@@ -9,9 +9,9 @@ author: Jerry Gagliano
 picture: ''
 ---
 
-I always had web developer portfolio site of myself. Allowing recruiters or companies a quick way to access my resume. But never focused on it much as I was always busy with work or with some side project.
+I always had web developer portfolio site. Allowing recruiters or companies a quick way to access my resume. But never focused on it much as I was always busy with work or with some side project.
 
-It's been always in the back of my head "You need to do this!". For me a basic portfolio site was always boring not motivating to keep up-to-date as it's difficult to get traffic or attraction. Also I didn't know what to content to show. As time went by, looking at my old site and got disgusted by it that's how I got even more motivated. I'm not a good writer but this is when I needed to get out of my comfort zone.
+It's been always in the back of my head to create a blog. For me a basic portfolio site was always boring not motivating, not knowing what content to write up and most importantly keeping up-to-date. As time went by, looking at my old site and got fustrated by it. By no means I am no professional writer but an opportunity to get out of my comfort zone and try something different.
 
 Here are some valid reasons that motivated me to start this blog and I hope this can help you too as developer or any other type of career your in.
 
