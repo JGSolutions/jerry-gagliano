@@ -1,7 +1,7 @@
 ---
 title: 'Created my first blog post and you should too!'
 description: 'I write about creating my first blog post and what motivated me to do this.'
-coverImage: ''
+coverImage: '/posts/blog.jpeg'
 tags: 'Web'
 date: '2022-09-26T00:00:07.322Z'
 updateDate: '2022-09-26T00:00:07.322Z'
@@ -9,7 +9,7 @@ author: Jerry Gagliano
 picture: ''
 ---
 
-I always had web developer portfolio site. Allowing recruiters or companies a quick way to access my resume. But never focused on it much as I was always busy with work or with some side project.
+I always had a web developer portfolio site. Allowing recruiters or companies a quick way to access my resume. But I never focused on it much as I was always busy with work or some side project.
 
 It's been always in the back of my head to create a blog. For me a basic portfolio site was always boring not motivating, not knowing what content to write up and most importantly keeping up-to-date. As time went by, looking at my old site and got fustrated by it. By no means I am no professional writer but an opportunity to get out of my comfort zone and try something different.
 
