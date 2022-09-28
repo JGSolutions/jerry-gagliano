@@ -15,13 +15,13 @@ export default function BlogItem({id, title, description, image, date, updatedDa
 
                 <Link href={`/posts/${id}`}>
                     <a className={styles.titleSection}>
-                        <h3>{title}</h3>
+                        <h3 className={styles.h3}>{title}</h3>
                     </a>
                 </Link>
 
-                <div className={styles.updatedDate}>
+                {/* <div className={styles.updatedDate}>
                     updated: <FormatDate dateString={updatedDate} />
-                </div>
+                </div> */}
 
                 <Link href={`/posts/${id}`}>
                     <a className={styles.imageSectionMobile}>
