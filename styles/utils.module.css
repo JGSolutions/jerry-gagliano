@@ -19,3 +19,32 @@ a.button:hover {
   margin-bottom: 16px;
   line-height: 30px;
 }
+
+.topSection {
+  background-color: var(--secondary-background);
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.headerPageSection { 
+  padding: 80px 0 50px 0;
+}
+
+@media (max-width: 600px) {
+  .headerPageSection { 
+    padding: 60px 16px;
+  }
+}
+
+.headerPageTitle {
+  font-weight: var(--fw-semi-medium);
+  color: var(--primary);
+  margin-bottom: 10px;
+  font-size: var(--fs-large);
+}
+
+.headerPageSlogan {
+  font-weight: var(--fw-regular);
+  font-size: clamp(12px, 3.5vw, var(--fs-regular));
+}

@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <header className={styles.header}>
             <div className={styles.logoContainer}>
-                <img src="/jg-logo.svg" alt="Jerry Gaglian logo"></img>
+                <img src="/jg-logo.svg" alt="Jerry Gagliano logo"></img>
                 {/* <nav className={styles.nav}>
                     <ul role='list' className={styles.menu}>
                         <li>

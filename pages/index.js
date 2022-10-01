@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { getSortedPostsData } from '../lib/posts';
 // import Link from 'next/link';
 // import Date from '../components/date';
 import utilStyles from '../styles/utils.module.css';
@@ -11,16 +10,8 @@ import Button from '../components/button/button'
 import Footer from '../components/footer/footer'
 // import { useRef, useEffect, useState } from 'react';
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
 
-export default function Home({ allPostsData }) {
+export default function Home() {
   // const myRef = useRef(null);
 
   // useEffect(() => {
@@ -40,14 +31,12 @@ export default function Home({ allPostsData }) {
     <div>
       <Head>
         <title>Jerry Gagliano - Fullstack Web Developer from Montreal</title>
-        <meta name="description" content="Jerry Gagliano fullstack developer from Montreal, Quebec. Passionate about developing apps with React, Angular, Node.js and Firebase." />
-        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=no"></meta>
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Jerry Gagliano fullstack developer from Montreal. Passionate about developing apps with React, Angular, Node.js and Firebase." />
       </Head>
 
       {/* header and hero sections --> */}
-      <div className={styles.topSection}>
-        <div className="container">
+      <div className={utilStyles.topSection}>
+        <div className="container-lg">
           <Header/>
           <HeroSection/>
         </div>
@@ -55,7 +44,7 @@ export default function Home({ allPostsData }) {
 
       <main className={styles.main}>
         <section style={{ width: '100%', marginBottom: '60px'}}>
-          <div className="container">
+          <div className="container-lg">
             <div className="row">
               <div className="col">
                 <h2 className={styles.h2}>Over the past 15 years,</h2>
@@ -77,7 +66,7 @@ export default function Home({ allPostsData }) {
         </section>
 
         <section style={{ width: '100%', marginBottom: '60px'}}>
-          <div className="container">
+          <div className="container-lg">
             <div className="row">
               <div className="col-md-6">
                 <div className={styles.skillContainer}>
@@ -121,7 +110,7 @@ export default function Home({ allPostsData }) {
         </section>
 
         <section style={{ width: '100%', marginBottom: '60px'}}>
-          <div className="container">
+          <div className="container-lg">
             <div className="row">
               <div className="col">
                 <h2 className={styles.h2}>Tech Stacks I Use</h2>
@@ -171,40 +160,8 @@ export default function Home({ allPostsData }) {
             <Button>Let&#39;s Talk</Button>
           </div>
         </section>
-
-        {/* <div style={{ width: '370px'}}>
-          <SimpleBlogItem 
-          title="Angular vs React"
-          date="Sat Sep 22 2022"
-          tags="css,html"
-          image="https://cdn-images-1.medium.com/max/1024/0*1MDT8N8E9HuYG7tV"
-          description="Interesting debate developers face between when developing a web product">
-
-          </SimpleBlogItem>
-        </div> */}
       </main>
-
       <Footer/>
-    
-      {/* <section>
-        <h2>Blog</h2>
-        <ul>
-          {allPostsData.map(({ id, date, title }) => (
-            <li key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              {id}
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section> */}
-
     </div>
   )
 }

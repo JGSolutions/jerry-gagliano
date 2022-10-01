@@ -7,13 +7,12 @@
     padding-bottom: 70px;
     padding-top: 100px;
 }
-  
+
 .h1 {
     text-align: center;
 }
 
 .heroText {
-    /* font-size: clamp(36px, 5vw, var(--fs-xlarge)); */
     font-style: italic;
     font-weight: var(--fw-bold);
 }
@@ -23,9 +22,7 @@
 }
 
 .slogan {
-    margin-top: 60px;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin: 60px 16px 24px 16px;
     max-width: 700px;
     text-align: center;
     font-size: clamp(14px, 3.5vw, var(--fs-medium));
