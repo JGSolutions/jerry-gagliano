@@ -32,13 +32,17 @@
 }
 
 .article  h2 {
-    font-weight: var(--fw-medium);
+    margin-top: 30px;
+    font-weight: var(--fw-semi-medium);
+    color: var(--primary);
+    font-size: var(--fs-blog-header);
 }
 
 .article ul {
     list-style-type: decimal;
     padding: 6px;
     margin-bottom: 24px;
+    margin-left: 40px;
 }
 
 .article  li {
