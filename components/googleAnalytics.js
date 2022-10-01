@@ -6,13 +6,13 @@ export default function GoogleAnalytics() {
         return (
             <>    
                 <Script
-                id="my-script"
                 strategy="afterInteractive"
+                id="google-tag-manager"
                 src={`https://www.googletagmanager.com/gtag/js?id=G-QHH9Y9MLFZ`}
                 />
 
                 <Script
-                id="my-script1"
+                id="google-tag-manager"
                 strategy="afterInteractive"
                 dangerouslySetInnerHTML={{
                     __html: `
