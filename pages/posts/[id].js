@@ -29,6 +29,7 @@ export default function Post({ postData }) {
   return (
     <div>
       <Head>
+        <title>{postData.title}</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content={postData.description} />
         <meta property="og:image" content={postData.coverImage}/>
