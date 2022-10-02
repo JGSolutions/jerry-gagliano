@@ -21,6 +21,7 @@
 /*  article  formatting  */
 .article {
     margin-top: 16px;
+    padding: 50px 84px;
 }
 
 .article p {
@@ -54,20 +55,12 @@
     text-justify: newspaper;
 }
 
-.content {
-    order: 1;
-}
-
-.sideContent {
-    order: 2;
-}
-
 .contactSignature {
-    background-color: var( --third-background);
+    background-color: var(--secondary-background);
     border-radius: 6px;
     padding: 16px;
-    margin-bottom: 24px;
-    margin-top: 60px;
+    margin: 60px 0 24px 0;
+    width: 100%;
 }
 
 .contactSignature p {
@@ -81,11 +74,7 @@
 }
 
 @media (max-width: 767px) {
-    .content {
-        order: 2;
-    }
-    
-    .sideContent {
-        order: 1;
+    .article {
+        padding: 50px 24px;
     }
 }

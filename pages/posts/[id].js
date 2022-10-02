@@ -57,28 +57,29 @@ export default function Post({ postData }) {
       </div>
 
       <main>
-        <div className="container-lg">
+        <div className="container-lg" style={{ position: 'relative',  top: '-70px', backgroundColor: '#312E2E'}}>
           <div className="row">
-            <div className={`col-xs-12 col-md-8 col-lg-8 ${styles.content}`}>
+            <div className={`col`}>
               <article className={styles.article}>
                 <div className={styles.articleText} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+              
+                <div className={styles.contactSignature}>
+                  <p>
+                    Thank you for reading this blog. If you find any invalid information or want to add
+                    more to this particular article you may contact me at:
+                  </p>
+
+                  <p>
+                    <a href="mailto:jerrygag@gmail.com">
+                      jerrygag@gmail.com
+                    </a>
+                  </p>
+                </div>
               </article>
 
-              <div className={styles.contactSignature}>
-                <p>
-                  Thank you for reading this blog. If you find any invalid information or want to add
-                  more to this particular article you may contact me at:
-                </p>
-
-                <p>
-                  <a href="mailto:jerrygag@gmail.com">
-                    jerrygag@gmail.com
-                  </a>
-                </p>
-              </div>
             </div>
 
-            <div className={`col-xs-12 col-md-4 col-lg-4 ${styles.sideContent}`}>
+            {/* <div className={`col-xs-12 col-md-4 col-lg-4 ${styles.sideContent}`}>
                 <section className={styles.details}>
                   <p className={styles.authorDate}>
                     By {postData.author} / <FormatDate dateString={postData.updateDate} />
@@ -87,7 +88,7 @@ export default function Post({ postData }) {
                     {tags}
                   </div>
                 </section>
-            </div>
+            </div> */}
           </div>
         </div>
       </main>
