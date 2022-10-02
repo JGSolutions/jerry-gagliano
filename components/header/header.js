@@ -1,12 +1,18 @@
 import styles from './header.module.css'
 import utilStyle from '../../styles/utils.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Header() {
     return (
         <header className={styles.header}>
             <div className={styles.logoContainer}>
-                <img src="/jg-logo.svg" alt="Jerry Gagliano logo"></img>
+
+            <Link href="/" passHref>
+                <a rel="noopener noreferrer">
+                    <Image src="/jg-logo.svg" alt="Jerry Gagliano logo" width={100} height={50}></Image>
+                </a>
+            </Link>
                 {/* <nav className={styles.nav}>
                     <ul role='list' className={styles.menu}>
                         <li>
