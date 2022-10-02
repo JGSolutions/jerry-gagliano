@@ -42,7 +42,6 @@ export default function Post({ postData }) {
         <div className="container-lg">
           <Header/>
           <section className={utilStyles.headerPageSection}>
-
             <Link href="/blog" passHref>
               <a className={utilStyles.back} rel="noopener noreferrer">
                 &larr; Go Back
@@ -57,7 +56,18 @@ export default function Post({ postData }) {
       </div>
 
       <main>
-        <div className="container-lg" style={{ position: 'relative',  top: '-70px', backgroundColor: '#312E2E'}}>
+        <div className={`container-lg ${styles.articleLayout}`}>
+          <div className="row">
+            <div className={`col ${styles.details}`}>
+              <div className={styles.authorDetails}>
+                <p className={styles.author}>By {postData.author}</p>
+                <p className={styles.authorDate}><FormatDate dateString={postData.updateDate} /></p>
+              </div>
+              <div>
+                {tags}
+              </div>
+            </div>
+          </div>
           <div className="row">
             <div className={`col`}>
               <article className={styles.article}>
@@ -65,8 +75,8 @@ export default function Post({ postData }) {
               
                 <div className={styles.contactSignature}>
                   <p>
-                    Thank you for reading this blog. If you find any invalid information or want to add
-                    more to this particular article you may contact me at:
+                    Thank you for taking the time in reading this blog. If you find any invalid information or want to add
+                    more this blog you may contact me at:
                   </p>
 
                   <p>
@@ -76,19 +86,7 @@ export default function Post({ postData }) {
                   </p>
                 </div>
               </article>
-
             </div>
-
-            {/* <div className={`col-xs-12 col-md-4 col-lg-4 ${styles.sideContent}`}>
-                <section className={styles.details}>
-                  <p className={styles.authorDate}>
-                    By {postData.author} / <FormatDate dateString={postData.updateDate} />
-                  </p>
-                  <div className={styles.tags}>
-                    {tags}
-                  </div>
-                </section>
-            </div> */}
           </div>
         </div>
       </main>
