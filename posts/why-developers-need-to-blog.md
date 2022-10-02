@@ -3,8 +3,8 @@ title: '4 Reasons Why Developers or Designers Should Have a Blog'
 description: 'Blogging can be time consuming but will help you in the long run.'
 coverImage: '/posts/blog.jpeg'
 tags: 'Web'
-date: '2022-10-01T00:00:07.322Z'
-updateDate: '2022-10-01T00:00:07.322Z'
+date: '2022-10-01T12:30:07.322Z'
+updateDate: '2022-10-01T12:30:07.322Z'
 author: Jerry Gagliano
 picture: ''
 ---
