@@ -1,5 +1,5 @@
 ---
-title: '4 reasons Why Developers or Designers Should Have a Blog'
+title: '4 Reasons Why Developers or Designers Should Have a Blog'
 description: 'Blogging can be time consuming but will help you in the long run.'
 coverImage: '/posts/blog.jpeg'
 tags: 'Web'
@@ -51,7 +51,9 @@ Eventually that topic will help another developers solve the same issue at faste
 
 ## Final Thoughts
 
-I hope this article motivates you in starting a blog. Remember that you don’t need to publish hundreds of blogs in a short amount of time. Quality is better than quantity. Your first version of your article can always be updated and get better over time. If feedback is provided from your readers then it means your content is valuable. 
+I hope this article motivates you in starting a blog. As I'm starting this blog, in the future I'm will write about how blogging actually helped me. Either good or bad!
+
+Remember that you don’t need to publish hundreds of blogs in a short amount of time. Quality is better than quantity. If feedback is provided from your readers then it means your content is valuable. 
 
 Also it will help you become a better communicator and lead you to other ways.
 
