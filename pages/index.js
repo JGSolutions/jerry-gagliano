@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-// import Link from 'next/link';
+import Link from 'next/link';
 // import Date from '../components/date';
 import utilStyles from '../styles/utils.module.css';
 import Header  from '../components/header/header';
@@ -157,7 +157,11 @@ export default function Home() {
               Always looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
             </p>
 
-            <Button>Let&#39;s Talk</Button>
+            <Link href="mailto:jerrygag@gmail.com" passHref>
+                <a className={utilStyles.button} rel="noopener noreferrer">
+                  Let&#39;s Talk
+                </a>
+            </Link>
           </div>
         </section>
       </main>

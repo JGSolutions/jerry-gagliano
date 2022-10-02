@@ -62,6 +62,24 @@
     order: 2;
 }
 
+.contactSignature {
+    background-color: var( --third-background);
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 24px;
+    margin-top: 60px;
+}
+
+.contactSignature p {
+    margin-bottom: 16px;
+}
+
+.contactSignature a {
+    color: var(--primary-text);
+    text-decoration: none;
+    font-weight: var(--fw-semi-medium);
+}
+
 @media (max-width: 767px) {
     .content {
         order: 2;

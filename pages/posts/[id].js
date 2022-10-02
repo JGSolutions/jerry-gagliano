@@ -63,6 +63,19 @@ export default function Post({ postData }) {
               <article className={styles.article}>
                 <div className={styles.articleText} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
               </article>
+
+              <div className={styles.contactSignature}>
+                <p>
+                  Thank you for reading this blog. If you find any invalid information or want to add
+                  more to this particular article you may contact me at:
+                </p>
+
+                <p>
+                  <a href="mailto:jerrygag@gmail.com">
+                    jerrygag@gmail.com
+                  </a>
+                </p>
+              </div>
             </div>
 
             <div className={`col-xs-12 col-md-4 col-lg-4 ${styles.sideContent}`}>

@@ -15,7 +15,7 @@ Developer or designers do like reading blogs when arriving on an interesting top
 
 As for myself, I always wanted to create a blog but what stopped me and probably same for other developers and designers was time and the type of content should be written. As there are abundance of blogs on the web which have might not been updated for years or just plain topics for example "How to install xxx or setup a framework" that repeats the same information from the actual origin documentation. 
 
-This keeps us thinking why do I need to create another blog? Let's go through some reasons and hopefully you will get a good idea.
+This keeps us thinking is another blog needed? Let's go through some reasons and hopefully you will get a good idea.
 
 ## 1. Makes Your Portfolio Site More Interesting
 
@@ -51,7 +51,7 @@ Eventually that topic will help another developers solve the same issue at faste
 
 ## Final Thoughts
 
-I hope this article motivates you in starting a blog. As I'm starting this blog, in the future I'm will write about how blogging actually helped me. Either good or bad!
+I hope this article motivates you in starting a blog. As I'm starting off this blog, I am hoping in the future I will write about how my blogging journey helped me. Either good or bad!
 
 Remember that you don’t need to publish hundreds of blogs in a short amount of time. Quality is better than quantity. If feedback is provided from your readers then it means your content is valuable. 
 
