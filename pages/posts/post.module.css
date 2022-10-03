@@ -1,15 +1,39 @@
-.authorDate {
-    color: var(--secondary-text);
-    font-family: var(--ff-secondary);
-    margin-bottom: 10px;
+.articleLayout {
+    position: relative;
+    top: -130px; 
+    background-color: var(--primary-background);
+}
+
+.headerPageSection { 
+    padding: 65px 0 160px 0;
+}
+
+@media (max-width: 990px) {
+    .headerPageSection { 
+        padding: 65px 16px 160px 16px;
+    }
 }
 
 .details {
-    border-radius: 8px;
-    margin: 24px 0 36px 0;
-    padding: 16px;
-    width: 100%;
-    background-color: var(--third-background);
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-background);
+    padding: 16px 10px;
+}
+
+.author {
+    font-size: var(--fs-small);
+}
+
+.authorDetails {
+    display: fleex; 
+    flex-direction: column;
+}
+
+.authorDate {
+    color: var(--secondary-text);
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-caption);
 }
 
 .tags {
@@ -21,6 +45,7 @@
 /*  article  formatting  */
 .article {
     margin-top: 16px;
+    padding: 60px 50px;
 }
 
 .article p {
@@ -54,20 +79,12 @@
     text-justify: newspaper;
 }
 
-.content {
-    order: 1;
-}
-
-.sideContent {
-    order: 2;
-}
-
 .contactSignature {
-    background-color: var( --third-background);
+    background-color: var(--secondary-background);
     border-radius: 6px;
     padding: 16px;
-    margin-bottom: 24px;
-    margin-top: 60px;
+    margin: 60px 0 24px 0;
+    width: 100%;
 }
 
 .contactSignature p {
@@ -81,11 +98,13 @@
 }
 
 @media (max-width: 767px) {
-    .content {
-        order: 2;
+    .article {
+        padding: 50px 24px;
     }
-    
-    .sideContent {
-        order: 1;
+}
+
+@media (max-width: 990px) {
+    .details {
+        padding: 16px 24px;
     }
 }

@@ -40,16 +40,6 @@ a.back:hover {
   position: relative;
 }
 
-.headerPageSection { 
-  padding: 80px 0 50px 0;
-}
-
-@media (max-width: 600px) {
-  .headerPageSection { 
-    padding: 60px 16px;
-  }
-}
-
 .headerPageTitle {
   font-weight: var(--fw-semi-medium);
   color: var(--primary);

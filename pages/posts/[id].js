@@ -41,52 +41,48 @@ export default function Post({ postData }) {
       <div className={utilStyles.topSection}>
         <div className="container-lg">
           <Header/>
-          <section className={utilStyles.headerPageSection}>
-
+          <section className={styles.headerPageSection}>
             <Link href="/blog" passHref>
               <a className={utilStyles.back} rel="noopener noreferrer">
                 &larr; Go Back
               </a>
             </Link>
             <h1 className={utilStyles.headerPageTitle}>{postData.title}</h1>
-            <p className={utilStyles.headerPageSlogan}>
-              {postData.description}
-            </p>
           </section>
         </div>
       </div>
 
       <main>
-        <div className="container-lg">
+        <div className={`container-lg ${styles.articleLayout}`}>
           <div className="row">
-            <div className={`col-xs-12 col-md-8 col-lg-8 ${styles.content}`}>
-              <article className={styles.article}>
-                <div className={styles.articleText} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-              </article>
-
-              <div className={styles.contactSignature}>
-                <p>
-                  Thank you for reading this blog. If you find any invalid information or want to add
-                  more to this particular article you may contact me at:
-                </p>
-
-                <p>
-                  <a href="mailto:jerrygag@gmail.com">
-                    jerrygag@gmail.com
-                  </a>
-                </p>
+            <div className={`col ${styles.details}`}>
+              <div className={styles.authorDetails}>
+                <p className={styles.author}>By {postData.author}</p>
+                <p className={styles.authorDate}><FormatDate dateString={postData.updateDate} /></p>
+              </div>
+              <div>
+                {tags}
               </div>
             </div>
-
-            <div className={`col-xs-12 col-md-4 col-lg-4 ${styles.sideContent}`}>
-                <section className={styles.details}>
-                  <p className={styles.authorDate}>
-                    By {postData.author} / <FormatDate dateString={postData.updateDate} />
+          </div>
+          <div className="row">
+            <div className={`col`}>
+              <article className={styles.article}>
+                <div className={styles.articleText} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+              
+                <div className={styles.contactSignature}>
+                  <p>
+                    Thank you for taking the time in reading this blog. If you find any invalid information or want to add
+                    more this blog you may contact me at:
                   </p>
-                  <div className={styles.tags}>
-                    {tags}
-                  </div>
-                </section>
+
+                  <p>
+                    <a href="mailto:jerrygag@gmail.com">
+                      jerrygag@gmail.com
+                    </a>
+                  </p>
+                </div>
+              </article>
             </div>
           </div>
         </div>

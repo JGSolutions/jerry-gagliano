@@ -26,9 +26,9 @@ export default function Blog({ allPostsData }) {
             <div className={utilStyles.topSection}>
                 <div className="container-lg">
                     <Header/>
-                    <section className={utilStyles.headerPageSection}>
+                    <section className={styles.headerPageSection}>
                         <h1 className={utilStyles.headerPageTitle}>My Blog</h1>
-                        <p className={utilStyles.headerPageSlogan}>Latest and updated news about projects, development tips and general experiences about the web.</p>
+                        <p className={utilStyles.headerPageSlogan}>Latest and updated news about projects, development tips and general experiences around the web.</p>
                     </section>
                 </div>
             </div>

@@ -9,9 +9,9 @@ author: Jerry Gagliano
 picture: ''
 ---
 
-As developers we like to code, designers like to design but writing is usually out of the question. Probably the only writing we might do is documentation for our code. Writing for documentation or blogs are completely different.
+As developers we like to code, designers like to design but writing is usually out of the question. Probably the only writing we might do is documentation for our code.
 
-Developer or designers do like reading blogs when arriving on an interesting topic as they can grasp ideas. Video content such as Youtube works well when learning a complex solution, framework or a design pattern. You'll get the actual visual aspect of the developer or designer teaching right in front of you, which can be long. When readers need some quick ideas, blogs are a great tool to have.
+Developer or designers do like reading blogs when arriving on an interesting topic as they can grasp ideas. Video content such as Youtube works well when learning a complex solution, framework or a design pattern. You'll get the actual visual aspect of the developer or designer teaching the  topic, which can be long. When readers need some quick ideas, blogs are a great tool to come across.
 
 As for myself, I always wanted to create a blog but what stopped me and probably same for other developers and designers was time and the type of content should be written. As there are abundance of blogs on the web which have might not been updated for years or just plain topics for example "How to install xxx or setup a framework" that repeats the same information from the actual origin documentation. 
 
