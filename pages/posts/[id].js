@@ -41,16 +41,13 @@ export default function Post({ postData }) {
       <div className={utilStyles.topSection}>
         <div className="container-lg">
           <Header/>
-          <section className={utilStyles.headerPageSection}>
+          <section className={styles.headerPageSection}>
             <Link href="/blog" passHref>
               <a className={utilStyles.back} rel="noopener noreferrer">
                 &larr; Go Back
               </a>
             </Link>
             <h1 className={utilStyles.headerPageTitle}>{postData.title}</h1>
-            <p className={utilStyles.headerPageSlogan}>
-              {postData.description}
-            </p>
           </section>
         </div>
       </div>

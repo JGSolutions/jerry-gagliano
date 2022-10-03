@@ -4,6 +4,16 @@
     background-color: var(--primary-background);
 }
 
+.headerPageSection { 
+    padding: 65px 0 160px 0;
+}
+
+@media (max-width: 990px) {
+    .headerPageSection { 
+        padding: 65px 16px 160px 16px;
+    }
+}
+
 .details {
     display: flex;
     justify-content: space-between;
