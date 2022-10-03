@@ -99,12 +99,12 @@
 
 @media (max-width: 767px) {
     .article {
-        padding: 50px 24px;
+        padding: 50px 10px;
     }
 }
 
 @media (max-width: 990px) {
     .details {
-        padding: 16px 24px;
+        padding: 16px 16px;
     }
 }

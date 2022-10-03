@@ -9,11 +9,11 @@ author: Jerry Gagliano
 picture: ''
 ---
 
-As developers we like to code, designers like to design but writing is usually out of the question. Probably the only writing we might do is documentation for our code.
+As developers we like to code, designers like to design but blogging is usually out of the question. Probably the only writing we perform is documentation for our work.
 
-Developer or designers do like reading blogs when arriving on an interesting topic as they can grasp ideas. Video content such as Youtube works well when learning a complex solution, framework or a design pattern. You'll get the actual visual aspect of the developer or designer teaching the  topic, which can be long. When readers need some quick ideas, blogs are a great tool to come across.
+Developers or designers like reading blogs when arriving on an interesting topic as they can grasp quick ideas. Video content such as Youtube works well when learning a complex solution, framework or a design pattern. You'll get the actual visual aspect of the developer or designer teaching the topic but it can be long. Readers sometimes need some quick ideas, blogs are a great tool to come across.
 
-As for myself, I always wanted to create a blog but what stopped me and probably same for other developers and designers was time and the type of content should be written. As there are abundance of blogs on the web which have might not been updated for years or just plain topics for example "How to install xxx or setup a framework" that repeats the same information from the actual origin documentation. 
+As for myself, I always wanted to create a blog but what stopped me was time and the type of content to produce. There are abundance of blogs on the web which haven't been updated or just the typical topics for example "How to install xxx or setup a framework" that repeats the same information from the actual origin documentation. 
 
 This keeps us thinking is another blog needed? Let's go through some reasons and hopefully you will get a good idea.
 
@@ -55,9 +55,7 @@ I hope this article motivates you in starting a blog. As I'm starting off this b
 
 Remember that you don’t need to publish hundreds of blogs in a short amount of time. Quality is better than quantity. If feedback is provided from your readers then it means your content is valuable. 
 
-Also it will help you become a better communicator and lead you to other ways.
-
-Happy coding!
+Concentrate on blogging about your experiences, thoughs and what you solutions you resolved. That will help you become a better communicator and lead you to other ways.
 
 <!-- ```
 var add2 = function(number) {
