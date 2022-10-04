@@ -74,6 +74,16 @@
     padding: 5px 10px;
 }
 
+.article a {
+    color: var(--primary-text);
+    font-weight: var(--fw-semi-medium);
+}
+
+.article blockquote {
+    font-style: italic;
+    padding: 0 24px;
+}
+
 .articleText {
     line-height: 32px;
     text-justify: newspaper;
