@@ -79,6 +79,11 @@
     font-weight: var(--fw-semi-medium);
 }
 
+.article em {
+    font-style: italic;
+    font-size: var(--fs-small);
+}
+
 .article blockquote {
     font-style: italic;
     padding: 0 24px;
