@@ -55,7 +55,7 @@ PWAs are all web based and can use any javascript framework to develop a PWA wit
 
 Huge advantage is that PWAs don't need to go through the Apple or Google store as we saw above. PWAs are dependanted on the web, which anyone can find easily on a mobile or desktop device. Revenue or subscription fees for businesses won't be shared with the big boys (Apple Or Google).
 
-## 3. Support on Browsers?
+## Support on Browsers?
 
 Google, Microsoft and Apple are all supporting PWA apps in their browsers (Chrome, Safari & Edge). PWAs can be installed on a Windows desktop, Android and MacOS or iOS. Unfortuntaly Safari on iOS Apple (iOS) are missing some key features that held back for attaction for development for PWAs. Here are the two main features.
 
@@ -67,7 +67,7 @@ notifications are usually a key feature to engage users. If Apple did release we
 
 If push notifications are the major draw back then you can always use [Capacitor](https://capacitorjs.com/) that helps you wrap your PWA app and release it on the Apple store.
 
-## 4. How's the Community?
+## How's the Community?
 
 Recently I came across a site called [PWABuilder](https://www.pwabuilder.com/). It's actually backed and funded by Microsoft. Site show various of other companies how PWAs increased traffice and conversion rates.
 
