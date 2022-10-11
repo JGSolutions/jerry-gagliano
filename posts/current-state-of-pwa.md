@@ -35,7 +35,7 @@ PWAs also embraces features:
 
 ## Companies Using PWA?
 
-Of course! Here are some of the companies released PWAs:
+Here are some of the companies released PWAs versions of their native apps:
 
 - Instagram
 - Uber
@@ -53,29 +53,28 @@ Twitter has seen increase in their activity for example:
 
 PWAs are all web based and can use any javascript framework to develop a PWA without the need for plugins with having ONE code base to maintain. PWA are smaller in size that take less space on the user's device.
 
-Huge advantage is that PWAs don't need to go through the Apple or Google store as we saw above. PWAs are dependanted on the web, which anyone can find easily on a mobile or desktop device. Revenue or subscription fees for businesses won't be shared with the big boys (Apple Or Google).
+Huge advantage is that PWAs don't need to go through the Apple or Google store as we saw above. PWAs are dependant on the web, which anyone can find easily on a mobile or desktop device. Revenue or subscription fees for businesses won't be shared with the big companies (Apple Or Google).
 
 ## Support on Browsers?
 
-Google, Microsoft and Apple are all supporting PWA apps in their browsers (Chrome, Safari & Edge). PWAs can be installed on a Windows desktop, Android and MacOS or iOS. Unfortuntaly Safari on iOS Apple (iOS) are missing some key features that held back for attaction for development for PWAs. Here are the two main features.
+Google, Microsoft and Apple are supporting PWA apps in their browsers (Chrome, Safari & Edge). PWAs can be installed on a Windows desktop, Android and MacOS or iOS. Unfortuntaly Safari on iOS Apple (iOS) are missing some key features that held back for attaction for development for PWAs. Here are the two main features.
 
 - Push Notifications
 - Installable Prompt
 
-My opinion, Apple for not supporting these delayed the community releasing PWA apps on iOS as
+My opinion, Apple for not supporting these features delayed the community releasing PWA apps on iOS as
 notifications are usually a key feature to engage users. If Apple did release web notifications it would have been a different ball game, with more PWAs on iOS devices. Apple's target plan to release this feature are in 2023. [iOS Upcoming Features](https://www.apple.com/ios/ios-16/features/) Let's cross our fingers!
 
-If push notifications are the major draw back then you can always use [Capacitor](https://capacitorjs.com/) that helps you wrap your PWA app and release it on the Apple store.
+If push notifications are the major draw back then you can always use [Capacitor](https://capacitorjs.com/) that wraps your PWA as a native app and releases it to the Apple store.
 
 ## How's the Community?
 
-Recently I came across a site called [PWABuilder](https://www.pwabuilder.com/). It's actually backed and funded by Microsoft. Site show various of other companies how PWAs increased traffice and conversion rates.
+Recently I came across a site called [PWABuilder](https://www.pwabuilder.com/). It's actually backed and funded by Microsoft. Site shows various of other companies how PWAs increased traffic and conversion rates.
 
-PWABuilder also helps developers start new PWA apps. They provide dev tools for your VSCode editor and help package your PWA apps for iOS, Windows and Android devices. Not sure what's the difference yet between packaging a PWA with PWABuilder or Capacitor. It's a technology I want to try and write about in the future.
+PWABuilder also helps developers start new PWAs. They created dev tools for your VSCode editor and help package your PWA apps for iOS, Windows and Android devices. Not sure what's the difference yet between packaging a PWA with PWABuilder or Capacitor. It's a technology I want to try and write about in the future.
 
 ## Final Thoughts
 
-Progressive web apps are definitly heading in the right direction. Communities are growing and the big tech guys are supporting, releasing new features with updates. Better dev tools for editors, chrome dev tools are available making it easier for developers to debug and create apps. 
+Progressive web apps are definitly heading in the right direction. Communities are growing and the big tech comapnies are supporting it, releasing new features with updates. Better dev tools for editors, chrome dev tools are available making it easier for developers to debug and create apps. 
 
-Will it slow down the native app market? Don't think so, but it will definitly be one of decisions for developers or companies to take in consideration when releasing a new product on the web.
-
+Will it slow down the native app market? Don't think so, but it will definitly be one of the decisions for developers or companies to take in consideration when releasing a new product on the web.
