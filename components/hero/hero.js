@@ -6,7 +6,7 @@ import utilStyle from '../../styles/utils.module.css'
 export default function HeroSection() {
     return (
         <section className={styles.heroSection}>
-            <div>
+            <div className={styles.headingsWrapper}>
                 <h1 className={styles.h1}>
                     Hi, I&#39;m Jerry Gagliano. <br/>
                     <span className={styles.heroText}>
