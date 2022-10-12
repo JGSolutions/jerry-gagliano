@@ -1,6 +1,6 @@
 ---
-title: 'Open Sourcing a Podcast App'
-description: 'Thinking of creating a Podcast app as a PWA. Any interest?'
+title: 'Create Podcast PWA as an Open Source Project'
+description: 'Thinking of creating a Podcast app as a PWA. I wonder if any designers or developers interested?'
 coverImage: '/posts/podcast-blog.jpeg'
 tags: 'Web'
 date: '2022-10-10T12:30:07.322Z'

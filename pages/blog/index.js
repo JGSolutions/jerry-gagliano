@@ -19,8 +19,8 @@ export default function Blog({ allPostsData }) {
     return (
         <>
             <Head>
-                <title>Jerry Gagliano&#39;s blog about web development and tips.</title>
-                <meta name="description" content="Providing my experiences and tips in working with the web." />
+                <title>Jerry Gagliano&#39;s blog about web development.</title>
+                <meta name="description" content="Blog with tips and experiences in build PWAs on the web." />
             </Head>
 
             <div className={utilStyles.topSection}>

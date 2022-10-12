@@ -1,6 +1,6 @@
 ---
 title: 'Current State of Progressive Web Apps'
-description: 'Some valid tips how PWA are progressing in the community'
+description: 'How are progressive web apps are growing in the community'
 coverImage: '/posts/pwa-logo.jpeg'
 tags: 'Web'
 date: '2022-10-10T12:30:07.322Z'

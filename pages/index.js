@@ -56,8 +56,8 @@ export default function Home() {
                 </p>
 
                 <p className={utilStyles.paragraph}>
-                  I am currently a senior frontend developer at Sportlogiq the industry leader for NHL hockey data-collection and advanced analytics.
-                  I maintain and build UI features on the NHL analytics web platform.
+                  Currently a senior frontend developer at Sportlogiq, the industry leader for NHL hockey data-collection and advanced analytics.
+                  I maintain and build UI features on their Analytics web platform based on the lastest Angular.
                 </p>
 
               </div>
