@@ -140,7 +140,7 @@ export default function Home() {
                 image="next-js.svg" 
                 description="React based framework generating server and static websites." 
                 url="https://nextjs.org/" 
-                level="60%"/>
+                level="70%"/>
               </div>
             </div>
           </div>
