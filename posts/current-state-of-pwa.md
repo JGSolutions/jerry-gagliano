@@ -31,8 +31,7 @@ PWAs also embraces features:
  - WebRTC (Video Chat)
  - Push notifications 
  - Access hardware connected via USB, serial port, or bluetooth
- - Interact with data stored on your device, such as contacts and calendar events
-
+ - Offline support
 ## Companies Using PWA?
 
 Here are some of the companies released PWAs versions of their native apps:
