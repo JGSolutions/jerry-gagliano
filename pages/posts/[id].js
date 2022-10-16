@@ -47,7 +47,7 @@ export default function Post({ postData }) {
         {/* <meta property="twitter:url" content={`${url}${postData.path}`} /> */}
         {/* <meta property="twitter:title" content={postData.title} /> */}
         {/* <meta property="twitter:description" content={postData.description} /> */}
-        {/* <meta property="twitter:image" content={`${url}${postData.coverImage}`} /> */}
+        <meta property="twitter:image" content={`${url}${postData.coverImage}`} />
         <meta name="twitter:creator" content="@JGSolutions" />
         
         <meta property="og:url" content={`${url}${postData.path}`} />
@@ -55,7 +55,6 @@ export default function Post({ postData }) {
         <meta property="og:title" content={postData.title} />
         <meta property="og:description" content={postData.description} />
         <meta name="image" property="og:image" content={`${url}${postData.coverImage}`} itemprop="image"/>
-
 
       </Head>
       
