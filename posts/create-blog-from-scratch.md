@@ -24,9 +24,9 @@ Speaking of SEO another great skill to learn. Once you have your site deployed y
 
 ## Helps Build Your Creative Skills
 
-Your a developer and we love creating things. We have the skill and power to create anything we want on the web. Designing and planning does occupy most of the developer's time. Planning your designs properly before you begin to code keeps you challenged and learn new designing skills for future projects. 
+You as a developer and we love creating things. We have the skill and power to create anything we want on the web. Designing and planning do occupy most of the developer's time. Planning your designs properly before you begin to code keeps you challenged and learn new designing skills for future projects. 
 
-In the meantime you will probably learn a design tool like Figma, Sketch, or Adobe XD. In my opinion Figma is the best tool as it's free and easy to use. Adobe recently acquired them but we will see the future. I actually designed this blog and other various projects myself using Figma.
+In the meantime, you will probably learn a design tool like Figma, Sketch, or Adobe XD. In my opinion, Figma is the best tool as it's free and easy to use. Adobe recently acquired them but we will see the future. I designed this blog and other various projects myself using Figma.
 ## 3. Invest in Your Blog
 
 If your serious about blogging invest in your own platform and make it unqiue. When landing on a Medium blog it doesn't seem unique. All Mediums blogs look the same and some of them haven't been updated. I find readers could get distracted, navigate to other related blogs and you may loose your audience.
