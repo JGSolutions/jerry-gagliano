@@ -7,7 +7,7 @@ date: '2022-10-15T12:30:07.322Z'
 updateDate: '2022-10-15T12:30:07.322Z'
 author: Jerry Gagliano
 picture: ''
-path: '/post/podcast-pwa'
+path: '/posts/podcast-pwa'
 ---
 
 In recent months I been using Google Podcasts and overall it's been great. I been finding most of the podcasts I'm interested in and usually listen on the web platform while working or mobile version while I'm on the go.

@@ -7,7 +7,7 @@ date: '2022-10-10T12:30:07.322Z'
 updateDate: '2022-10-10T12:30:07.322Z'
 author: Jerry Gagliano
 picture: ''
-path: '/post/current-state-of-pwa'
+path: '/posts/current-state-of-pwa'
 ---
 
 PWAs and the coummunity are growing strong and it's a perfect time to be part of it.
