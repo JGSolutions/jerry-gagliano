@@ -33,7 +33,7 @@ export default function Blog({ allPostsData }) {
                 </div>
             </div>
 
-            <main style={{ height: '100vh', marginTop: '24px'}}>
+            <main className={styles.main}>
                 <div className="container-lg">
                     <div className="row">
                     {allPostsData.map(({ id, date, updateDate, title, tags, author, description, coverImage }) => (
