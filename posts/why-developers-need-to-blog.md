@@ -7,6 +7,7 @@ date: '2022-10-01T12:30:07.322Z'
 updateDate: '2022-10-01T12:30:07.322Z'
 author: Jerry Gagliano
 picture: ''
+path: '/post/why-developers-need-to-blog'
 ---
 
 As developers we like to code, designers like to design but blogging is usually out of the question. Probably the only writing we perform is documentation for our work.

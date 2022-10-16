@@ -27,14 +27,33 @@ export async function getStaticPaths() {
 
 export default function Post({ postData }) {
   const tags =  generateTagsElements(postData.tags);
+
+  const env = process.env.NODE_ENV;
+  let url;
+  if (env === "production") {
+    url ='https://jgsolutions.ca';
+  } else {
+    url ='http://localhost:3000';
+  }
+
   return (
     <div>
       <Head>
         <title>{postData.title}</title>
-        <meta name="description" content={postData.description} />
-        <meta property="og:image" content={postData.coverImage}/>
-        <meta name="og:title" content={postData.title} />
+
+        <meta property="og:url" content={`${url}${postData.path}`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={postData.title} />
+        <meta property="og:description" content={postData.description} />
+        <meta property="og:image" content={`${url}${postData.coverImage}`} />
+
         <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="jgsolutions.ca" />
+        <meta property="twitter:url" content={`${url}${postData.path}`} />
+        <meta name="twitter:title" content={postData.title} />
+        <meta name="twitter:description" content={postData.description} />
+        <meta name="twitter:image" content={`${url}${postData.coverImage}`} />
+
       </Head>
       
       <div className={utilStyles.topSection}>
