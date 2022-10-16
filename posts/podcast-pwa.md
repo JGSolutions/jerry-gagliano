@@ -2,11 +2,12 @@
 title: 'Create Podcast PWA as an Open Source Project'
 description: 'Thinking of creating a Podcast app as a PWA. I wonder if any designers or developers interested?'
 coverImage: '/posts/podcast-blog.jpeg'
-tags: 'Web'
-date: '2022-10-10T12:30:07.322Z'
-updateDate: '2022-10-10T12:30:07.322Z'
+tags: 'PWA'
+date: '2022-10-15T12:30:07.322Z'
+updateDate: '2022-10-15T12:30:07.322Z'
 author: Jerry Gagliano
 picture: ''
+path: '/post/podcast-pwa'
 ---
 
 In recent months I been using Google Podcasts and overall it's been great. I been finding most of the podcasts I'm interested in and usually listen on the web platform while working or mobile version while I'm on the go.
@@ -33,6 +34,8 @@ When listening to a podcast on my laptop and then jumping on my phone, the curre
 
 ## Final Thoughts
 
-I think this can be an interesting project to open souce. This can allow developers and designers let their minds be more creative and development features. Who knows maybe it can give Google Podcast a run for their money!
+I hoping this can be an interesting project to open souce. This should allow developers and designers let their minds be more creative. Who knows maybe it can give Google Podcast a run for their money!
 
-If anyone has any ideas what they would want to join the open source project, contact me and we can discuss. I haven't started anything but if I do will update this post.
+I am not looking to hire by contract. If you contact me asking what is my budget then do not bother. If your passionate about podcasts, feel that you can improve the genre and want to grow and learn with the product, then this is for you. 
+
+I will update this blog with a github repo eventually with mockups and will start the launch.
