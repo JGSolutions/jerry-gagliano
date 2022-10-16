@@ -31,7 +31,7 @@ In the meantime you will probably learn a design tool like Figma, Sketch, or Ado
 
 If your serious about blogging invest in your own platform and make it unqiue. When landing on a Medium blog it doesn't seem unique. All Mediums blogs look the same and some of them haven't been updated. I find readers could get distracted, navigate to other related blogs and you may loose your audience.
 
-If readers are not subscribers for a specific blogging platform like Medium, they provide a maximun of articles per month. If they reached the limit, your blog will be missed. Also think about what happens if your articles eventually get traffic? What if Medium decides to shutdown? How will you transfer all articles to another blog or eventually you decide you want my own blog?
+If readers are not subscribers for a specific blogging platform like Medium, they provide a maximun of articles per month. If they reached the limit, your blog will be missed. Also, think about what happens if your articles increase traffic? What if blogging platforms decides to shutdown? How will you transfer all articles to another blog or eventually you decide you want your own platform?
 
 Most of the well known developers or designers have their own unique blogging platform which actually inspired me to do the same. Here are some examples:
 
