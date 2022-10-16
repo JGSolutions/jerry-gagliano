@@ -47,6 +47,7 @@ export default function Post({ postData }) {
         <meta property="og:description" content={postData.description} />
         <meta name="image" property="og:image" content={`${url}${postData.coverImage}`} itemprop="image"/>
 
+        <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="jgsolutions.ca" />
         <meta property="twitter:url" content={`${url}${postData.path}`} />
         <meta property="twitter:title" content={postData.title} />
