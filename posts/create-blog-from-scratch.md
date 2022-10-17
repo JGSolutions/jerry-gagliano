@@ -1,7 +1,7 @@
 ---
 title: 'Why Developers Should Create Their Own Blog From Scratch'
 description: "Creating your own blog can be time consuming but also a great learning experience."
-coverImage: '/posts/blog-platform.png'
+coverImage: '/posts/blog-platform.jpeg'
 tags: 'Web'
 date: '2022-10-14T12:30:07.322Z'
 updateDate: '2022-10-14T12:30:07.322Z'
