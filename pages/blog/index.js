@@ -19,8 +19,20 @@ export default function Blog({ allPostsData }) {
     return (
         <>
             <Head>
-                <title>Jerry Gagliano&#39;s blog about web development.</title>
+                <title>Jerry Gagliano&#39;s blog about web & PWA development tips.</title>
                 <meta name="description" content="Blog with tips and experiences in build PWAs on the web." />
+
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="JGSolution's Blog" />
+                <meta property="og:description" content="Blogging about the web and development" />
+                <meta name="image" property="og:image" content="https://jgsolutions.ca/jg-logo-bl.svg" itemprop="image"/>
+
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:domain" content="jgsolutions.ca" />
+                <meta property="twitter:title" content="JGSolution's Blog" />
+                <meta property="twitter:description" content="Blogging about the web and development" />
+                <meta property="twitter:image" content="https://jgsolutions.ca/jg-logo-bl.svg" />
+                <meta property="twitter:creator" content="@JGSolutions"></meta>
             </Head>
 
             <div className={utilStyles.topSection}>

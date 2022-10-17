@@ -31,7 +31,19 @@ export default function Home() {
     <div>
       <Head>
         <title>Jerry Gagliano - Fullstack Web Developer from Montreal</title>
-        <meta name="description" content="Jerry Gagliano fullstack developer from Montreal. Passionate about developing apps with React, Angular, Node.js and Firebase." />
+        <meta name="description" content="Passionate about developing PWAs with React, Angular, Node.js and Firebase." />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Jerry Gagliano - Fullstack Web Developer" />
+        <meta property="og:description" content="I build Progressive Web Apps" />
+        <meta name="image" property="og:image" content="https://jgsolutions.ca/jg-logo-bl.svg" itemprop="image"/>
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="jgsolutions.ca" />
+        <meta property="twitter:title" content="Jerry Gagliano - Fullstack Web Developer" />
+        <meta property="twitter:description" content="I build Progressive Web Apps" />
+        <meta property="twitter:image" content="https://jgsolutions.ca/jg-logo-bl.svg" />
+        <meta property="twitter:creator" content="@JGSolutions"></meta>
       </Head>
 
       {/* header and hero sections --> */}
