@@ -27,12 +27,11 @@ export default function Blog({ allPostsData }) {
                 <meta property="og:description" content="Blogging about the web and development" />
                 <meta name="image" property="og:image" content="https://jgsolutions.ca/jg-logo-bl.svg" itemprop="image"/>
 
-                <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:domain" content="jgsolutions.ca" />
-                <meta property="twitter:title" content="JGSolution's Blog" />
-                <meta property="twitter:description" content="Blogging about the web and development" />
-                <meta property="twitter:image" content="https://jgsolutions.ca/jg-logo-bl.svg" />
-                <meta property="twitter:creator" content="@JGSolutions"></meta>
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="JGSolution's Blog" />
+                <meta name="twitter:description" content="Blogging about the web and development" />
+                <meta name="twitter:image" content="https://jgsolutions.ca/jg-logo-bl.svg" />
+                <meta name="twitter:creator" content="@JGSolutions"></meta>
             </Head>
 
             <div className={utilStyles.topSection}>

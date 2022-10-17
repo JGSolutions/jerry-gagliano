@@ -38,12 +38,11 @@ export default function Home() {
         <meta property="og:description" content="I build Progressive Web Apps" />
         <meta name="image" property="og:image" content="https://jgsolutions.ca/jg-logo-bl.svg" itemprop="image"/>
 
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="jgsolutions.ca" />
-        <meta property="twitter:title" content="Jerry Gagliano - Fullstack Web Developer" />
-        <meta property="twitter:description" content="I build Progressive Web Apps" />
-        <meta property="twitter:image" content="https://jgsolutions.ca/jg-logo-bl.svg" />
-        <meta property="twitter:creator" content="@JGSolutions"></meta>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Jerry Gagliano - Fullstack Web Developer" />
+        <meta name="twitter:description" content="I build Progressive Web Apps" />
+        <meta name="twitter:image" content="https://jgsolutions.ca/jg-logo-bl.svg" />
+        <meta name="twitter:creator" content="@JGSolutions"></meta>
       </Head>
 
       {/* header and hero sections --> */}
