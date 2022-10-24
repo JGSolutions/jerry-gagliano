@@ -89,6 +89,16 @@
     padding: 0 24px;
 }
 
+.article pre {
+    background-color: var(--third-background);
+    border-radius: 6px;
+    padding: 24px;
+    font-size: var(--fs-small);
+    font-weight: var(--fs-regular);
+    color: var(--secondary-text);
+    margin-bottom: 16px;
+}
+
 .articleText {
     line-height: 32px;
     text-justify: newspaper;

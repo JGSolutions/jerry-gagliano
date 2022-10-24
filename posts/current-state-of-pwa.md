@@ -2,7 +2,7 @@
 title: 'Current State of Progressive Web Apps'
 description: 'How are progressive web apps are growing in the community'
 coverImage: '/posts/pwa-logo.jpeg'
-tags: 'Web'
+tags: 'PWA'
 date: '2022-10-10T12:30:07.322Z'
 updateDate: '2022-10-10T12:30:07.322Z'
 author: Jerry Gagliano
