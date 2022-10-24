@@ -1,6 +1,6 @@
 ---
 title: 'Directive Composition API in Angular 15'
-description: 'An simplified reusable takeUntil() with new directive composition api'
+description: 'An simplified reusable takeUntil RxJS operator with new directive composition api'
 coverImage: '/posts/directive-composition.png'
 tags: 'Angular'
 date: '2022-10-24T12:30:07.322Z'
