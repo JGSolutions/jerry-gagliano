@@ -45,7 +45,7 @@ export default function Post({ postData }) {
         <meta property="og:type" content="article" />
         <meta property="og:title" content={postData.title} />
         <meta property="og:description" content={postData.description} />
-        <meta name="image" property="og:image" content={`${url}${postData.coverImage}`} itemprop="image"/>
+        <meta name="image" property="og:image" content={`${url}${postData.coverImage}`} itemProp="image"/>
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content={`${url}${postData.path}`} />
@@ -60,10 +60,8 @@ export default function Post({ postData }) {
         <div className="container-lg">
           <Header/>
           <section className={styles.headerPageSection}>
-            <Link href="/blog" passHref>
-              <a className={utilStyles.back} rel="noopener noreferrer">
+            <Link href="/blog" passHref className={utilStyles.back} rel="noopener noreferrer">
                 &larr; Go Back
-              </a>
             </Link>
             <h1 className={utilStyles.headerPageTitle}>{postData.title}</h1>
           </section>

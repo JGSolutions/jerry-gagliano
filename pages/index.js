@@ -36,7 +36,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Jerry Gagliano - Fullstack Web Developer" />
         <meta property="og:description" content="I build Progressive Web Apps" />
-        <meta name="image" property="og:image" content="https://jgsolutions.ca/jerry-pic.jpeg" itemprop="image"/>
+        <meta name="image" property="og:image" content="https://jgsolutions.ca/jerry-pic.jpeg" itemProp="image"/>
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Jerry Gagliano - Fullstack Web Developer" />
@@ -168,10 +168,8 @@ export default function Home() {
               Always looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
             </p>
 
-            <Link href="mailto:jerrygag@gmail.com" passHref>
-                <a className={utilStyles.button} rel="noopener noreferrer">
-                  Let&#39;s Talk
-                </a>
+            <Link href="mailto:jerrygag@gmail.com" passHref className={utilStyles.button} rel="noopener noreferrer">
+              Let&#39;s Talk
             </Link>
           </div>
         </section>

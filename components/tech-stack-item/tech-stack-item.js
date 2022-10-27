@@ -19,8 +19,8 @@ export default function TechStackItem({name, image, description, url, level}) {
                 </div>
             </div>
 
-            <Link href={url}>
-                <a className={styles.url}>{url}</a>
+            <Link href={url} className={styles.url}>
+                {url}
             </Link>
         </div>
     )

@@ -18,7 +18,7 @@ export default function HeroSection() {
                     Full stack developer crafting solid and scalable front-end Progressive Web Apps.
                 </p>
 
-                <Link href="/blog">
+                <Link href="/blog" legacyBehavior>
                     <a className={utilStyle.button} rel="noopener noreferrer">
                         Read My Blog
                     </a>
