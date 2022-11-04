@@ -1,6 +1,6 @@
 ---
-title: 'How to Setup Open Graphh Meta Tags'
-description: 'Make your site link a professional look when shared within social media sites'
+title: 'Setting Up Open Graph Meta Tags'
+description: 'Givee your site a professional look and feel when shared within social media sites'
 coverImage: '/posts/podcast-blog.jpeg'
 tags: 'PWA'
 date: '2022-10-15T12:30:07.322Z'
@@ -22,4 +22,4 @@ Don't you want your site to look interesting when shared through social media si
 
 ## Final Thoughts
 
-I hoping this can be an interesting project to open souce. This should allow developers and designers let their minds be more creative. Who knows maybe it can give Google Podcast a run for their money!
+I hoping this can be an interesting project to open souce.
