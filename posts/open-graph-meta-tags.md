@@ -58,16 +58,16 @@ Social media platforms like Facebook, Twitter, Pinterest and LinkedIn recognize 
 
 Both of these snippet examples can be copied at the beginning of your website between the 'head' tags. You will probably have other tags like title and description but the ordering does not matter. 
 
-If your site is based on a content management system like WordPress, you will probably have to add these tags the settings admin section. I am not a wordpress expert, so you use Google as your friend on this topic.
+If your site is based on a content management system like WordPress, you will probably have to add these tags in the settings admin section. I am not a wordpress expert, so you use Google as your friend on this topic.
 
 ## How to Test
 
 First, right away you should inspect element in the dev tools in Chrome or any other browser. Expand the header tags and you should see the meta tag elements rendered.
 
-Obviously now your ready to see the results of these updates and one way which I don't recommend is actually pasting your blog or site url right away in Facebook or Twitter but without sending the post. You might see the link get formatted right away.
+To actually view the visibility of your content of these updates, one way which I don't recommend is actually pasting your url in Facebook or Twitter but without sending the post. A chance it might not work as social media sites don't recognize the URL right away which could be fustrating. 
 
-This might not work as social media sites don't recognize the URL right away and could get fustrating. Don't worry that is not the case. An online tool is available to test your site for your urls [Opengraph](https://www.opengraph.xyz/).
+Another solution is an online tool that is available to test your site [Opengraph](https://www.opengraph.xyz/). This will allow you to paste your URL and will give you a quick preview for all the different social media sites.
 
 ## Final Thoughts
 
-Hopefully this article helped clarify how to add Open Graph meta tags to your site. If your not to technical and don't confident about doing this your self you can always contact me and give you more guidance.
+Hopefully, this article helped clarify how to add Open Graph meta tags to your site. If your not technical person and confident in peforming this task, you can always contact me and provide you with more guidance.
