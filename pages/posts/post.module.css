@@ -97,6 +97,7 @@
     font-weight: var(--fs-regular);
     color: var(--secondary-text);
     margin-bottom: 16px;
+    width: fit-content;
 }
 
 .articleText {

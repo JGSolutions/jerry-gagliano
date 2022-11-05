@@ -1,34 +1,73 @@
 ---
-title: 'Setting Up Open Graph Meta Tags on Your Site'
-description: 'Give your site a professional look and feel when your site is shared within social media sites.'
-coverImage: '/posts/podcast-blog.jpeg'
-tags: 'PWA'
-date: '2022-11-07T12:30:07.322Z'
-updateDate: '2022-11-07T12:30:07.322Z'
+title: "Setting Up Open Graph Meta Tags on Your Site"
+description: "Give your site a professional look and feel when shared within social media sites."
+coverImage: "/posts/open-graph/images.jpeg"
+tags: "Web"
+date: "2022-11-07T12:30:07.322Z"
+updateDate: "2022-11-07T12:30:07.322Z"
 author: Jerry Gagliano
-picture: ''
-path: '/posts/open-graph-meta-tags'
+picture: ""
+path: "/posts/open-graph-meta-tags"
 ---
 
-You came across this article probably you have a site or heard about optimizing your content on social media and are interested in Open Graph meta tags. I will give you a quick overview and straight to the point how to implement Open Graph meta tags.
+You came across this article probably because you want to optimize your content on social media using Open Graph meta tags. It's fairly easy and I will give you a quick overview and straight to the point on how to implement Open Graph meta tags.
 
 ## What is Open Graph?
 
-The Open Graph protocol controls what content displays when sharing links on social media. When using Open Graph tags becomes a rich object in the social graph. The Open Graph protocol allows you to control what image, title, and description display when sharing links on social media. 
+The Open Graph protocol controls what content displays when sharing links on social media. When using Open Graph tags become a rich object in the social graph. The Open Graph protocol allows you to control what image, title, and description display when sharing links on social media.
 
 Here's how this post looks when shared on Facebook with Open Graph tags:
 
 ![Facebook Open Graph Example](/posts/open-graph/open-graph-example.png)
-## Why Open Graph Important
 
-Without Open Graph, social media platforms can choose a random image, title, and description.
-When your site is shared through social media sites optimizes your shared content and provides a better user experience. It improves the visibility of your content, makes it more engaging, and helps attract clicks. Also helps your site in SEO ranking
+## Why Open Graph is Important
+
+Without Open Graph tags setup, social media platforms can choose a random image, title, and description. As you saw above when your site is shared through social media sites optimizes your shared content and provides a better user experience. It improves the visibility of your content, makes it more engaging, and helps attract clicks. Here are some other valid reasons
+
+- Drive traffic to your website
+- Improve page rankings in search results
+- Builds brand reputation and trust
+- Earn quality backlinks
+- Grow your social media follower
+- Help social media platforms understand your content
 
 ## How to Add Open Graph Tags to Your Website
 
-Social media platforms like Facebook, Twitter, and LinkedIn recognize Open Graph tags. However, Twitter also uses meta tags called Twitter Cards. But will use Open Graph when there are no Twitter Card tags.
+Social media platforms like Facebook, Twitter, Pinterest and LinkedIn recognize Open Graph tags. However, Twitter also uses meta tags called Twitter Cards. But will use Open Graph when there are no Twitter Card tags. Here are 2 examples below:
+
+```
+  <!-- Facebook, Linkedin, Pinterest Meta Tags -->
+  <meta property="og:url" content="[Actual url of site or blog]">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="[Title]">
+  <meta property="og:description" content="[Small description]">
+  <meta property="og:image" content="[An image full path url]">
+
+```
+
+```
+<!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="jgsolutions.ca">
+  <meta property="twitter:url" content="[Url]">
+  <meta name="twitter:title" content="[Title of site or blog]">
+  <meta name="twitter:description" content="[Small description]">
+  <meta name="twitter:image" content="[An image full path url]">
+
+```
+
+Both of these snippet examples can be copied at the beginning of your website between the 'head' tags. You will probably have other tags like title and description but the ordering does not matter. 
+
+If your site is based on a content management system like WordPress, you will probably have to add these tags the settings admin section. I am not a wordpress expert, so you use Google as your friend on this topic.
 
 ## How to Test
 
+First, right away you should inspect element in the dev tools in Chrome or any other browser. Expand the header tags and you should see the meta tag elements rendered.
+
+Obviously now your ready to see the results of these updates and one way which I don't recommend is actually pasting your blog or site url right away in Facebook or Twitter but without sending the post. You might see the link get formatted right away.
+
+This might not work as social media sites don't recognize the URL right away and could get fustrating. Don't worry that is not the case. An online tool is available to test your site for your urls [Opengraph](https://www.opengraph.xyz/).
+
 ## Final Thoughts
 
+Hopefully this article helped clarify how to add Open Graph meta tags to your site. If your not to technical and don't confident about doing this your self you can always contact me and give you more guidance.
