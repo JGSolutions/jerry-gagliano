@@ -3,14 +3,14 @@ title: "Setting Up Open Graph Meta Tags on Your Site"
 description: "Give your site a professional look and feel when shared within social media sites."
 coverImage: "/posts/open-graph/images.jpeg"
 tags: "Web"
-date: "2022-11-07T12:30:07.322Z"
-updateDate: "2022-11-07T12:30:07.322Z"
+date: "2022-11-05T12:30:07.322Z"
+updateDate: "2022-11-05T12:30:07.322Z"
 author: Jerry Gagliano
 picture: ""
 path: "/posts/open-graph-meta-tags"
 ---
 
-You came across this article probably because you want to optimize your content on social media using Open Graph meta tags. It's fairly easy and I will give you a quick overview and straight to the point on how to implement Open Graph meta tags.
+Sharing content on social media is an essential part of what a lot people do these days. This article is important to learn and take into account as you want to optimize your content on social media using Open Graph meta tags. It's fairly easy and I will give you a quick overview and straight to the point on how to implement Open Graph meta tags.
 
 ## What is Open Graph?
 
