@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://jgsolutions.ca</loc>
+        <lastmod>2022-10-01</lastmod>
+    </url>
+    <url>
+        <loc>https://jgsolutions.ca/blog/</loc>
+        <lastmod>2022-11-05</lastmod>
+    </url>
+    <url>
+        <loc>https://jgsolutions.ca/posts/open-graph-meta-tags/</loc>
+        <lastmod>2022-11-05</lastmod>
+    </url>
+    <url>
+        <loc>https://jgsolutions.ca/posts/angular-directive-takeuntil/</loc>
+        <lastmod>2022-10-24</lastmod>
+    </url>
+    <url>
+        <loc>https://jgsolutions.ca/posts/podcast-pwa/</loc>
+        <lastmod>2022-10-15</lastmod>
+    </url>
+    <url>
+        <loc>https://jgsolutions.ca/posts/create-blog-from-scratch/</loc>
+        <lastmod>2022-10-14</lastmod>
+    </url>
+    <url>
+        <loc>https://jgsolutions.ca/posts/current-state-of-pwa/</loc>
+        <lastmod>2022-10-10</lastmod>
+    </url>
+    <url>
+        <loc>https://jgsolutions.ca/posts/why-developers-need-to-blog/</loc>
+        <lastmod>2022-10-01</lastmod>
+    </url>
+</urlset>
