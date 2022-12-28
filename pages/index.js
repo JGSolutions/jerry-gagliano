@@ -62,8 +62,8 @@ export default function Home() {
 
                 <p className={utilStyles.paragraph}>
                   of experience in web development, building interfaces and tools for various companies or projects. 
-                  Started my career as a fullstack developer. As Javascript frameworks became in demand, my interest 
-                  grew more towards building UI and progressive web apps.
+                  Started my career as a fullstack web developer. As Javascript frameworks became in demand and popular, my interest 
+                  grew more towards building UI experiences in progressive web apps.
                 </p>
 
                 <p className={utilStyles.paragraph}>
@@ -90,7 +90,7 @@ export default function Home() {
               </div>
               <div className="col-md-6">
                 <div className={styles.skillContainer}>
-                  <h3 className={styles.skillHeader}>Frontend</h3>
+                  <h3 className={styles.skillHeader}>Front-end</h3>
                   <p className={utilStyles.paragraph}>
                     Building client-side applications with modern features and maintain semantic coding style
                     among other best practices for SEO optimisation.
@@ -102,7 +102,7 @@ export default function Home() {
             <div className="row">
               <div className="col-md-6">
                 <div className={styles.skillContainer}>
-                  <h3 className={styles.skillHeader}>Backend</h3>
+                  <h3 className={styles.skillHeader}>Back-end</h3>
                   <p className={utilStyles.paragraph}>
                     Capable of buildng scalable and maintainable apis using modern technology stacks such as Node.js, Express, and Firebase Cloud Functions.
                   </p>
@@ -129,13 +129,13 @@ export default function Home() {
             </div>
             <div className="row">
               <div className="col-xs-6 col-md-6 col-lg-4">
-                <TechStackItem name="Angular" image="angular-logo.svg" description="Front-end framework creating spa complex web apps." url="https://angular.io" level="90%"/>
+                <TechStackItem name="Angular" image="angular-logo.svg" description="Front-end framework creating spa complex web apps." url="https://angular.io" level="90"/>
               </div>
               <div className="col-xs-6 col-md-6 col-lg-4">
-                <TechStackItem name="Firebase" image="firebase-logo.svg" description="Platform for hosting web apps and NoSQL data managment." url="https://firebase.google.com" level="95%"/>
+                <TechStackItem name="Firebase" image="firebase-logo.svg" description="Platform for hosting web apps and NoSQL data managment." url="https://firebase.google.com" level="95"/>
               </div>
               <div className="col-xs-6 col-md-6 col-lg-4">
-                <TechStackItem name="Node.js" image="nodejs-logo.svg" description="Create apis, manage data and heavy logic computations. " url="https://nodejs.org" level="90%"/>
+                <TechStackItem name="Node.js" image="nodejs-logo.svg" description="Create apis, manage data and heavy logic computations. " url="https://nodejs.org" level="90"/>
               </div>
               <div className="col-xs-6 col-md-6 col-lg-4">
                 <TechStackItem 
@@ -143,7 +143,7 @@ export default function Home() {
                 image="rxjs.svg" 
                 description="Reactive programming using observables. Easier to compose asynchronous calls." 
                 url="https://rxjs.dev/" 
-                level="80%"/>
+                level="90"/>
               </div>
               <div className="col-xs-6 col-md-6 col-lg-4">
                 <TechStackItem 
@@ -151,7 +151,7 @@ export default function Home() {
                 image="next-js.svg" 
                 description="React based framework generating server and static websites." 
                 url="https://nextjs.org/" 
-                level="70%"/>
+                level="80"/>
               </div>
             </div>
           </div>
