@@ -14,6 +14,9 @@
 .titleSection {
     padding: 16px;
     font-weight: var(--fw-medium);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .imageSection {
@@ -37,6 +40,12 @@
     font-size: var(--fs-small);
     width: 100%;
     margin-bottom: 10px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .tags {

@@ -4,7 +4,7 @@ description: 'Thinking of creating a Podcast app as a PWA. I wonder if any desig
 coverImage: '/posts/podcast-blog.jpeg'
 tags: 'PWA'
 date: '2022-10-15T12:30:07.322Z'
-updateDate: '2022-10-15T12:30:07.322Z'
+updateDate: '2022-12-28T12:30:07.322Z'
 author: Jerry Gagliano
 picture: ''
 path: '/posts/podcast-pwa'

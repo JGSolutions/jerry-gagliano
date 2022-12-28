@@ -175,7 +175,7 @@ export default function Home({ getRecentPosts }) {
 
             <div className="row">
               {getRecentPosts.map(({ id, date, title, description, coverImage, tags }) => (
-                <div className={`col col-md-6 col-lg-6 col-xl-4 col-12 ${styles.col}`} key={id}>
+                <div className={`col col-lg-4 col-xl-4 col-12 ${styles.col}`} key={id}>
                   <Link href={`/posts/${id}`} className={styles.blogItem}>
                     <SimpleBlogItem 
                       id={id}
