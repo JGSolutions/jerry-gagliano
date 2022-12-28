@@ -10,7 +10,7 @@ picture: ''
 path: '/posts/podcast-pwa'
 ---
 
-In recent months I been using Google Podcasts and overall it's been great. Most of the time I listen to podcasts are usually on the web platform while working or native mobile app.
+In recent months I been using Google Podcasts and overall it's been great. Most of the time I listen to podcasts are usually on the web platform while working or using the native mobile app version.
 
 There isn't any podcast developed as a PWA, and most other podcast apps are native. So why not create an open source podcast as PWA. Here are some ideas!
 
