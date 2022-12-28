@@ -6,7 +6,7 @@ import utilStyles from '../styles/utils.module.css';
 import Header  from '../components/header/header';
 import HeroSection from '../components/hero/hero'
 import TechStackItem from '../components/tech-stack-item/tech-stack-item'
-import Button from '../components/button/button'
+// import Button from '../components/button/button'
 import Footer from '../components/footer/footer'
 // import { useRef, useEffect, useState } from 'react';
 
@@ -30,17 +30,17 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Jerry Gagliano - Fullstack Web Developer from Montreal</title>
-        <meta name="description" content="Passionate about developing PWAs with React, Angular, Node.js and Firebase." />
+        <title>Jerry Gagliano - Front-end Web Developer from Montreal</title>
+        <meta name="description" content="Front-end web developer passionate about developing PWAs with React, Angular, Node.js and Firebase." />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Jerry Gagliano - Fullstack Web Developer" />
-        <meta property="og:description" content="I build Progressive Web Apps" />
+        <meta property="og:title" content="Jerry Gagliano - Front-end Web Developer" />
+        <meta property="og:description" content="Front-end web developer building Progressive Web Apps." />
         <meta name="image" property="og:image" content="https://jgsolutions.ca/jerry-pic.jpeg" itemProp="image"/>
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Jerry Gagliano - Fullstack Web Developer" />
-        <meta name="twitter:description" content="I build Progressive Web Apps" />
+        <meta name="twitter:title" content="Jerry Gagliano - Front-end Web Developer" />
+        <meta name="twitter:description" content="Front-end web developer building Progressive Web Apps" />
         <meta name="twitter:image" content="https://jgsolutions.ca/jerry-pic.jpeg" />
         <meta name="twitter:creator" content="@JGSolutions"></meta>
       </Head>
@@ -58,17 +58,17 @@ export default function Home() {
           <div className="container-lg">
             <div className="row">
               <div className="col">
-                <h2 className={styles.h2}>Over the past 15 years,</h2>
+                <h2 className={styles.h2}>Over 15 years,</h2>
 
                 <p className={utilStyles.paragraph}>
-                  of experience in web development and building interfaces and tools for various companies. 
-                  Started my career as a frontend and backend developer. As Javascript frameworks became in demand, my interest 
-                  grew more towards building UI and single page applications.
+                  of experience in web development, building interfaces and tools for various companies or projects. 
+                  Started my career as a fullstack web developer. As Javascript frameworks became in demand and popular, my interest 
+                  grew more towards building UI experiences in progressive web apps.
                 </p>
 
                 <p className={utilStyles.paragraph}>
-                  Currently a senior frontend developer at Sportlogiq, the industry leader for NHL hockey data-collection and advanced analytics.
-                  I maintain and build UI features on their Analytics web platform based on the lastest Angular.
+                  Currently a senior front-end developer at Sportlogiq, the industry leader for NHL hockey data-collection and advanced analytics.
+                  I maintain and build UI features on their analytics web platform based on the lastest Angular framework.
                 </p>
 
               </div>
@@ -90,7 +90,7 @@ export default function Home() {
               </div>
               <div className="col-md-6">
                 <div className={styles.skillContainer}>
-                  <h3 className={styles.skillHeader}>Frontend</h3>
+                  <h3 className={styles.skillHeader}>Front-end</h3>
                   <p className={utilStyles.paragraph}>
                     Building client-side applications with modern features and maintain semantic coding style
                     among other best practices for SEO optimisation.
@@ -102,7 +102,7 @@ export default function Home() {
             <div className="row">
               <div className="col-md-6">
                 <div className={styles.skillContainer}>
-                  <h3 className={styles.skillHeader}>Backend</h3>
+                  <h3 className={styles.skillHeader}>Back-end</h3>
                   <p className={utilStyles.paragraph}>
                     Capable of buildng scalable and maintainable apis using modern technology stacks such as Node.js, Express, and Firebase Cloud Functions.
                   </p>
@@ -129,13 +129,13 @@ export default function Home() {
             </div>
             <div className="row">
               <div className="col-xs-6 col-md-6 col-lg-4">
-                <TechStackItem name="Angular" image="angular-logo.svg" description="Front-end framework creating spa complex web apps." url="https://angular.io" level="90%"/>
+                <TechStackItem name="Angular" image="angular-logo.svg" description="Front-end framework creating spa complex web apps." url="https://angular.io" level="90"/>
               </div>
               <div className="col-xs-6 col-md-6 col-lg-4">
-                <TechStackItem name="Firebase" image="firebase-logo.svg" description="Platform for hosting web apps and NoSQL data managment." url="https://firebase.google.com" level="95%"/>
+                <TechStackItem name="Firebase" image="firebase-logo.svg" description="Platform for hosting web apps and NoSQL data managment." url="https://firebase.google.com" level="95"/>
               </div>
               <div className="col-xs-6 col-md-6 col-lg-4">
-                <TechStackItem name="Node.js" image="nodejs-logo.svg" description="Create apis, manage data and heavy logic computations. " url="https://nodejs.org" level="90%"/>
+                <TechStackItem name="Node.js" image="nodejs-logo.svg" description="Create apis, manage data and heavy logic computations. " url="https://nodejs.org" level="90"/>
               </div>
               <div className="col-xs-6 col-md-6 col-lg-4">
                 <TechStackItem 
@@ -143,7 +143,7 @@ export default function Home() {
                 image="rxjs.svg" 
                 description="Reactive programming using observables. Easier to compose asynchronous calls." 
                 url="https://rxjs.dev/" 
-                level="80%"/>
+                level="90"/>
               </div>
               <div className="col-xs-6 col-md-6 col-lg-4">
                 <TechStackItem 
@@ -151,7 +151,7 @@ export default function Home() {
                 image="next-js.svg" 
                 description="React based framework generating server and static websites." 
                 url="https://nextjs.org/" 
-                level="70%"/>
+                level="80"/>
               </div>
             </div>
           </div>

@@ -10,12 +10,12 @@ export default function HeroSection() {
                 <h1 className={styles.h1}>
                     Hi, I&#39;m Jerry Gagliano. <br/>
                     <span className={styles.heroText}>
-                    Bringing <span className={styles.heroTextHightlight}>ideas</span> to <span className={styles.heroTextHightlight}>reality!</span>
+                        A <span className={styles.heroTextHightlight}>Front-end</span> Web <span className={styles.heroTextHightlight}>Developer</span>
                     </span>
                 </h1>
 
                 <p className={styles.slogan}>
-                    Full stack developer crafting solid and scalable front-end Progressive Web Apps.
+                    Front-end web developer crafting solid progressive web apps with great user experiences.
                 </p>
 
                 <Link href="/blog" legacyBehavior>
