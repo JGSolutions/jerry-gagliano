@@ -37,6 +37,11 @@
   color: var(--primary);
 }
 
+.blogItem {
+  color: white;
+  text-decoration: none;
+}
+
 @media (max-width: 600px) {
   .main {
     padding: 40px 16px;
