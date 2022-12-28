@@ -62,7 +62,7 @@ export default function Home({ getRecentPosts }) {
       </div>
 
       <main className={styles.main}>
-        <section style={{ width: '100%', marginBottom: '60px'}}>
+        <section>
           <div className="container-lg">
             <div className="row">
               <div className="col">
@@ -84,7 +84,7 @@ export default function Home({ getRecentPosts }) {
           </div>
         </section>
 
-        <section style={{ width: '100%', marginBottom: '60px'}}>
+        <section>
           <div className="container-lg">
             <div className="row">
               <div className="col-md-6">
@@ -128,7 +128,7 @@ export default function Home({ getRecentPosts }) {
           </div>
         </section>
 
-        <section style={{ width: '100%', marginBottom: '60px'}}>
+        <section>
           <div className="container-lg">
             <div className="row">
               <div className="col">
@@ -165,7 +165,7 @@ export default function Home({ getRecentPosts }) {
           </div>
         </section> 
 
-        <section style={{ width: '100%', marginBottom: '60px'}}>
+        <section>
           <div className="container-lg" style={{gap: 0}}>
             <div className="row">
               <div className="col">
@@ -208,6 +208,7 @@ export default function Home({ getRecentPosts }) {
           </div>
         </section>
       </main>
+
       <Footer/>
     </div>
   )

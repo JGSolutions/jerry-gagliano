@@ -1,5 +1,8 @@
 .main {
   padding: 40px 0;
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
 }
 
 .skillContainer {
@@ -16,7 +19,6 @@
   width: 100%; 
   display: flex;  
   justify-content: center;
-  margin-bottom: 60px;
 }
 
 .contact {
