@@ -19,7 +19,7 @@ export default function Blog({ allPostsData }) {
     return (
         <>
             <Head>
-                <title>Jerry Gagliano&#39;s blog about web & PWA development tips.</title>
+                <title>Jerry Gagliano - Blog about web & progressive web development tips.</title>
                 <meta name="description" content="Blog with tips and experiences in build PWAs on the web." />
 
                 <meta property="og:type" content="website" />

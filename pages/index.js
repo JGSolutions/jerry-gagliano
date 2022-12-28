@@ -6,7 +6,7 @@ import utilStyles from '../styles/utils.module.css';
 import Header  from '../components/header/header';
 import HeroSection from '../components/hero/hero'
 import TechStackItem from '../components/tech-stack-item/tech-stack-item'
-import Button from '../components/button/button'
+// import Button from '../components/button/button'
 import Footer from '../components/footer/footer'
 // import { useRef, useEffect, useState } from 'react';
 
@@ -30,17 +30,17 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Jerry Gagliano - Fullstack Web Developer from Montreal</title>
-        <meta name="description" content="Passionate about developing PWAs with React, Angular, Node.js and Firebase." />
+        <title>Jerry Gagliano - Front-end Web Developer from Montreal</title>
+        <meta name="description" content="Front-end web developer passionate about developing PWAs with React, Angular, Node.js and Firebase." />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Jerry Gagliano - Fullstack Web Developer" />
-        <meta property="og:description" content="I build Progressive Web Apps" />
+        <meta property="og:title" content="Jerry Gagliano - Front-end Web Developer" />
+        <meta property="og:description" content="Front-end web developer building Progressive Web Apps." />
         <meta name="image" property="og:image" content="https://jgsolutions.ca/jerry-pic.jpeg" itemProp="image"/>
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Jerry Gagliano - Fullstack Web Developer" />
-        <meta name="twitter:description" content="I build Progressive Web Apps" />
+        <meta name="twitter:title" content="Jerry Gagliano - Front-end Web Developer" />
+        <meta name="twitter:description" content="Front-end web developer building Progressive Web Apps" />
         <meta name="twitter:image" content="https://jgsolutions.ca/jerry-pic.jpeg" />
         <meta name="twitter:creator" content="@JGSolutions"></meta>
       </Head>
@@ -58,17 +58,17 @@ export default function Home() {
           <div className="container-lg">
             <div className="row">
               <div className="col">
-                <h2 className={styles.h2}>Over the past 15 years,</h2>
+                <h2 className={styles.h2}>Over 15 years,</h2>
 
                 <p className={utilStyles.paragraph}>
-                  of experience in web development and building interfaces and tools for various companies. 
-                  Started my career as a frontend and backend developer. As Javascript frameworks became in demand, my interest 
-                  grew more towards building UI and single page applications.
+                  of experience in web development, building interfaces and tools for various companies or projects. 
+                  Started my career as a fullstack developer. As Javascript frameworks became in demand, my interest 
+                  grew more towards building UI and progressive web apps.
                 </p>
 
                 <p className={utilStyles.paragraph}>
-                  Currently a senior frontend developer at Sportlogiq, the industry leader for NHL hockey data-collection and advanced analytics.
-                  I maintain and build UI features on their Analytics web platform based on the lastest Angular.
+                  Currently a senior front-end developer at Sportlogiq, the industry leader for NHL hockey data-collection and advanced analytics.
+                  I maintain and build UI features on their analytics web platform based on the lastest Angular framework.
                 </p>
 
               </div>
