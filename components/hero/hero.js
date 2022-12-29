@@ -18,10 +18,8 @@ export default function HeroSection() {
                     Front-end web developer crafting solid progressive web apps with great user experiences.
                 </p>
 
-                <Link href="/blog" legacyBehavior>
-                    <a className={utilStyle.button} rel="noopener noreferrer">
-                        Read My Blog
-                    </a>
+                <Link href="/blog" className={utilStyle.button} rel="noopener noreferrer">
+                    Read My Blog
                 </Link>
             </div>
 
@@ -31,6 +29,7 @@ export default function HeroSection() {
                     className={styles.profilePic}
                     height={207}
                     width={207}
+                    priority
                     alt="jerry gagliano"
                 />
             </div>
