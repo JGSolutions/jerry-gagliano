@@ -22,9 +22,9 @@ export default function Header() {
                                 <Link href="https://fitvitfitness.com/blog/" className={styles.link}>Blog</Link>
                             </li>
 
-                            <li>
+                            {/* <li>
                                 <Link href="https://fitvitfitness.com" className={styles.link}>Portfolio</Link>
-                            </li>
+                            </li> */}
                         </ul>
                     </nav>
                 </div>
