@@ -40,13 +40,7 @@ export default function Header() {
                         </ul>
                     </nav> */}
                 </div>
-
-                <Link href="https://docs.google.com/document/d/1sunyIYQNLZfWAAQq1kbRtHBX0ivRrte58iJFHFpQxuc/edit" passHref legacyBehavior>
-                    <a className={utilStyle.button}  target="_blank" rel="noopener noreferrer">
-                        My Resume
-                    </a>
-                </Link>
-
+                
                 <button className={styles.menuButton} onClick={() => setOpenPanel(!open)}>
 					<Image
 						src="/menu.svg"
@@ -55,6 +49,12 @@ export default function Header() {
 						alt="menu"
 						/>
 				</button>
+                
+                <Link href="https://docs.google.com/document/d/1sunyIYQNLZfWAAQq1kbRtHBX0ivRrte58iJFHFpQxuc/edit" passHref legacyBehavior>
+                    <a className={utilStyle.button}  target="_blank" rel="noopener noreferrer">
+                        My Resume
+                    </a>
+                </Link>
             </header>
 
             <SideNav open={open}>

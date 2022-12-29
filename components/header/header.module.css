@@ -50,3 +50,27 @@
     font-size: var(--fs-medium);
     text-decoration: none;
 }
+
+.menuButton {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    display: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+@media (max-width: 700px) {
+    /* .header {
+        justify-content: space-between;
+        padding: 0 16px;
+    }
+
+    .menuNavigation {
+        display: none;
+    } */
+
+    .menuButton {
+        display: block;
+    }
+}
