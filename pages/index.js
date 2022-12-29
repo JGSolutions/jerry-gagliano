@@ -1,17 +1,25 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
-// import Date from '../components/date';
 import utilStyles from '../styles/utils.module.css';
 import Header  from '../components/header/header';
 import HeroSection from '../components/hero/hero'
 import TechStackItem from '../components/tech-stack-item/tech-stack-item'
-// import Button from '../components/button/button'
 import Footer from '../components/footer/footer'
+import { getRecentBlogs } from '../lib/posts'
+import SimpleBlogItem from '../components/simple-blog-item/simple-blog-item'
 // import { useRef, useEffect, useState } from 'react';
 
+export async function getStaticProps() {
+  const getRecentPosts = await getRecentBlogs();
+  return {
+    props: {
+      getRecentPosts,
+    },
+  };
+}
 
-export default function Home() {
+export default function Home({ getRecentPosts }) {
   // const myRef = useRef(null);
 
   // useEffect(() => {
@@ -54,7 +62,7 @@ export default function Home() {
       </div>
 
       <main className={styles.main}>
-        <section style={{ width: '100%', marginBottom: '60px'}}>
+        <section>
           <div className="container-lg">
             <div className="row">
               <div className="col">
@@ -76,7 +84,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section style={{ width: '100%', marginBottom: '60px'}}>
+        <section>
           <div className="container-lg">
             <div className="row">
               <div className="col-md-6">
@@ -120,7 +128,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section style={{ width: '100%', marginBottom: '60px'}}>
+        <section>
           <div className="container-lg">
             <div className="row">
               <div className="col">
@@ -157,6 +165,32 @@ export default function Home() {
           </div>
         </section> 
 
+        <section>
+          <div className="container-lg" style={{gap: 0}}>
+            <div className="row">
+              <div className="col">
+                <h2 className={styles.h2}>Recent Blogs</h2>
+              </div>
+            </div>
+
+            <div className="row">
+              {getRecentPosts.map(({ id, date, title, description, coverImage, tags }) => (
+                <div className={`col col-lg-4 col-xl-4 col-12 ${styles.col}`} key={id}>
+                  <Link href={`/posts/${id}`} className={styles.blogItem}>
+                    <SimpleBlogItem 
+                      id={id}
+                      image={coverImage}
+                      title={title}
+                      tags={tags}
+                      description={description}
+                      date={date} />
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+				</section>
+
         <section className={styles.contactSection}>
           <div className={styles.contact}>
             <div>
@@ -174,6 +208,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+
       <Footer/>
     </div>
   )
