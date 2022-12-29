@@ -1,0 +1,30 @@
+.menuPanel {
+    background-color: var(--primary);
+    height: 100vh;
+    width: 100%;
+    text-align: left;
+    padding: 0 var(--padding-large);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.openPanel {
+    transform: translateX(0);
+}
+
+.closePanel {
+    transform: translateX(-100%);
+}
+
+.disableScroll {
+    overflow: hidden;
+}
+
+@media (min-width: 701px) {
+    .menuPanel {
+        display: none;
+    }
+}

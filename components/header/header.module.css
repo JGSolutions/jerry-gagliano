@@ -29,3 +29,24 @@
     text-decoration: none;
     color: var(--primary-text);
 }
+
+.headerPanel {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menuPanelLinks {
+    list-style: none;
+}
+
+.menuPanelLinks li {
+    padding:  var(--padding-medium) 0;
+}
+
+.menuPanelLinks a {
+    color: white;
+    font-size: var(--fs-medium);
+    text-decoration: none;
+}

@@ -44,6 +44,10 @@
   text-decoration: none;
 }
 
+.col {
+  margin-bottom: 24px;
+}
+
 @media (max-width: 600px) {
   .main {
     padding: 40px 16px;
