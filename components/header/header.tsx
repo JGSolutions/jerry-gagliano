@@ -29,7 +29,7 @@ export default function Header() {
                     </nav>
                 </div>
 
-                <Link href="https://docs.google.com/document/d/1sunyIYQNLZfWAAQq1kbRtHBX0ivRrte58iJFHFpQxuc/edit" passHref className={`${utilStyle.button} ${styles.resumeButton}`}  target="_blank" rel="noopener noreferrer">
+                <Link href="https://docs.google.com/document/d/1sunyIYQNLZfWAAQq1kbRtHBX0ivRrte58iJFHFpQxuc" passHref className={`${utilStyle.button} ${styles.resumeButton}`}  target="_blank" rel="noopener noreferrer">
                     My Resume
                 </Link>
 
@@ -55,11 +55,18 @@ export default function Header() {
 					</button>
 				</div>
 				<ul className={styles.menuPanelLinks}>
-					<li>
-						<Link href="/about">About me</Link>
+                    <li>
+						<Link href="/">Home</Link>
 					</li>
 					<li>
 						<Link href="/blog">Blog</Link>
+					</li>
+                    {/* <li>
+						<Link href="/blog">Portfolio</Link>
+					</li> */}
+
+                    <li>
+						<Link href="https://docs.google.com/document/d/1sunyIYQNLZfWAAQq1kbRtHBX0ivRrte58iJFHFpQxuc">My Resume</Link>
 					</li>
 				</ul>
 			</SideNav>
