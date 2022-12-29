@@ -60,12 +60,20 @@
     padding: 0;
 }
 
+.resumeButton {
+    display: block;
+}
+
 @media (max-width: 700px) {
     .menuButton {
         display: block;
     }
 
     .desktopNav {
+        display: none;
+    }
+
+    .resumeButton {
         display: none;
     }
 }

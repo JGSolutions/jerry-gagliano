@@ -29,7 +29,7 @@ export default function Header() {
                     </nav>
                 </div>
 
-                <Link href="https://docs.google.com/document/d/1sunyIYQNLZfWAAQq1kbRtHBX0ivRrte58iJFHFpQxuc/edit" passHref className={utilStyle.button}  target="_blank" rel="noopener noreferrer">
+                <Link href="https://docs.google.com/document/d/1sunyIYQNLZfWAAQq1kbRtHBX0ivRrte58iJFHFpQxuc/edit" passHref className={`${utilStyle.button} ${styles.resumeButton}`}  target="_blank" rel="noopener noreferrer">
                     My Resume
                 </Link>
 
