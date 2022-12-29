@@ -9,17 +9,20 @@
 
 .headingsWrapper {
     order: 1;
+    width: 70%;
 }
 
 .profileWrapper {
     display: flex;
     flex-grow: 1;
+    width: 30%;
     justify-content: center;
     order: 2;
+    position: relative;
 }
 
 .profilePic {
-    border-radius: 50%;
+    border-radius: 100%;
     border: 7px solid white !important;
 }
 
@@ -59,6 +62,8 @@
 
     .profileWrapper {
         order: 1;
+        width: 100%;
+        object-fit: cover;
     }
 
     .slogan {

@@ -27,8 +27,8 @@ export default function HeroSection() {
                 <Image
                     src="/jerry-pic.jpeg"
                     className={styles.profilePic}
-                    height={207}
-                    width={207}
+                    height={230}
+                    width={230}
                     priority
                     alt="jerry gagliano"
                 />
