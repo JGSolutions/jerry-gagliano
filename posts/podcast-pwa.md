@@ -1,6 +1,6 @@
 ---
-title: 'Create Podcast PWA as an Open Source Project'
-description: 'Thinking of creating a Podcast app as a PWA. I wonder if any designers or developers interested?'
+title: 'Develop Podcast PWA App?'
+description: 'How cool would it be to open source a podcast app. Any designers or developers?'
 coverImage: '/posts/podcast-blog.jpeg'
 tags: 'PWA'
 date: '2022-10-15T12:30:07.322Z'
@@ -12,7 +12,7 @@ path: '/posts/podcast-pwa'
 
 In recent months I been using Google Podcasts and overall it's been great. Most of the time I listen to podcasts are usually on the web platform while working or using the native mobile app version.
 
-There isn't any podcast developed as a PWA, and most other podcast apps are native. So why not create an open source podcast as PWA. Here are some ideas!
+There isn't any podcast developed as a PWA (progressive web app), and most other podcast apps are native. So why not develop an open source podcast but as PWA? Here are some ideas!
 
 ## Tech Stack
 
