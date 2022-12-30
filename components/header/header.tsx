@@ -19,7 +19,7 @@ export default function Header() {
                     <nav className={styles.desktopNav}>
                         <ul role='list' className={styles.menu}>
                             <li>
-                                <Link href="https://fitvitfitness.com/blog/" className={styles.link}>Blog</Link>
+                                <Link href="/blog" className={styles.link}>Blog</Link>
                             </li>
 
                             {/* <li>
