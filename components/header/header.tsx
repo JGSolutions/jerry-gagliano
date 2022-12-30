@@ -19,12 +19,12 @@ export default function Header() {
                     <nav className={styles.desktopNav}>
                         <ul role='list' className={styles.menu}>
                             <li>
-                                <Link href="https://fitvitfitness.com/blog/" className={styles.link}>Blog</Link>
+                                <Link href="/blog" className={styles.link}>Blog</Link>
                             </li>
 
-                            {/* <li>
-                                <Link href="https://fitvitfitness.com" className={styles.link}>Portfolio</Link>
-                            </li> */}
+                            <li>
+                                <Link href="/portfolio/" className={styles.link}>Portfolio</Link>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -61,10 +61,9 @@ export default function Header() {
 					<li>
 						<Link href="/blog">Blog</Link>
 					</li>
-                    {/* <li>
-						<Link href="/blog">Portfolio</Link>
-					</li> */}
-
+                    <li>
+						<Link href="/portfolio">Portfolio</Link>
+					</li>
                     <li>
 						<Link href="https://docs.google.com/document/d/1sunyIYQNLZfWAAQq1kbRtHBX0ivRrte58iJFHFpQxuc">My Resume</Link>
 					</li>

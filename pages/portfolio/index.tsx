@@ -27,8 +27,8 @@ export default function Portfolio() {
                 <div className="container-lg">
                     <Header/>
                     <section className={styles.headerPageSection}>
-                        <h1 className={utilStyles.headerPageTitle}>My Blog</h1>
-                        <p className={utilStyles.headerPageSlogan}>Latest and updated news about projects, development tips and web experiences.</p>
+                        <h1 className={utilStyles.headerPageTitle}>My Portfolio</h1>
+                        <p className={utilStyles.headerPageSlogan}>Current or pasted projects.</p>
                     </section>
                 </div>
             </div>
@@ -38,8 +38,8 @@ export default function Portfolio() {
                     <div className="row">
                     </div>
                 </div>
-    
             </main>
+            
             <Footer/>
         </>
     )
