@@ -37,8 +37,14 @@ export default function Portfolio() {
             <main className={styles.main}>
                 <div className="container-lg">
                     <div className="row">
-                        <div className="col">
-                            <PortfolioItem image="" name="FitVit" description="Helping people get into fitness more easily" blogLink="dldkd" githubLink="kdkd"></PortfolioItem>
+                        <div className={`col-12 col-sm-12 ${styles.col}`}>
+                            <PortfolioItem 
+                                image="https://fitvitfitness.com/fitvit-logo.svg"
+                                name="FitVit" 
+                                description="Fitness website containing workout programs and tips helping people staying motivated and healthy." 
+                                blogLink="dldkd" 
+                                websiteLink="https://www.fitvitfitness.com" 
+                                githubLink=""></PortfolioItem>
                         </div>
                     </div>
                 </div>
