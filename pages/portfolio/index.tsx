@@ -14,12 +14,12 @@ export default function Portfolio() {
 
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Jerry Gagliano's Portfolio" />
-                <meta property="og:description" content="My portfolio of various web projects" />
+                <meta property="og:description" content="Portfolio of various web projects" />
                 <meta name="image" property="og:image" content="https://jgsolutions.ca/jerry-pic.jpeg" itemProp="image"/>
 
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Jerry Gagliano's Portfolio" />
-                <meta name="twitter:description" content="My portfolio of various web projects" />
+                <meta name="twitter:description" content="Portfolio of various web projects" />
                 <meta name="twitter:image" content="https://jgsolutions.ca/jerry-pic.jpeg" />
                 <meta name="twitter:creator" content="@JGSolutions"></meta>
             </Head>
@@ -42,9 +42,9 @@ export default function Portfolio() {
                                 image="https://fitvitfitness.com/fitvit-logo.svg"
                                 name="FitVit" 
                                 description="Fitness website containing workout programs and tips helping people staying motivated and healthy." 
-                                blogLink="dldkd" 
+                                blogLink="/posts/fitvitfitness-portfolio/" 
                                 websiteLink="https://www.fitvitfitness.com" 
-                                githubLink=""></PortfolioItem>
+                                githubLink="" />
                         </div>
                     </div>
                 </div>
