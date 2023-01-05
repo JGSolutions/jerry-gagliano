@@ -39,7 +39,7 @@ export default function Portfolio() {
                     <div className="row">
                         <div className={`col-12 col-sm-12 ${styles.col}`}>
                             <PortfolioItem 
-                                image="https://fitvitfitness.com/fitvit-logo.svg"
+                                image="/posts/fitvit/fitvit.jpeg"
                                 name="FitVit" 
                                 description="Fitness website containing workout programs and tips helping people staying motivated and healthy." 
                                 blogLink="/posts/fitvitfitness-portfolio/" 
