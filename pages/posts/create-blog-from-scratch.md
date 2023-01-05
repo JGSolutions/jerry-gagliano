@@ -39,6 +39,7 @@ Most of the well known developers or designers have their own unique blogging pl
 - [Adam Argyle](https://nerdy.dev/)
 - [Paul Kinlan](https://paul.kinlan.me/)
 - [Addy Osmani](https://addyosmani.com/)
+
 ## Final Thoughts
 
 Overall it seems more work and it might discourage you from writing blogs right away until your platform is setup. In the meantime you can always write down some topics and objectives for these topics in google docs as your developing your blog. Once deployed, copy, paste the ideas, and begin your journey with blogging.

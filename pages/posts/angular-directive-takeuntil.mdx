@@ -10,6 +10,19 @@ picture: ''
 path: '/posts/angular-directive-takeuntil'
 ---
 
+import BlogLayout from '../../components/blog-layout/blog-layout'
+
+export const meta = {
+title: 'Directive Composition API in Angular 15',
+coverImage: '/posts/directive-composition.png',
+tags: 'Angular',
+date: '2022-10-24T12:30:07.322Z',
+updateDate: '2022-10-24T12:30:07.322Z',
+author: 'Jerry Gagliano',
+picture: '',
+path: '/posts/angular-directive-takeuntil'
+}
+
 Angular version 15 is around the corner with new features coming up. The particular feature I want to share is the directive composition api and how we can implement it.
 
 This feature allows you to create a standalone directive without the need to be rendered in the template. Developers were demanding this feature which I had no idea which is good to see. Here is an article for more details [Directive composition API](https://www.angularjswiki.com/angular/directive-composition-api-in-angular-15/#real-use-cases)
@@ -75,7 +88,7 @@ export class ComponentName implements OnInit {
 }
 ```
 
-As we see much cleaner and code is centralized. If we need to modify the takeUntil operator or add logic we would have one common file. 
+As we see much cleaner and code is centralized. If we need to modify the takeUntil operator or add logic we would have one common file.
 
 One argument we might have, directives are UI based elements only. This is true, but you're still actually managing functionality in the component UI. The other argument is why not just use a service? I prefer not to use services much. Services are used mainly to create methods containing endpoint calls or without UI component interaction. If you use a state management library like NGXS, services are much less needed.
 
@@ -85,6 +98,4 @@ Here it is! A quick example of how to structure your takeUntil's using the new d
 
 Cheers!
 
-
-
-
+export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>
