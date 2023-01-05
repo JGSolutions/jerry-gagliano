@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
+// const optimizedImages = require('next-optimized-images');
+const nextMDX = require('@next/mdx')
 
-const withMDX = require('@next/mdx')({
+const withMDX = nextMDX({
   extension: /\.mdx?$/,
   options: {
     // If you use remark-gfm, you'll need to use next.config.mjs
@@ -13,11 +15,10 @@ const withMDX = require('@next/mdx')({
     reactStrictMode: true,
     trailingSlash: true,
     swcMinify: true,
-
+    images: {
+      unoptimized: true
+    }
   },
-  // images: {
-  //   unoptimized: true,
-  // }
 })
 
 // const nextConfig = {

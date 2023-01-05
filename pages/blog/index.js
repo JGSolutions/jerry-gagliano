@@ -49,7 +49,7 @@ export default function Blog({ allPostsData }) {
                     <div className="row">
                     {allPostsData.map(({ id, date, updateDate, title, tags, author, description, coverImage }) => (
                         <div className={`col col-12 ${styles.column}`} key={id}>
-                            <BlogItem 
+                            {/* <BlogItem 
                                 id={id}
                                 image={coverImage}
                                 title={title} 
@@ -57,7 +57,7 @@ export default function Blog({ allPostsData }) {
                                 description={description}
                                 tags={tags}
                                 date={date}
-                                updatedDate={updateDate} />
+                                updatedDate={updateDate} /> */}
                         </div>
                     ))}
                     </div>
