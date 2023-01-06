@@ -1,14 +1,4 @@
-export const meta = {
-title: 'Directive Composition API in Angular 15',
-coverImage: '/posts/directive-composition.png',
-tags: 'Angular',
-date: '2022-10-24T12:30:07.322Z',
-updateDate: '2022-10-24T12:30:07.322Z',
-author: 'Jerry Gagliano',
-picture: '',
-path: '/posts/angular-directive-takeuntil'
-}
-
+import {meta} from '../../lib/blog-posts'
 import BlogLayout from '../../components/blog-layout/blog-layout'
 
 Angular version 15 is around the corner with new features coming up. The particular feature I want to share is the directive composition api and how we can implement it.
@@ -86,4 +76,4 @@ Here it is! A quick example of how to structure your takeUntil's using the new d
 
 Cheers!
 
-export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>
+export default ({ children }) => <BlogLayout meta={meta['angular-directive-takeuntil']}>{children}</BlogLayout>
