@@ -1,14 +1,5 @@
----
-title: 'Current State of Progressive Web Apps'
-description: 'How are progressive web apps are growing in the community'
-coverImage: '/posts/pwa-logo.jpeg'
-tags: 'PWA'
-date: '2022-10-10T12:30:07.322Z'
-updateDate: '2022-10-10T12:30:07.322Z'
-author: Jerry Gagliano
-picture: ''
-path: '/posts/current-state-of-pwa'
----
+import {meta} from '../../lib/blog-posts'
+import BlogLayout from '../../components/blog-layout/blog-layout'
 
 PWAs and the coummunity are growing strong and it's a perfect time to be part of it.
 The web is an incredible free platform helping developers solving problems 
@@ -87,3 +78,7 @@ PWABuilder also helps developers start new PWAs. They created dev tools for your
 Progressive web apps are definitely heading in the right direction. Communities are growing and the big tech comapnies are supporting it, releasing new features with updates. Better dev tools for editors, chrome dev tools are available making it easier for developers to debug and create apps. 
 
 Will it slow down the native app market? Don't think so, but it will definitly be one of the decisions for developers or companies to take in consideration when releasing a new product on the web.
+
+
+export default ({ children }) => <BlogLayout meta={meta['current-state-of-pwa']}>{children}</BlogLayout>
+

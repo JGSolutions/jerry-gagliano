@@ -1,8 +1,8 @@
 ## About
 
-A portfolio website of my web development career that I built. A overview of my skill set and projects I worked on. My site also contains a blog about web development and experiences that i have gone through. :)
+A portfolio website of my web development career that I built. A overview of my skill set and projects I worked on. Contains also a blog about web development and experiences that I have gone through. :)
 
-This project is public but please do not copy my work. You can get expired and use snippets of code :)
+This project is public but please do not copy my work. You can get inspired by it and use snippets of code :)
 
 ## Getting Started
 

@@ -1,14 +1,5 @@
----
-title: 'Why Developers Should Create Their Own Blog From Scratch'
-description: "Creating your own blog can be time consuming but also a great learning experience."
-coverImage: '/posts/blog-platform.jpeg'
-tags: 'Web'
-date: '2022-10-14T12:30:07.322Z'
-updateDate: '2022-10-14T12:30:07.322Z'
-author: Jerry Gagliano
-picture: ''
-path: '/posts/create-blog-from-scratch'
----
+import {meta} from '../../lib/blog-posts'
+import BlogLayout from '../../components/blog-layout/blog-layout'
 
 I previously wrote about [4 Reasons Why Developers or Designers Should Have a Blog](https://jgsolutions.ca/posts/why-developers-need-to-blog/). It provides tips and motivation for developers or designers to start blogging. The main question we ask ourselves is, should we create your own platform or use an existing platform like Medium or Dev.to? 
 
@@ -39,6 +30,9 @@ Most of the well known developers or designers have their own unique blogging pl
 - [Adam Argyle](https://nerdy.dev/)
 - [Paul Kinlan](https://paul.kinlan.me/)
 - [Addy Osmani](https://addyosmani.com/)
+
 ## Final Thoughts
 
 Overall it seems more work and it might discourage you from writing blogs right away until your platform is setup. In the meantime you can always write down some topics and objectives for these topics in google docs as your developing your blog. Once deployed, copy, paste the ideas, and begin your journey with blogging.
+
+export default ({ children }) => <BlogLayout meta={meta['create-blog-from-scratch']}>{children}</BlogLayout>
