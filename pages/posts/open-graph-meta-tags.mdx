@@ -2,13 +2,17 @@ import {meta} from '../../lib/blog-posts'
 import BlogLayout from '../../components/blog-layout/blog-layout'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 
-Sharing content on social media is an essential part of what a lot people do these days. This article is important to learn and take into account as you want to optimize your content on social media using Open Graph meta tags. It's fairly easy and I will give you a quick overview and straight to the point on how to implement Open Graph meta tags.
+**Are you wondering how other sites look great when shared through social sites? Do you want your site to look the same way?**
+
+In this article I will show you how to setup Open Graph tags on your site and the advantages. 
+Sharing content on social media is an essential part of what people do these days. When your site is shared through social media with, people tend to click on links
+that have images.
 
 ## What is Open Graph?
 
 The Open Graph protocol controls what content displays when sharing links on social media. When using Open Graph tags become a rich object in the social graph. The Open Graph protocol allows you to control what image, title, and description display when sharing links on social media.
 
-Here's how this post looks when shared on Facebook with Open Graph tags:
+Here's how this post renders when shared on Facebook with Open Graph tags:
 
 ![Facebook Open Graph Example](/posts/open-graph/open-graph-example.png)
 
@@ -54,7 +58,7 @@ Both of these snippet examples can be copied at the beginning of your website be
 
 If your site is based on a content management system like WordPress, you will probably have to add these tags in the settings admin section. I am not a wordpress expert, so you use Google as your friend on this topic.
 
-## How to Test
+## How to Test Open Graph tags
 
 First, right away you should inspect element in the dev tools in Chrome or any other browser. Expand the header tags and you should see the meta tag elements rendered.
 
@@ -62,9 +66,15 @@ To actually view the visibility of your content of these updates, one way which 
 
 Another solution is an online tool that is available to test your site [Opengraph](https://www.opengraph.xyz/). This will allow you to paste your URL and will give you a quick preview for all the different social media sites.
 
+## How to audit Open Graph tags
+
+If your site contains lots of pages and want to verify if open graph meta tags are setup properly, you
+can use a tool called [Ahrefs’ Site Audit](https://ahrefs.com/site-audit). This will check your pages in bulk and provide you any issues that 
+needs to be fixed. 
+
 ## Final Thoughts
 
-Hopefully, this article helped clarify how to add Open Graph meta tags to your site. If your not technical person and confident in peforming this task, you can always contact me and provide you with more guidance.
+Hopefully, this article helped clarify how to add Open Graph meta tags to your site. If your not technical and confident in peforming this task, don't be afraid
+to contact me. I can provide you with more guidance and get your Open Graph tags setup.
 
 export default ({ children }) => <BlogLayout meta={meta['open-graph-meta-tags']}>{children}</BlogLayout>
-

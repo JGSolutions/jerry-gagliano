@@ -58,7 +58,8 @@ export default function BlogLayout({ meta, children }) {
             <div className={`col ${styles.details}`}>
               <div className={styles.authorDetails}>
                 <p className={styles.author}>By {meta.author}</p>
-                <p className={styles.authorDate}><FormatDate dateString={meta.updateDate} /></p>
+                <p className={styles.authorDate}>Created on: <FormatDate dateString={meta.date} /></p>
+                <p className={styles.authorDate}>Updated on: <FormatDate dateString={meta.updateDate} /></p>
               </div>
               <div>
                 {tags}

@@ -54,12 +54,12 @@ export const meta = {
         path: '/posts/fitvitfitness-portfolio'
     },
     'open-graph-meta-tags': {
-        title: "Setting Up Open Graph Meta Tags on Your Site",
-        description: "Give your site a professional look and feel when shared within social media sites.",
+        title: "How to Set Up Open Graph Meta Tags",
+        description: "Easy way of understanding how and what is Open Graph for social media sites.",
         coverImage: "/posts/open-graph/images.jpeg",
         tags: "Web",
         date: "2022-11-05T12:30:07.322Z",
-        updateDate: "2022-11-05T12:30:07.322Z",
+        updateDate: "2023-01-06T12:30:07.322Z",
         author: 'Jerry Gagliano',
         picture: '',
         path: "/posts/open-graph-meta-tags",
