@@ -1,14 +1,5 @@
----
-title: 'Develop Podcast PWA App?'
-description: 'How cool would it be to open source a podcast app. Any designers or developers?'
-coverImage: '/posts/podcast-blog.jpeg'
-tags: 'PWA'
-date: '2022-10-15T12:30:07.322Z'
-updateDate: '2022-12-28T12:30:07.322Z'
-author: Jerry Gagliano
-picture: ''
-path: '/posts/podcast-pwa'
----
+import {meta} from '../../lib/blog-posts'
+import BlogLayout from '../../components/blog-layout/blog-layout'
 
 In recent months I been using Google Podcasts and overall it's been great. Most of the time I listen to podcasts are usually on the web platform while working or using the native mobile app version.
 
@@ -39,3 +30,5 @@ I hoping this can be an interesting project to open souce. This should allow dev
 I am not looking to hire by contract. If you contact me asking what is my budget then do not bother. If your passionate about podcasts, feel that you can improve this concept, grow and learn the product then this is for you. 
 
 I will update this blog with a GitHub repo eventually with mockups and will start the launch.
+
+export default ({ children }) => <BlogLayout meta={meta['podcast-pwa']}>{children}</BlogLayout>

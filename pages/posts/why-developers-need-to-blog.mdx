@@ -1,14 +1,5 @@
----
-title: '4 Reasons Why Developers or Designers Should Have a Blog'
-description: 'Blogging can be time consuming but will help you in the long run.'
-coverImage: '/posts/blog.jpeg'
-tags: 'Web'
-date: '2022-10-01T12:30:07.322Z'
-updateDate: '2022-10-01T12:30:07.322Z'
-author: Jerry Gagliano
-picture: ''
-path: '/posts/why-developers-need-to-blog'
----
+import {meta} from '../../lib/blog-posts'
+import BlogLayout from '../../components/blog-layout/blog-layout'
 
 As developers we like to code, designers like to design but blogging is usually out of the question. Probably the only writing we perform is documentation for our work.
 
@@ -58,8 +49,4 @@ Remember that you don’t need to publish hundreds of blogs in a short amount of
 
 Concentrate on blogging about your experiences, thoughs and what you solutions you resolved. That will help you become a better communicator and lead you to other ways.
 
-<!-- ```
-var add2 = function(number) {
-  return number + 2;
-}
-``` -->
+export default ({ children }) => <BlogLayout meta={meta['why-developers-need-to-blog']}>{children}</BlogLayout>
