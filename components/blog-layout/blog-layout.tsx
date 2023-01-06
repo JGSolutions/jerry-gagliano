@@ -25,18 +25,18 @@ export default function BlogLayout({ meta, children }) {
       <Head>
         <title>{meta.title}</title>
 
-        {/* <meta property="og:url" content={`${url}${postData.path}`} />
+        <meta property="og:url" content={`${url}${meta.path}`} />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content={postData.title} />
-        <meta property="og:description" content={postData.description} />
-        <meta name="image" property="og:image" content={`${url}${postData.coverImage}`} itemProp="image"/>
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:description" content={meta.description} />
+        <meta name="image" property="og:image" content={`${url}${meta.coverImage}`} itemProp="image"/>
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={`${url}${postData.path}`} />
-        <meta property="twitter:title" content={postData.title} />
-        <meta property="twitter:description" content={postData.description} />
-        <meta property="twitter:image" content={`${url}${postData.coverImage}`} />
-        <meta property="twitter:creator" content="@JGSolutions"></meta> */}
+        <meta property="twitter:url" content={`${url}${meta.path}`} />
+        <meta property="twitter:title" content={meta.title} />
+        <meta property="twitter:description" content={meta.description} />
+        <meta property="twitter:image" content={`${url}${meta.coverImage}`} />
+        <meta property="twitter:creator" content="@JGSolutions"></meta>
 
       </Head>
       

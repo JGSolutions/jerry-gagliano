@@ -1,5 +1,6 @@
 import {meta} from '../../lib/blog-posts'
 import BlogLayout from '../../components/blog-layout/blog-layout'
+import SyntaxHighlighter from 'react-syntax-highlighter';
 
 Sharing content on social media is an essential part of what a lot people do these days. This article is important to learn and take into account as you want to optimize your content on social media using Open Graph meta tags. It's fairly easy and I will give you a quick overview and straight to the point on how to implement Open Graph meta tags.
 
@@ -26,26 +27,28 @@ Without Open Graph tags setup, social media platforms can choose a random image,
 
 Social media platforms like Facebook, Twitter, Pinterest and LinkedIn recognize Open Graph tags. However, Twitter also uses meta tags called Twitter Cards. But will use Open Graph when there are no Twitter Card tags. Here are 2 examples below:
 
-```
+<SyntaxHighlighter language="html">
+ {`
   <!-- Facebook, Linkedin, Pinterest Meta Tags -->
   <meta property="og:url" content="[Actual url of site or blog]">
   <meta property="og:type" content="website">
   <meta property="og:title" content="[Title]">
   <meta property="og:description" content="[Small description]">
   <meta property="og:image" content="[An image full path url]">
+`}
+</SyntaxHighlighter>
 
-```
-
-```
-<!-- Twitter Meta Tags -->
+<SyntaxHighlighter language="html">
+ {`
+  <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="jgsolutions.ca">
   <meta property="twitter:url" content="[Url]">
   <meta name="twitter:title" content="[Title of site or blog]">
   <meta name="twitter:description" content="[Small description]">
   <meta name="twitter:image" content="[An image full path url]">
-
-```
+`}
+</SyntaxHighlighter>
 
 Both of these snippet examples can be copied at the beginning of your website between the 'head' tags. You will probably have other tags like title and description but the ordering does not matter. 
 
