@@ -7,7 +7,7 @@ import BlogItem from '../../components/blog-item/blog-item';
 import { getSortedPostsData } from '../../lib/posts';
 
 export async function getStaticProps() {
-    const allPostsData = await getSortedPostsData();
+    const allPostsData = getSortedPostsData();
     return {
         props: {
             allPostsData,

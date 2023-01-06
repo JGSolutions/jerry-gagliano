@@ -2,11 +2,11 @@ import {meta} from '../../lib/blog-posts'
 import BlogLayout from '../../components/blog-layout/blog-layout'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 
-Angular version 15 is around the corner with new features coming up. The particular feature I want to share is the directive composition api and how we can implement it.
+With Angular version 15, a particular feature I want to share is the directive composition api and how we can implement it.
 
 This feature allows you to create a standalone directive without the need to be rendered in the template. Developers were demanding this feature which I had no idea which is good to see. Here is an article for more details [Directive composition API](https://www.angularjswiki.com/angular/directive-composition-api-in-angular-15/#real-use-cases)
 
-What caught my eye about this feature is using the takeUntil pattern with a directive. Those of you who don't know about this particular pattern, it's basically using a Subject observable. When the component is destroyed, the observable is emitted and unsubscribes the observable. This is a common pattern used in Angular app development but not in a well-structured way.
+An interesting concept about this feature is using the takeUntil pattern with a directive. For those of you who don't know about this particular pattern, it's basically using a Subject observable. When the component is destroyed, the observable is emitted and unsubscribes the observable. This is a common pattern used in Angular app development but not in a well-structured way.
 
 Here is an example without the directive composition API:
 
@@ -31,7 +31,8 @@ Here is an example without the directive composition API:
 `}
 </SyntaxHighlighter>
 
-As we see, the observable will unsubscribe once the component is destroyed and will emit the Subject observable. If we had hundreds of components that implement this specific pattern. Lots of repeated code which is not ideal!
+As we see, the observable will unsubscribe once the component is destroyed and will emit the Subject observable. 
+If we had hundreds of components that implement this specific pattern, lots of code would be repeated is not ideal.
 
 Here is an example of using directive composition API composing with a directive:
 
@@ -96,7 +97,7 @@ One argument we might have, directives are UI based elements only. This is true,
 
 ## Final Thoughts
 
-Here it is! A quick example of how to structure your takeUntil's using the new directive composition API. This is just one idea and I am sure so many other developers will use this feature in different ways. If other developers have other ideas, please email me with examples as I am curious to expand my knowledge about this feature.
+A quick example of how to structure your takeUntil's using the new directive composition API. This is just one idea and I am sure other developers will implement this feature in different ways. If other developers have other ideas, please email me with examples as I am curious to expand my knowledge about this feature.
 
 Cheers!
 
