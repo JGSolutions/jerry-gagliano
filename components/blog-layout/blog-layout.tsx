@@ -24,7 +24,8 @@ export default function BlogLayout({ meta, children }) {
     <div>
       <Head>
         <title>{meta.title}</title>
-
+        <link rel="canonical" href={`${url}${meta.path}`} />
+        
         <meta property="og:url" content={`${url}${meta.path}`} />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={meta.title} />

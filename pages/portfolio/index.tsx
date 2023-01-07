@@ -11,6 +11,7 @@ export default function Portfolio() {
             <Head>
                 <title>Jerry Gagliano - Portfolio</title>
                 <meta name="description" content="My portfolio of various web projects that I worked on that includes websites and progressive web apps." />
+                <link rel="canonical" href="https://jgsolutions.ca/portfolio/" />
 
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Jerry Gagliano's Portfolio" />
