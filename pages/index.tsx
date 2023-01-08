@@ -38,8 +38,8 @@ export default function Home({ getRecentPosts }) {
   return (
     <div>
       <Head>
-        <title>Jerry Gagliano - Front-end Web Developer from Montreal</title>
-        <meta name="description" content="Front-end web developer passionate about developing PWAs with React, Angular, Node.js and Firebase." />
+        <title>Jerry Gagliano - Front-end developer from Montreal</title>
+        <meta name="description" content="Front-end web developer passionate about developing progressive web apps with React, Angular, Node.js and Firebase." />
         <link rel="canonical" href="https://jgsolutions.ca" />
 
         <meta property="og:type" content="website" />
