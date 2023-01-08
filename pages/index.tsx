@@ -72,7 +72,7 @@ export default function Home({ getRecentPosts }) {
                 <p className={utilStyles.paragraph}>
                   of experience in web development, building interfaces and tools for various companies or projects. 
                   Started my career as a fullstack web developer. As Javascript frameworks became in demand and popular, my interest 
-                  grew more towards building UI experiences in progressive web apps.
+                  grew more towards a front-end developer, building UI experiences with progressive web apps.
                 </p>
 
                 <p className={utilStyles.paragraph}>
@@ -141,10 +141,10 @@ export default function Home({ getRecentPosts }) {
                 <TechStackItem name="Angular" image="angular-logo.svg" description="Front-end framework creating spa complex web apps." url="https://angular.io" level="90"/>
               </div>
               <div className="col-xs-6 col-md-6 col-lg-4">
-                <TechStackItem name="Firebase" image="firebase-logo.svg" description="Platform for hosting web apps and NoSQL data managment." url="https://firebase.google.com" level="95"/>
+                <TechStackItem name="Firebase" image="firebase-logo.svg" description="Platform for hosting web apps and NoSQL data management." url="https://firebase.google.com" level="95"/>
               </div>
               <div className="col-xs-6 col-md-6 col-lg-4">
-                <TechStackItem name="Node.js" image="nodejs-logo.svg" description="Create apis, manage data and heavy logic computations. " url="https://nodejs.org" level="90"/>
+                <TechStackItem name="Node.js" image="nodejs-logo.svg" description="Create apis, manage data with heavy logic computations. " url="https://nodejs.org" level="90"/>
               </div>
               <div className="col-xs-6 col-md-6 col-lg-4">
                 <TechStackItem 
@@ -196,7 +196,7 @@ export default function Home({ getRecentPosts }) {
           <div className={styles.contact}>
             <div>
               <p>What&#39;s next</p>
-              <h1 className={styles.contactHeader}>Get In Touch!</h1>
+              <h2 className={styles.contactHeader}>Get In Touch!</h2>
             </div>
 
             <p className={utilStyles.paragraph}>

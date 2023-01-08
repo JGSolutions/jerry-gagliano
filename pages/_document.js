@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 function MyDocument() {
     return (
-        <Html>
+        <Html lang="en">
             <Head>
                 <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
                 <link rel="preconnect" href="https://fonts.googleapis.com"></link>
