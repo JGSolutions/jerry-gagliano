@@ -9,16 +9,18 @@ export default function Portfolio() {
     return (
         <>
             <Head>
-                <title>Jerry Gagliano - Portfolio</title>
-                <meta name="description" content="My portfolio of various web projects that I worked on that includes websites and progressive web apps." />
+                <title>Jerry Gagliano&#39;s Web Development Projects</title>
+                <meta name="description" content="My portfolio of various web development project that includes websites and progressive web apps based on React, Angular, Node.js and Firebase technologies." />
                 <link rel="canonical" href="https://jgsolutions.ca/portfolio/" />
 
                 <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://jgsolutions.ca/portfolio/" />
                 <meta property="og:title" content="Jerry Gagliano's Portfolio" />
                 <meta property="og:description" content="Portfolio of various web projects" />
                 <meta name="image" property="og:image" content="https://jgsolutions.ca/jerry-pic.jpeg" itemProp="image"/>
 
                 <meta name="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://jgsolutions.ca/portfolio/" />
                 <meta name="twitter:title" content="Jerry Gagliano's Portfolio" />
                 <meta name="twitter:description" content="Portfolio of various web projects" />
                 <meta name="twitter:image" content="https://jgsolutions.ca/jerry-pic.jpeg" />

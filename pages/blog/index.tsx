@@ -19,18 +19,20 @@ export default function Blog({ allPostsData }) {
     return (
         <>
             <Head>
-                <title>Jerry Gagliano - Front-end developing experiences.</title>
-                <meta name="description" content="Blogging about my front-end experiences and progressive web apps." />
+                <title>Jerry Gagliano - Blogging about Front-end developing experiences.</title>
+                <meta name="description" content="Front-end development blogs containing articles about websites, web app development, and tips for website owners." />
                 <link rel="canonical" href="https://jgsolutions.ca/blog/" />
 
                 <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://jgsolutions.ca/blog/" />
                 <meta property="og:title" content="Jerry Gagliano's Blog" />
-                <meta property="og:description" content="Blogging about the web." />
+                <meta property="og:description" content="Front-end development blogs containing articles about websites, web app development, and tips for website owners." />
                 <meta name="image" property="og:image" content="https://jgsolutions.ca/jerry-pic.jpeg" itemProp="image"/>
 
                 <meta name="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://jgsolutions.ca/blog/" />
                 <meta name="twitter:title" content="Jerry Gagliano's Blog" />
-                <meta name="twitter:description" content="Blogging about the web." />
+                <meta name="twitter:description" content="Front-end development blogs containing articles about websites, web app development, and tips for website owners." />
                 <meta name="twitter:image" content="https://jgsolutions.ca/jerry-pic.jpeg" />
                 <meta name="twitter:creator" content="@JGSolutions"></meta>
             </Head>
@@ -39,8 +41,11 @@ export default function Blog({ allPostsData }) {
                 <div className="container-lg">
                     <Header/>
                     <section className={styles.headerPageSection}>
-                        <h1 className={utilStyles.headerPageTitle}>My Blog</h1>
-                        <p className={utilStyles.headerPageSlogan}>Latest and updated news about projects, development tips and web experiences.</p>
+                        <h1 className={utilStyles.headerPageTitle}>Front-end Web Development Blog</h1>
+                        <p className={utilStyles.headerPageSlogan}>
+                            Blogging articles about front-end web development and various web technologies. Providing tips for web developers
+                            and website owners on ways to improve their site.
+                        </p>
                     </section>
                 </div>
             </div>

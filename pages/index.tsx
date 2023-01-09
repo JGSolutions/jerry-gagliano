@@ -38,18 +38,20 @@ export default function Home({ getRecentPosts }) {
   return (
     <div>
       <Head>
-        <title>Jerry Gagliano - Front-end developer from Montreal</title>
-        <meta name="description" content="Front-end web developer passionate about developing progressive web apps with React, Angular, Node.js and Firebase." />
+        <title>Jerry Gagliano - Front-end Web Developer from Montreal</title>
+        <meta name="description" content="A passionate front-end Web Developer building the Frontend of Websites and Web Applications that brings ideas to reality." />
         <link rel="canonical" href="https://jgsolutions.ca" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Jerry Gagliano - Front-end Web Developer" />
-        <meta property="og:description" content="Front-end web developer building Progressive Web Apps." />
+        <meta property="og:url" content="https://jgsolutions.ca/" />
+        <meta property="og:title" content="Front-end Web Developer" />
+        <meta property="og:description" content="A passionate front-end Web Developer building the Frontend of Websites and Web Applications that brings ideas to reality." />
         <meta name="image" property="og:image" content="https://jgsolutions.ca/jerry-pic.jpeg" itemProp="image"/>
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Jerry Gagliano - Front-end Web Developer" />
-        <meta name="twitter:description" content="Front-end web developer building Progressive Web Apps" />
+        <meta property="twitter:url" content="https://jgsolutions.ca/" />
+        <meta name="twitter:title" content="Front-end Web Developer" />
+        <meta name="twitter:description" content="A passionate front-end Web Developer building the Frontend of Websites and Web Applications that brings ideas to reality." />
         <meta name="twitter:image" content="https://jgsolutions.ca/jerry-pic.jpeg" />
         <meta name="twitter:creator" content="@JGSolutions"></meta>
       </Head>
