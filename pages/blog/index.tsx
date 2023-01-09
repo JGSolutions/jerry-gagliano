@@ -19,7 +19,7 @@ export default function Blog({ allPostsData }) {
     return (
         <>
             <Head>
-                <title>Jerry Gagliano - Blogging about Front-end developing experiences.</title>
+                <title>Jerry Gagliano - Blogs about Front-end web development.</title>
                 <meta name="description" content="Front-end development blogs containing articles about websites, web app development, and tips for website owners." />
                 <link rel="canonical" href="https://jgsolutions.ca/blog/" />
 
