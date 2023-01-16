@@ -1,6 +1,7 @@
 export const meta = {
     'angular-directive-takeuntil': {
         title: 'Directive Composition API in Angular 15',
+        description: 'A resuable pattern unsubscribing observables using takeUntil operator.',
         coverImage: '/posts/directive-composition.png',
         tags: 'Angular',
         date: '2022-10-24T12:30:07.322Z',
@@ -33,7 +34,7 @@ export const meta = {
     },
     'current-state-of-pwa': {
         title: 'Current State of Progressive Web Apps',
-        description: 'How are progressive web apps are growing in the community',
+        description: 'How progressive web apps are growing in the community',
         coverImage: '/posts/pwa-logo.jpeg',
         tags: 'PWA',
         date: '2022-10-10T12:30:07.322Z',
