@@ -43,16 +43,16 @@ export default function Home({ getRecentPosts }) {
         <link rel="canonical" href="https://jgsolutions.ca" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://jgsolutions.ca/" />
+        <meta property="og:url" content="https://www.jgsolutions.ca/" />
         <meta property="og:title" content="Front-end Web Developer" />
         <meta property="og:description" content="A passionate front-end Web Developer building the Frontend of Websites and Web Applications that brings ideas to reality." />
         <meta name="image" property="og:image" content="https://jgsolutions.ca/jerry-pic.jpeg" itemProp="image"/>
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://jgsolutions.ca/" />
+        <meta property="twitter:url" content="https://www.jgsolutions.ca/" />
         <meta name="twitter:title" content="Front-end Web Developer" />
         <meta name="twitter:description" content="A passionate front-end Web Developer building the Frontend of Websites and Web Applications that brings ideas to reality." />
-        <meta name="twitter:image" content="https://jgsolutions.ca/jerry-pic.jpeg" />
+        <meta name="twitter:image" content="https://www.jgsolutions.ca/jerry-pic.jpeg" />
         <meta name="twitter:creator" content="@JGSolutions"></meta>
       </Head>
 

@@ -14,8 +14,11 @@ export default function BlogLayout({ meta, children }) {
 
   const env = process.env.NODE_ENV;
   let url;
+  let canonicalUrl;
+
   if (env === "production") {
-    url ='https://jgsolutions.ca';
+    url ='https://www.jgsolutions.ca';
+    canonicalUrl ='https://jgsolutions.ca';
   } else {
     url ='http://localhost:3000';
   }
@@ -24,7 +27,7 @@ export default function BlogLayout({ meta, children }) {
     <div>
       <Head>
         <title>{meta.title}</title>
-        <link rel="canonical" href={`${url}${meta.path}`} />
+        <link rel="canonical" href={`${canonicalUrl}${meta.path}`} />
         <meta name="description" content={meta.description} />
 
         <meta property="og:url" content={`${url}${meta.path}`} />
