@@ -2,13 +2,39 @@ import {meta} from '../../lib/blog-posts'
 import BlogLayout from '../../components/blog-layout/blog-layout'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 
-I recently implemented a newsletter module on fitvitness.com website. Basically using
-MailChimp to save user's email directly from the site.
+I recently implemented a newsletter subsription module on fitvitness.com. My side project that accumulates user's emails using a 3rd party service 
+called MailChimp. MailChimp is a service that allows sites to gather emails and send newsletters directly to your subscriber's email inbox. A newsletter
+section is always good as you can gather future clients and build a community that are highly interested in your site.
 
-## What is Open Graph?
+I want to keep this article as simple as possible for none technical people that have a site and need some ideas to improve their
+site.
+Some technical issues came about needed to rethink how to architect the site from communicating with MailChimp. 
 
-![Facebook Open Graph Example](/posts/open-graph/open-graph-example.png)
+## Overview Site Architecture
 
+First off, FitVitFitness.com is based on Next.js which exports all static html, css and javscript files, and are deployed to Firebase Hosting. 
+I wrote an article about this if your curious and want more details about it.
+
+Basically the site has no commication to any server or even rendered by a server. The possiblity to commuicate to a 3rd party service
+can easily happened but not directly from the a browser as secruity errors will occur which are called 
+CORS [Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
+
+## Technical Specs of Microservice
+
+To overcome this solution I needed to create a Mircoservice. Basically a backend server sending requests to the MailChimp server.
+
+The microservice I developed is based on Node.js deployed to Firebase Cloud Functions. Express.js is also used sets up all the routes that my site will request. 
+
+So the question is why does my site allow server requests but not the MailChimp? By default, browsers restrict cross-origin HTTP requests initiated from scripts. 
+For example, XMLHttpRequest and the Fetch API follow the same-origin policy. This means that a web application or site using those APIs can only request resources from the same origin (or same domain) the application was loaded from.
+
+Since I created my own microservice I can allow any requests from any domain by setting up the right CORS headers
+
+Show an example
+
+## Advantages
+
+## Disadvantages
 
 ## Final Thoughts
 
