@@ -75,5 +75,16 @@ export const meta = {
         author: 'Jerry Gagliano',
         picture: '',
         path: '/posts/why-developers-need-to-blog',
+    },
+    'microservices-architecture-over-monolithic': {
+        title: 'Why I Choose Mircoservice over Monolithic Architecture',
+        description: '',
+        coverImage: '/posts/blog.jpeg',
+        tags: 'Web',
+        date: '2023-01-14T12:30:07.322Z',
+        updateDate: '2023-01-14T12:30:07.322Z',
+        author: 'Jerry Gagliano',
+        picture: '',
+        path: '/posts/microservices-architecture-over-monolithic',
     }
 }
