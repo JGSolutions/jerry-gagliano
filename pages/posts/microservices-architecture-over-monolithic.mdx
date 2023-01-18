@@ -2,22 +2,27 @@ import {meta} from '../../lib/blog-posts'
 import BlogLayout from '../../components/blog-layout/blog-layout'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 
-I recently implemented a newsletter subsription module on fitvitness.com. My side project that accumulates user's emails using a 3rd party service 
-called MailChimp. MailChimp is a service that allows sites to gather emails and send newsletters directly to your subscriber's email inbox. A newsletter
-section is always good as you can gather future clients and build a community that are highly interested in your site.
+In this article I want to discuss the advantages of developing a microservice over a monolithic architecture and how I used it. 
+I won't get into the technical stack details as I want to keep this simple for any type of skilled developer.
 
-I want to keep this article as simple as possible for none technical people that have a site and need some ideas to improve their
-site.
-Some technical issues came about needed to rethink how to architect the site from communicating with MailChimp. 
+I recently implemented a newsletter subsription feature on fitvitness.com. Site needs to accumulates user's emails using a 3rd party service 
+called MailChimp. MailChimp, for thos eof you don't know, is a service that allows sites to gather emails and send newsletters directly to your subscriber's email inbox. 
+A newsletter section is an interesting marketing strategy to gather future clients and build a community that are highly interested in your product.
+
+
 
 ## Overview Site Architecture
 
-First off, FitVitFitness.com is based on Next.js which exports all static html, css and javscript files, and are deployed to Firebase Hosting. 
-I wrote an article about this if your curious and want more details about it.
+FitVitFitness.com is based on Next.js which I chose to export all static html, css and javscript files, and deployed to Firebase Hosting. 
+I wrote an article about this if your curious and want more details about it [here](https://jgsolutions.ca/posts/fitvitfitness-portfolio/).
 
-Basically the site has no commication to any server or even rendered by a server. The possiblity to commuicate to a 3rd party service
-can easily happened but not directly from the a browser as secruity errors will occur which are called 
+Basically the site has no commication to any server or even rendered by a server. To implement this newsletter feature I needed the site to 
+communicate directly to Mailchimp. But making requests from a browser, security errors will occur which are called 
 CORS [Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
+
+Of course I needed to rethink how to architect the site from communicating with MailChimp or even other services needed in the future. 
+
+## Discuss the choice made between Microservice & Monolithic
 
 ## Technical Specs of Microservice
 
