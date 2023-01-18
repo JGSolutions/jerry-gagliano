@@ -5,11 +5,9 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 In this article I want to discuss the advantages of developing a microservice over a monolithic architecture and how I used it. 
 I won't get into the technical stack details as I want to keep this simple for any type of skilled developer.
 
-I recently implemented a newsletter subsription feature on fitvitness.com. Site needs to accumulates user's emails using a 3rd party service 
-called MailChimp. MailChimp, for thos eof you don't know, is a service that allows sites to gather emails and send newsletters directly to your subscriber's email inbox. 
-A newsletter section is an interesting marketing strategy to gather future clients and build a community that are highly interested in your product.
-
-
+I recently implemented a newsletter subscription feature on [fitvitfitness.com](https://www.fitvitfitness.com). Site needs to accumulates future client's emails using a 3rd party service 
+called MailChimp. MailChimp, for those of you don't know, it's a service that gather emails and capable of sending newsletters directly to your subscriber's email inbox. 
+A newsletter section is an interesting marketing strategy to gather attract users and build a community that are highly interested in your product.
 
 ## Overview Site Architecture
 
@@ -20,9 +18,19 @@ Basically the site has no commication to any server or even rendered by a server
 communicate directly to Mailchimp. But making requests from a browser, security errors will occur which are called 
 CORS [Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
 
-Of course I needed to rethink how to architect the site from communicating with MailChimp or even other services needed in the future. 
+Of course I needed to rethink how to architect the site allowing me to communicate to MailChimp or even other services needed in the future. 
 
-## Discuss the choice made between Microservice & Monolithic
+## Choosing Between Microservice & Monolithic
+
+Obiviously the two main choices comes to mind for every experienced developer is microservice or a one big code base using monolithic.
+
+A microservice is an independent services that communicates over well-defined APIs. Microservices can be focused for sepefic modules or features for example:
+
+- handling image uploads and resizing.
+- Rest apis.
+- Cron job tasks
+
+A Monolithic architecture, all features or modules are tightly coupled and run as a single service. Basically having one code base that has all the features.
 
 ## Technical Specs of Microservice
 
