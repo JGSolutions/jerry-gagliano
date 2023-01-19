@@ -2,11 +2,11 @@ import {meta} from '../../lib/blog-posts'
 import BlogLayout from '../../components/blog-layout/blog-layout'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 
-In this article I want to discuss the advantages of developing a microservice over a monolithic architecture and how I used it. 
-I won't get into the technical stack details as I want to keep this simple for any type of skilled developer.
+In this article I want to discuss the advantages of developing a microservice over a monolithic architecture and how I went about it. 
+I won't get into the technical details as I want to keep this simple for any type of skilled developer.
 
-I recently implemented a newsletter subscription feature on [fitvitfitness.com](https://www.fitvitfitness.com). Site needs to accumulates future client's emails using a 3rd party service 
-called MailChimp. MailChimp, for those of you don't know, it's a service that gather emails and capable of sending newsletters directly to your subscriber's email inbox. 
+I recently implemented a newsletter subscription feature on [fitvitfitness.com](https://www.fitvitfitness.com). We need to accumulate future client's emails using a 3rd party service 
+called MailChimp. MailChimp, for those of you don't know, it's a service that gathers emails and capable of sending newsletters directly to your subscriber's email inbox. 
 A newsletter section is an interesting marketing strategy to gather attract users and build a community that are highly interested in your product.
 
 ## Overview Site Architecture
@@ -15,40 +15,56 @@ FitVitFitness.com is based on Next.js which I chose to export all static html, c
 I wrote an article about this if your curious and want more details about it [here](https://jgsolutions.ca/posts/fitvitfitness-portfolio/).
 
 Basically the site has no commication to any server or even rendered by a server. To implement this newsletter feature I needed the site to 
-communicate directly to Mailchimp. But making requests from a browser, security errors will occur which are called 
-CORS [Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
+communicate directly to Mailchimp. Having requests by the browser causes security errors which are called 
+CORS [Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). By default, browsers restrict cross-origin
+HTTP requests initiated from scripts. For example, XMLHttpRequest and the Fetch API follow the same-origin policy. 
+This means that a web application or site using those APIs can only request resources from the same origin (or same domain) the application was loaded from.
 
 Of course I needed to rethink how to architect the site allowing me to communicate to MailChimp or even other services needed in the future. 
 
 ## Choosing Between Microservice & Monolithic
 
-Obiviously the two main choices comes to mind for every experienced developer is microservice or a one big code base using monolithic.
+Obiviously the two main choices that a developer is faced with is between microservice or monolithic.
 
-A microservice is an independent services that communicates over well-defined APIs. Microservices can be focused for sepefic modules or features for example:
+A microservice is an independent services that communicates over well-defined APIs. Microservices can be focused for specific modules or features for example:
 
-- handling image uploads and resizing.
+- Handling image uploads and resizing.
 - Rest apis.
+- Authentication
 - Cron job tasks
 
-A Monolithic architecture, all features or modules are tightly coupled and run as a single service. Basically having one code base that has all the features.
+A monolithic architecture, all features or modules are tightly coupled and run as a single service. Basically having one code
+base that has all the features. One example, every route the user clicks on your site the page will 
+be exercuted, rendered on the server and all the html, css and javascript will be pushed to client.
 
-## Technical Specs of Microservice
+## Developing A Microservice
 
-To overcome this solution I needed to create a Mircoservice. Basically a backend server sending requests to the MailChimp server.
+To overcome this solution I developed a mircoservice. This microservice will contain just simple apis that can communicate with 3rd party services our my
+apis needed for FitVitFitness. All the front-end or UI products will use this as the main microservice.
 
-The microservice I developed is based on Node.js deployed to Firebase Cloud Functions. Express.js is also used sets up all the routes that my site will request. 
+Here is a stack details list:
 
-So the question is why does my site allow server requests but not the MailChimp? By default, browsers restrict cross-origin HTTP requests initiated from scripts. 
-For example, XMLHttpRequest and the Fetch API follow the same-origin policy. This means that a web application or site using those APIs can only request resources from the same origin (or same domain) the application was loaded from.
+- Node.js
+- Firebase Cloud Function
+- Express.js (api routing)
+- GitHub and Actions (CI Builds and Deployment)
 
-Since I created my own microservice I can allow any requests from any domain by setting up the right CORS headers
-
-Show an example
+I choose the Firebase platform because I eventually will need to use other services such as authentication and Firestore (storing data).
 
 ## Advantages
 
-## Disadvantages
+Huge advantages of this project architected as a microservice.
 
-## Final Thoughts
+- **Smaller code base**: Separate developers can work independantly from the front-end. A separate git repository with a CI pipeline.
+- **Server Errors**: In a monolithic architecture, if a single component fails, it can cause the entire product to fail. With microservices, only the request api will fail and not crashing the entire website.
+- **Faster Site**: Website(front-end) and the microservice are hosted on two separate servers. The mircoservice will execute only when a request is need.
+- **Cheaper Server Cost** Less server execution, less money it will cost you.
+
+## Conclusion
+
+As you can see, I wanted fitvitfitness.com to have 2 separate layers. One layer for the UI and the other layer to handle data or service requests.
+I hope this opens up ideas for any current or future projects you currently have
+[About](https://aws.amazon.com/microservices/)
+
 
 export default ({ children }) => <BlogLayout meta={meta['microservices-architecture-over-monolithic']}>{children}</BlogLayout>
