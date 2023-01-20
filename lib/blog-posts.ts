@@ -79,7 +79,7 @@ export const meta = {
     'microservices-architecture-over-monolithic': {
         title: 'Why I Choose Mircoservice over Monolithic Architecture',
         description: 'How I architected a blog site with a microservice with Node.js and communicating with MailChimp',
-        coverImage: '/posts/blog.jpeg',
+        coverImage: '/posts/blog-microservice-min.jpg',
         tags: 'Web',
         date: '2023-01-14T12:30:07.322Z',
         updateDate: '2023-01-14T12:30:07.322Z',
