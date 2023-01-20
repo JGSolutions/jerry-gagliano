@@ -11,20 +11,24 @@ A newsletter section is an interesting marketing strategy to gather attract user
 
 ## Overview Site Architecture
 
-FitVitFitness.com is based on Next.js which I chose to export all static html, css and javscript files, and deployed to Firebase Hosting. 
+FitVitFitness.com is based on Next.js which exports only static html, css and javscript files, and deployed to Firebase Hosting. 
 I wrote an article about this if your curious and want more details about it [here](https://jgsolutions.ca/posts/fitvitfitness-portfolio/).
 
-Basically the site has no commication to any server or even rendered by a server. To implement this newsletter feature I needed the site to 
-communicate directly to Mailchimp. Having requests by the browser causes security errors which are called 
+The site has no commication to any server or even rendered by a server. To implement this newsletter feature I needed the front-end to 
+communicate directly to Mailchimp. 
+
+Executing requests by the browser causes security errors which are called 
 CORS [Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). By default, browsers restrict cross-origin
 HTTP requests initiated from scripts. For example, XMLHttpRequest and the Fetch API follow the same-origin policy. 
-This means that a web application or site using those APIs can only request resources from the same origin (or same domain) the application was loaded from.
+
+This means that a web application or site using those APIs can only request resources from the same origin (or same domain)
+the application was loaded from.
 
 Of course I needed to rethink how to architect the site allowing me to communicate to MailChimp or even other services needed in the future. 
 
 ## Choosing Between Microservice & Monolithic
 
-Obiviously the two main choices that a developer is faced with is between microservice or monolithic.
+Obiviously the two main choices that a developer are faced with is microservice or monolithic.
 
 A microservice is an independent services that communicates over well-defined APIs. Microservices can be focused for specific modules or features for example:
 
@@ -35,12 +39,14 @@ A microservice is an independent services that communicates over well-defined AP
 
 A monolithic architecture, all features or modules are tightly coupled and run as a single service. Basically having one code
 base that has all the features. One example, every route the user clicks on your site the page will 
-be exercuted, rendered on the server and all the html, css and javascript will be pushed to client.
+be executed, rendered on the server and all the html, css and javascript will be pushed to client.
+
+You can read more about [microservice vs  monolithic](https://aws.amazon.com/microservices/)
 
 ## Developing A Microservice
 
 To overcome this solution I developed a mircoservice. This microservice will contain just simple apis that can communicate with 3rd party services our my
-apis needed for FitVitFitness. All the front-end or UI products will use this as the main microservice.
+apis providing data. All the front-end or UI products will use this as the main microservice.
 
 Here is a stack details list:
 
@@ -49,22 +55,56 @@ Here is a stack details list:
 - Express.js (api routing)
 - GitHub and Actions (CI Builds and Deployment)
 
-I choose the Firebase platform because I eventually will need to use other services such as authentication and Firestore (storing data).
+I choose the Firebase platform because I eventually will need to use other services such as 
+authentication and Firestore (storing data).
+
+## Actual Microservice Implementation
+
+Currently my mircoservice only contains a route which is:
+
+<SyntaxHighlighter language="javascript">
+    {`
+        // Express.js route
+        app.post("/subscribe-newsletter", subscribeNewsletter);
+    `}
+</SyntaxHighlighter>
+
+As you can see I have a module 'subscribeNewsletter'. This is where the MailChimp api is called that sends the user's email.
+
+<SyntaxHighlighter language="javascript">
+    {`
+        // Module called in the Express.js
+        export const subscribeNewsletter = async (req: Request, res: Response) => {
+            const {email} = req.body;
+
+            // MailChimp keys are stored on the server side which is more secure.
+            const AUDIENCE_ID = "***";
+            const API_KEY = "****";
+            const DATACENTER = "***";
+
+            // ...will contain logic to make request to mailchimp
+        }
+           
+    `}
+</SyntaxHighlighter>
+
+Purpose of this article is not to show you how to implement MailChimp but more an overview of microservices architecture.
+If you do need help for this particular topic please contact me and I can send you examples of code.
 
 ## Advantages
 
-Huge advantages of this project architected as a microservice.
+On my side huge advantages of this project architected as a microservice.
 
-- **Smaller code base**: Separate developers can work independantly from the front-end. A separate git repository with a CI pipeline.
-- **Server Errors**: In a monolithic architecture, if a single component fails, it can cause the entire product to fail. With microservices, only the request api will fail and not crashing the entire website.
-- **Faster Site**: Website(front-end) and the microservice are hosted on two separate servers. The mircoservice will execute only when a request is need.
-- **Cheaper Server Cost** Less server execution, less money it will cost you.
+- **Smaller code base**: Developers can work independantly from the front-end.
+- **Error Handling**: In a monolithic architecture, if a single component fails, it can cause the entire product to fail. With microservices, only the request api will fail and not crashing the entire website.
+- **Faster Page Loads**: Website(front-end) and the microservice are hosted on two separate servers. The mircoservice will execute only when a request is need.
+- **Cheaper Server Cost** Less server executions, costs will be much less.
 
 ## Conclusion
 
-As you can see, I wanted fitvitfitness.com to have 2 separate layers. One layer for the UI and the other layer to handle data or service requests.
-I hope this opens up ideas for any current or future projects you currently have
-[About](https://aws.amazon.com/microservices/)
+As you can see, the architecture is from front-end to backend is separated into two layers. 
+In the future I will be implementing more routes as the site needs more features. As this might not work 
+for every developer but a hight percentage of sites or web applications are architected as mircoservices.
 
 
 export default ({ children }) => <BlogLayout meta={meta['microservices-architecture-over-monolithic']}>{children}</BlogLayout>
