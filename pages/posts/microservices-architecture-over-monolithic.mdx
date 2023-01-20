@@ -2,21 +2,21 @@ import {meta} from '../../lib/blog-posts'
 import BlogLayout from '../../components/blog-layout/blog-layout'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 
-In this article I want to discuss the advantages of developing a microservice over a monolithic architecture and how I went about it. 
+In this article, I want to discuss the advantages of developing a microservice over a monolithic architecture and how I went about it. 
 I won't get into the technical details as I want to keep this simple for any type of skilled developer.
 
-I recently implemented a newsletter subscription feature on [fitvitfitness.com](https://www.fitvitfitness.com). We need to accumulate future client's emails using a 3rd party service 
-called MailChimp. 
+I recently implemented a newsletter subscription module on [fitvitfitness.com](https://www.fitvitfitness.com). We want to allow users subscribing to our newsletter
+for future blogs which will use a 3rd party service called MailChimp. 
 
-MailChimp, for those of you don't know, it's a service that gathers emails and sending newsletters directly to your subscriber's email inbox. 
-Having a newsletter subscription is an interesting marketing strategy to gather, attract users, and build a community that are highly interested in your product.
+MailChimp, for those who don't know, it's a service that gathers emails and sends newsletters directly to your subscriber's email inbox. 
+A newsletter subscription is an interesting marketing strategy to gather, attract users, and build a highly interested community in your product.
 
 ## Overview Site Architecture
 
-FitVitFitness.com is based on Next.js which exports only static html, css and javscript files, and deployed to Firebase Hosting. 
+FitVitFitness.com is based on Next.js which exports only static HTML, css and javscript files, and deployed to Firebase Hosting. 
 I wrote an article about this if your curious and want more details about it [here](https://jgsolutions.ca/posts/fitvitfitness-portfolio/).
 
-The site has no commication to any server or even rendered by a server. To implement this newsletter feature I needed the front-end to 
+The site has no communication to any server or is even rendered by a server. To implement this newsletter feature I needed the front-end to 
 communicate directly to Mailchimp. 
 
 Executing requests by the browser causes security errors which are called 
@@ -24,9 +24,9 @@ CORS [Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/We
 HTTP requests initiated from scripts. For example, XMLHttpRequest and the Fetch API follow the same-origin policy. 
 
 This means that a web application or site using those APIs can only request resources from the same origin (or same domain)
-the application was loaded from.
+the the application was loaded from.
 
-Of course I needed to rethink how to architect the site allowing me to communicate to MailChimp or even other services needed in the future. 
+Of course, I needed to rethink how to architect the site allowing me to communicate to MailChimp or even other services needed in the future. 
 
 ## Choosing Between Microservice & Monolithic
 
@@ -45,20 +45,20 @@ be executed, rendered on the server and all the html, css and javascript will be
 
 You can read more about [microservice vs  monolithic](https://aws.amazon.com/microservices/)
 
-## Developing A Microservice
+## Developing The Microservice
 
-To overcome this solution I developed a mircoservice. This microservice will contain just simple apis that can communicate with 3rd party services our my
-apis providing data. All the front-end or UI products will use this as the main microservice.
+To overcome this solution, I choose to develop a microservice. This microservice will contain just simple APIs that can communicate with 3rd party services or 
+APIs providing data. It's small but will scale to handle all the back-end services.
 
 Here is a stack details list:
 
 - Node.js
-- Firebase Cloud Function
+- Firebase Cloud Functions
 - Express.js (api routing)
 - GitHub and Actions (CI Builds and Deployment)
 
-I choose the Firebase platform because I eventually will need to use other services such as 
-authentication and Firestore (storing data).
+Firebase is my main environment and for most of my projects. I tend to use their features eventually will need implement 
+authentication and Firestore for storing data.
 
 ## Actual Microservice Implementation
 
@@ -71,7 +71,7 @@ Currently my mircoservice only contains a route which is:
     `}
 </SyntaxHighlighter>
 
-As you can see I have a module 'subscribeNewsletter'. This is where the MailChimp api is called that sends the user's email.
+As you can see I have a module 'subscribeNewsletter'. The MailChimp API is called that sends the user's email.
 
 <SyntaxHighlighter language="javascript">
     {`
@@ -99,13 +99,15 @@ On my side huge advantages of this project architected as a microservice.
 
 - **Smaller code base**: Developers can work independantly from the front-end.
 - **Error Handling**: In a monolithic architecture, if a single component fails, it can cause the entire product to fail. With microservices, only the request api will fail and not crashing the entire website.
-- **Faster Page Loads**: Website(front-end) and the microservice are hosted on two separate servers. The mircoservice will execute only when a request is need.
-- **Cheaper Server Cost** Less server executions, costs will be much less.
+- **Faster Page Loads**: The website and microservice are hosted on two separate servers. The microservice will execute only when a request is needed.
+- **Cheaper Server Cost** Fewer server executions, fewer costs.
 
 ## Conclusion
 
-As you can see, the architecture is from front-end to backend is separated into two layers. 
-In the future I will be implementing more routes as the site needs more features. As this might not work 
+As you can see, the architecture is layered from front-end to back-end. 
+In the future, it is easier to scale as I will be implementing more routes for more features. 
+
+Monolithic could still be in favor and willmight not work 
 for every developer but a hight percentage of sites or web applications are architected as mircoservices.
 
 
