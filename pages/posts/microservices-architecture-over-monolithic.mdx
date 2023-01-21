@@ -64,7 +64,7 @@ Will need implement authentication and Firestore for storing data.
 
 ## Actual Microservice Implementation
 
-Currently my mircoservice only contains a route which is:
+Currently my mircoservice only contains subscribe newsletter route which is:
 
 <SyntaxHighlighter language="javascript">
     {`
@@ -73,7 +73,7 @@ Currently my mircoservice only contains a route which is:
     `}
 </SyntaxHighlighter>
 
-As you can see I have a module 'subscribeNewsletter'. The MailChimp API is called that sends the user's email.
+The Express.js route calls a module 'subscribeNewsletter' which handles the MailChimp API that sends the user's email.
 
 <SyntaxHighlighter language="javascript">
     {`
@@ -92,8 +92,27 @@ As you can see I have a module 'subscribeNewsletter'. The MailChimp API is calle
     `}
 </SyntaxHighlighter>
 
-The purpose of this blog is not to demostrat how to implement MailChimp but more an overview of microservices architecture.
-If you do need help for this particular topic please contact me and I can send you examples of code.
+Here is an example of the front-end code when the user submits the email which will call the
+api route as you saw above '/subscribe-newsletter' from the microservice.
+
+<SyntaxHighlighter language="javascript">
+    {`
+        // fitvit-api.web.app is my microservice domain
+       	await fetch('https://fitvit-api.web.app/subscribe-newsletter', {
+		body: JSON.stringify({
+			email: inputRef.current.value, // email value from field input
+		}),
+
+		headers: {
+			'Content-Type': 'application/json',
+		},
+
+		method: 'POST',
+		});
+    `}
+</SyntaxHighlighter>
+
+The purpose of these example, is not to demonstrate how to implement MailChimp but more on how I architected this microservice.
 
 ## Advantages
 
@@ -106,10 +125,11 @@ On my side, the huge advantages of this project architected as a microservice.
 
 ## Conclusion
 
-As you can see, the architecture is separated layers from front-end to back-end. 
+As you can see, the architecture is separated layers from front-end to back-end. For experienced web developers this may be super easy but
+for non experience devs may need to wrap your head around.
 
 In some cases, monolithic architecting could still be in favour and work well for certain 
-developers or environments. Usually a high percentage of sites or applications are architected as mircoservices.
+developers or environments. A high percentage of sites or applications are architected as mircoservices.
 
 If help or quick guidance for your site is needed, you can always contact me and will be glad to provide some pointers.
 
