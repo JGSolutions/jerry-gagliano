@@ -1,7 +1,7 @@
 export const meta = {
     'angular-directive-takeuntil': {
         title: 'Directive Composition API in Angular 15',
-        description: 'A resuable pattern unsubscribing observables using takeUntil operator.',
+        description: 'With angular\'s new release version 15 we look into a resuable pattern unsubscribing observables using takeUntil operator.',
         coverImage: '/posts/directive-composition.png',
         tags: 'Angular',
         date: '2022-10-24T12:30:07.322Z',
@@ -12,7 +12,7 @@ export const meta = {
     },
     'create-blog-from-scratch': {
         title: 'Why Developers Should Create Their Own Blog From Scratch',
-        description: 'Creating your own blog can be time consuming but also a great learning experience.',
+        description: 'Creating your own blog from scratch can be time consuming but also a great technical learning experience. As your in full control of your platform.',
         coverImage: '/posts/blog-platform.jpeg',
         tags: 'Web',
         date: '2022-10-14T12:30:07.322Z',
@@ -22,8 +22,8 @@ export const meta = {
         path: '/posts/create-blog-from-scratch'
     },
     'podcast-pwa': {
-        title: 'Develop Podcast PWA App?',
-        description: 'How cool would it be to open source a podcast app. Any designers or developers?',
+        title: 'Open Sourcing A Podcast PWA App',
+        description: 'Highly interested in open sourcing a podcast app using progressive web app technologies.',
         coverImage: '/posts/podcast-blog.jpeg',
         tags: 'PWA',
         date: '2022-10-15T12:30:07.322Z',
@@ -34,7 +34,7 @@ export const meta = {
     },
     'current-state-of-pwa': {
         title: 'Current State of Progressive Web Apps',
-        description: 'How progressive web apps are growing in the community',
+        description: 'As the web is evolving and more in demand as progressive web app development is growing, allowing developers creating mobile native app user experiences.',
         coverImage: '/posts/pwa-logo.jpeg',
         tags: 'PWA',
         date: '2022-10-10T12:30:07.322Z',
@@ -44,8 +44,8 @@ export const meta = {
         path: '/posts/current-state-of-pwa',
     },
     'fitvitfitness-portfolio': {
-        title: 'Featured Project - FitVitFitness.com',
-        description: 'A fitness blog about weight training and tips for a healthy life style.',
+        title: 'My Side FitVitFitness.com',
+        description: 'Side project about a personal certified trainer. Providing workout programs and writing blogs. Motivating people to have healthy life style.',
         coverImage: '/posts/fitvit/fitvit.jpeg',
         tags: 'Projects',
         date: '2023-01-04T12:30:07.322Z',
@@ -56,7 +56,7 @@ export const meta = {
     },
     'open-graph-meta-tags': {
         title: "How to Set Up Open Graph Meta Tags",
-        description: "Easy way of understanding how and what is Open Graph for social media sites.",
+        description: "Easy way of understanding how and what is Open Graph for social media. Improving your site links how they look and feel when shared through social media.",
         coverImage: "/posts/open-graph/images.jpeg",
         tags: "Web",
         date: "2022-11-05T12:30:07.322Z",
@@ -66,8 +66,8 @@ export const meta = {
         path: "/posts/open-graph-meta-tags",
     },
     'why-developers-need-to-blog': {
-        title: '4 Reasons Why Developers or Designers Should Have a Blog',
-        description: 'Blogging can be time consuming but will help you in the long run.',
+        title: '4 Reasons Why Developers Should Have a Blog',
+        description: 'Reasons why developers or designers should blog! Why it is important in building up their brand and talk about their experiences.',
         coverImage: '/posts/blog.jpeg',
         tags: 'Web',
         date: '2022-10-01T12:30:07.322Z',
