@@ -8,7 +8,7 @@ export const meta = {
         updateDate: '2022-10-24T12:30:07.322Z',
         author: 'Jerry Gagliano',
         picture: '',
-        path: '/posts/angular-directive-takeuntil'
+        path: '/posts/angular-directive-takeuntil/'
     },
     'create-blog-from-scratch': {
         title: 'Why Developers Should Create Their Own Blog From Scratch',
@@ -19,7 +19,7 @@ export const meta = {
         updateDate: '2022-10-14T12:30:07.322Z',
         author: 'Jerry Gagliano',
         picture: '',
-        path: '/posts/create-blog-from-scratch'
+        path: '/posts/create-blog-from-scratch/'
     },
     'podcast-pwa': {
         title: 'Open Sourcing A Podcast PWA App',
@@ -30,7 +30,7 @@ export const meta = {
         updateDate: '2022-12-28T12:30:07.322Z',
         author: 'Jerry Gagliano',
         picture: '',
-        path: '/posts/podcast-pwa',
+        path: '/posts/podcast-pwa/',
     },
     'current-state-of-pwa': {
         title: 'Current State of Progressive Web Apps',
@@ -41,7 +41,7 @@ export const meta = {
         updateDate: '2022-10-10T12:30:07.322Z',
         author: 'Jerry Gagliano',
         picture: '',
-        path: '/posts/current-state-of-pwa',
+        path: '/posts/current-state-of-pwa/',
     },
     'fitvitfitness-portfolio': {
         title: 'My Side FitVitFitness.com',
@@ -52,7 +52,7 @@ export const meta = {
         updateDate: '2023-01-04T12:30:07.322Z',
         author: 'Jerry Gagliano',
         picture: '',
-        path: '/posts/fitvitfitness-portfolio'
+        path: '/posts/fitvitfitness-portfolio/'
     },
     'open-graph-meta-tags': {
         title: "How to Set Up Open Graph Meta Tags",
@@ -67,13 +67,13 @@ export const meta = {
     },
     'why-developers-need-to-blog': {
         title: '4 Reasons Why Developers Should Have a Blog',
-        description: 'Reasons why developers or designers should blog! Why it is important in building up their brand and talk about their experiences.',
+        description: 'Reasons why developers or designers should blog. Why it is important in building up their brand and talk about their experiences.',
         coverImage: '/posts/blog.jpeg',
         tags: 'Web',
         date: '2022-10-01T12:30:07.322Z',
         updateDate: '2022-10-01T12:30:07.322Z',
         author: 'Jerry Gagliano',
         picture: '',
-        path: '/posts/why-developers-need-to-blog',
+        path: '/posts/why-developers-need-to-blog/',
     }
 }
