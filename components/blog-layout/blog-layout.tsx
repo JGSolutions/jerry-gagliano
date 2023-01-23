@@ -18,7 +18,7 @@ export default function BlogLayout({ meta, children }) {
 
   if (env === "production") {
     url ='https://www.jgsolutions.ca';
-    canonicalUrl ='https://jgsolutions.ca';
+    canonicalUrl ='https://www.jgsolutions.ca';
   } else {
     url ='http://localhost:3000';
   }

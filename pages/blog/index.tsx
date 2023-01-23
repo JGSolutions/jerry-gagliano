@@ -20,19 +20,19 @@ export default function Blog({ allPostsData }) {
         <>
             <Head>
                 <title>Jerry Gagliano - Blogs about Front-end web development.</title>
-                <meta name="description" content="Front-end development blogs containing articles about websites, web app development, and tips for website owners." />
-                <link rel="canonical" href="https://jgsolutions.ca/blog/" />
+                <meta name="description" content="Front-end web development blogs containing articles about websites, web app development, and tips for newly skilled developers." />
+                <link rel="canonical" href="https://www.jgsolutions.ca/blog/" />
 
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.jgsolutions.ca/blog/" />
                 <meta property="og:title" content="Jerry Gagliano's Blog" />
-                <meta property="og:description" content="Front-end development blogs containing articles about websites, web app development, and tips for website owners." />
+                <meta property="og:description" content="Front-end development blogs containing articles about websites, web app development, and tips for newly skilled developers." />
                 <meta name="image" property="og:image" content="https://jgsolutions.ca/jerry-pic.jpeg" itemProp="image"/>
 
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta property="twitter:url" content="https://www.jgsolutions.ca/blog/" />
                 <meta name="twitter:title" content="Jerry Gagliano's Blog" />
-                <meta name="twitter:description" content="Front-end development blogs containing articles about websites, web app development, and tips for website owners." />
+                <meta name="twitter:description" content="Front-end development blogs containing articles about websites, web app development, and tips for newly skilled developers." />
                 <meta name="twitter:image" content="https://www.jgsolutions.ca/jerry-pic.jpeg" />
                 <meta name="twitter:creator" content="@JGSolutions"></meta>
             </Head>

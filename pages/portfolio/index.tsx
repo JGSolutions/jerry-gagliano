@@ -10,8 +10,8 @@ export default function Portfolio() {
         <>
             <Head>
                 <title>Jerry Gagliano&#39;s Web Development Projects</title>
-                <meta name="description" content="My portfolio of various web development project that includes websites and progressive web apps based on React, Angular, Node.js and Firebase technologies." />
-                <link rel="canonical" href="https://jgsolutions.ca/portfolio/" />
+                <meta name="description" content="My portfolio of various web development project including websites and progressive web apps based on React, Angular, Node.js and Firebase technologies." />
+                <link rel="canonical" href="https://www.jgsolutions.ca/portfolio/" />
 
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.jgsolutions.ca/portfolio/" />
