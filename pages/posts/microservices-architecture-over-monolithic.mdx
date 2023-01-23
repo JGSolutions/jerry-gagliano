@@ -36,14 +36,14 @@ Obiviously the two main choices that a developer is faced with are microservice 
 
 A microservice is an independent service that communicates over well-defined APIs. Microservices can be focused on specific modules or features for example:
 
-- Handling image uploads and resizing.
-- Rest apis.
+- Handling image uploads and resizing
+- Rest APIs. Returning simple json data structure
 - Authentication
 - Cron job tasks
 
-In a monolithic architecture, all features or modules are tightly coupled and run as a single service. Having one code
-base that has all the features. One example, in every route the user clicks on your site the page will 
-be executed, and rendered on the server and all the HTML, CSS and Javascript will be pushed to the client.
+In a monolithic architecture, all features or modules are tightly coupled and run as a single code base. One example, when a user clicks on a link, the page would fully 
+render on the server generating HTML, CSS and Javascript which will be pushed to the client. Basically every action the user performs your server
+will execute. This is call Server Side Rendering (SSR).
 
 You can read more about [microservice vs  monolithic](https://aws.amazon.com/microservices/)
 
