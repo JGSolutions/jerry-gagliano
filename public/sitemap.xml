@@ -36,7 +36,11 @@
         <loc>https://www.jgsolutions.ca/posts/fitvitfitness-portfolio/</loc>
         <lastmod>2023-01-04</lastmod>
     </url>
-        <url>
+    <url>
+        <loc>https://www.jgsolutions.ca/posts/microservices-architecture-over-monolithic/</loc>
+        <lastmod>2023-01-23</lastmod>
+    </url>
+    <url>
         <loc>https://www.jgsolutions.ca/portfolio/</loc>
         <lastmod>2023-01-22</lastmod>
     </url>
