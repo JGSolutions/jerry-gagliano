@@ -88,14 +88,14 @@ export const meta = {
         path: '/posts/microservices-architecture-over-monolithic/',
     },
     'reactjs-vs-web-components': {
-        title: 'Is React.js Better than Native Web Components',
-        description: 'A deep dive on if React.js is re',
+        title: 'How Web Components can be better than React.js',
+        description: 'Web components web standards has caught up in the web industry and this article will discuss why developers should use them more.',
         coverImage: '/posts/blog-microservice-min.jpg',
         tags: 'Web',
         date: '2023-02-23T12:30:07.322Z',
         updateDate: '2023-02-23T12:30:07.322Z',
         author: 'Jerry Gagliano',
         picture: '',
-        path: '/posts/microservices-architecture-over-monolithic/',
+        path: '/posts/reactjs-vs-web-components/',
     }
 }

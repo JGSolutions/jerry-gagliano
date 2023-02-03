@@ -2,13 +2,35 @@ import {meta} from '../../lib/blog-posts'
 import BlogLayout from '../../components/blog-layout/blog-layout'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 
-Always a debate between using React.js vs Web Componnents and of course more people favour React.js and bigger community
-using React.js
-Since 2012ish React.js has gain attraction in the web development world. At the same time, Google released Polymer library 
-which was web components but not 100% compatiable with all browsers as it needed a polyfill library. Not too many companies were
-adapting to Plyomer
+The big discussion between React.js vs Web Componnents. I will talk about how Web Components are catching up and dev should working with Web Components more towards
+the future.
+
+Since 2013ish Facebook released React.js, which has gain attraction in the web development community. Around the same time, Google also 
+released Polymer a library based on web components but required polyfills which browser support was very minimal.
+
+Of course, React.js was compatiblele for all browsers, developers were able to ship products much quicker and easier. The community grew as libraries and tools
+were popping up, making developer's lives easier.
+
+Now fast forward 10 years or more, Web Components has caught up with the web standards and works natively in all browsers Chrome, Safari, Firefox, Edge.
+
+## Light Weight
+
+To run web components, no extra library is needed to run components on the browser. With React.js have 3 layers of code that needs to run.
+
+1. Your custom React component
+2. The actual react.js library to run your components
+3. The browser to actually render all the elements
+
+On top of the React.js is 100% javascipt based which needs to be bundled and loaded.
 
 
+## Adnostic
+
+All your web components you create can used in any web framework, Angular, Svelt, React.js, Next.js etc.
+
+## Encapsulate the CSS
+
+## Slot
 <SyntaxHighlighter language="javascript">
     {`
         // Express.js route
@@ -17,10 +39,6 @@ adapting to Plyomer
 </SyntaxHighlighter>
 
 
-## Advantages
 
 
 ## Conclusion
-
-
-
