@@ -4,8 +4,7 @@ import Link from 'next/link'
 import { generateTagsElements } from '../../lib/utils'
 
 export default function BlogItem({id, title, description, image, date, updatedDate, tags, author}) {
-    console.log(tags)
-    // const tagItems =  generateTagsElements(tags);
+    const tagItems =  generateTagsElements(tags);
 
     return (
         <div className={styles.wrapper}>
@@ -31,7 +30,7 @@ export default function BlogItem({id, title, description, image, date, updatedDa
                 </div>
 
                 <div className={styles.tags}>
-                    {/* {tagItems} */}
+                    {tagItems}
                 </div>
             </div>
 
