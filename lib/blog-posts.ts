@@ -87,15 +87,15 @@ export const meta = {
         picture: '',
         path: '/posts/microservices-architecture-over-monolithic/',
     },
-    'react.js-vs-web-components': {
-        title: 'How Web Components can be better than React.js',
-        description: 'Web components standards has caught up and this article will discuss why developers should use them more.',
+    'reactjs-vs-web-components': {
+        title: 'How Web Components can be better than ReactJS',
+        description: 'Web components standards has caught up and this article will discuss why developers should begin using them over ReactJS.',
         coverImage: '/posts/blog-microservice-min.jpg',
         tags: 'Web',
-        date: '2023-02-23T12:30:07.322Z',
-        updateDate: '2023-02-23T12:30:07.322Z',
+        date: '2023-02-06T12:30:07.322Z',
+        updateDate: '2023-02-06T12:30:07.322Z',
         author: 'Jerry Gagliano',
         picture: '',
-        path: '/posts/react.js-vs-web-components/',
+        path: '/posts/reactjs-vs-web-components/',
     }
 }

@@ -1,0 +1,99 @@
+import {meta} from '../../lib/blog-posts'
+import BlogLayout from '../../components/blog-layout/blog-layout'
+import SyntaxHighlighter from 'react-syntax-highlighter';
+
+There are great quantity of key features of how web components can be beneficial in your next or
+future projects. They both have pros and cons that serve a purpose but web components have improved and heading
+in the right direction over ReactJS.
+
+## A Brief History of Both Web Technologies
+
+In 2013 Facebook released ReactJS, which has gained attraction in the web development community. ReactJS was compatible with all browsers, 
+was developed to simplify the process of building web applications. The community grew as libraries and tools
+were popping up, making developers' lives easier.
+
+Around the same time, Google released Polymer. A web components library that required a polyfill whose browser support was very minimal.
+
+Fast forward 10 years or more, Web Components has caught up with the web standards and works natively in all browsers Chrome, Safari, Firefox, Edge. 
+
+Here is a great video how to create a web component.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2I7uX8m0Ta0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+
+## Light Weight & Fast
+
+To run web components, no extra library is needed to run components on the browser. Just import the module
+to your project and use it as a regular html element. Web components run natively on the browser as suppose to React.js requires
+a javascript library to be imported.
+
+With ReactJS, an extra layer of code needs to be executed. ReactJS does not work with Real DOMs. Instead, 
+it has a Virtual DOM, a lightweight representation of the Real DOMs in JavaScript.
+
+## Agnostic
+
+Web components can be imported and used in any web framework, Angular, Svelte, ReactJS, Vue, Next.js etc. Companies are beginning
+to use web components for creating UI kits that can be imported in any project or framework. 
+
+[Ionic Framework](https://ionicframework.com/) is one example using Web Components in their UI kit components. The previous versions, UI components were all based on 
+Angular modules which were strictly made for Angular apps. Eventually in later versions all the UI components switched to Web Components which opened up the doors for developers like
+ReactJS, Vue and native JavaScript apps.
+
+[Astro](https://astro.build/) is another framework allows developers to easily integrate web components in the framework easily to build simple sites and CMS.
+ 
+## Styles are Encapsulated
+
+Web components use shadow DOM. Basically all styles for that component are encapsulated in that component. Any css in your project with the same style class name will not overwite
+the components styles. This allows developers the need not to worry about styling and debugging issues that might come up.
+
+ReactJS does not have shadow dom. There are other alternatives wiith 3rd party packages are needed to be installed.
+
+## Slots
+
+One feature that shines over ReactJS, as you can provide web components with multiple child elements. 
+The problem in ReactJS you can't provide multiple child elements in your component. 
+For example if you have two elements title and sub title sections. In ReactJS this is not possible unless you 
+pass each item as prop.
+
+With Web components you can specify different sections with a name and using <mark>slots</mark> and point at which element you want to use. Here's an example:
+
+Inside you Web Component template will contain this.  
+<SyntaxHighlighter language="javascript">
+    {`
+      // A header component
+       <p>
+        <slot name="my-title">main title will go here</slot>
+        <slot name="my-subtitle">sub title will go here</slot>
+       </p>
+    `}
+</SyntaxHighlighter>
+
+Imported and calling the component you can add elements as child elements.  
+<SyntaxHighlighter language="javascript">
+    {`
+      <my-header>
+        <span slot="my-title">Main title</span>
+        <span slot="my-subtitle">Sub title</span>
+      </my-header>
+    `}
+</SyntaxHighlighter>
+
+## Development Tools
+
+Communities such as Google have released tools and libraries to help speed up productivity and enhancing Web Components. 
+This allow developers continue to use their existing framework and develop the syntax that they're comfortable with. 
+Which then the framework or library will compile the source code into web components.
+
+List of tools and libraries that allows you to do this.
+
+- [Angular Elements](https://angular.io/guide/elements) (Google)
+- [StencilJs](https://stenciljs.com/) (Ionic)
+- [Lit](https://lit.dev/) (Google)
+
+## Conclusion
+
+As you can see, web components have come a long way and growing in populartity. Developers should begin embracing them
+as it will push the web to it's limits.
+
+Currently ReactJS is used in alot of projects but Web components will take over and leave ReactJS they way the web left JQuery behind. When 
+begining a new prject think about the future not what library is trending.
+
+export default ({ children }) => <BlogLayout meta={meta['reactjs-vs-web-components']}>{children}</BlogLayout>
