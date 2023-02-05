@@ -2,7 +2,7 @@
 import Head from 'next/head';
 import FormatDate from '../../components/date';
 import utilStyles from '../../styles/utils.module.css'
-import styles from './post.module.css'
+import styles from './blog-layout.module.css'
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
 import { generateTagsElements  } from '../../lib/utils'
