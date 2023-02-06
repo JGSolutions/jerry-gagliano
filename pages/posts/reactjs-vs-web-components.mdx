@@ -49,14 +49,14 @@ ReactJS does not have shadow dom. There are other alternatives 3rd party package
 
 ## Slots
 
-One feature that shines over ReactJS, as you can provide web components with multiple child elements. 
-The problem in ReactJS you can't provide multiple child elements in your component. 
-For example if you have two elements title and sub title sections. In ReactJS this is not possible unless you 
-pass each item as prop.
+One feature that shines over ReactJS, is as you can provide web components with multiple child elements. 
+In ReactJS you can't provide multiple child elements in your component. 
+For example, if you have two elements title and sub-title sections. In ReactJS this is not possible unless you 
+pass each item as a prop.
 
-With Web components you can specify different sections with a name and using <mark>slots</mark> and point at which element you want to use. Here's an example:
+In Web components, you can specify different sections with a name with using <mark>slot</mark> and point at which element you want to use. Here's an example:
 
-Inside you Web Component template will contain this.  
+Inside your Web Component template will contain this.  
 <SyntaxHighlighter language="javascript">
     {`
       // A header component
@@ -81,7 +81,7 @@ Imported and calling the component you can add elements as child elements.
 
 Communities such as Google have released tools and libraries to help speed up productivity and enhancing Web Components. 
 This allow developers continue to use their existing framework and develop the syntax that they're comfortable with. 
-Which then the framework or library will compile the source code into web components.
+which the library will compile the source code into web components.
 
 List of tools and libraries that allows you to do this.
 
@@ -94,6 +94,6 @@ List of tools and libraries that allows you to do this.
 As you can see, web components have come a long way and growing in populartity. Developers should begin to embrace them
 as it will push the web to it's limits.
 
-I feel eventually the rate that Web components are heading, it will take over ReactJS and leave it behind they way the Web left JQuery.
+I feel eventually the rate that Web components are heading, it will take over ReactJS and leave it behind they way the JavaScript left JQuery.
 
 export default ({ children }) => <BlogLayout meta={meta['reactjs-vs-web-components']}>{children}</BlogLayout>
