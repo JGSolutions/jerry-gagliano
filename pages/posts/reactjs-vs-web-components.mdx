@@ -2,15 +2,14 @@ import {meta} from '../../lib/blog-posts'
 import BlogLayout from '../../components/blog-layout/blog-layout'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 
-There are great quantity of key features of how web components can be beneficial in your next or
-future projects. They both have pros and cons that serve a purpose but web components have improved and heading
-in the right direction over ReactJS.
+Always a debate between two great web technologies using ReactJS or Web Components. The journey that Web Components have grown, it's a great time 
+to discuss the key features of how web components can be beneficial in your next or future projects.
 
 ## A Brief History of Both Web Technologies
 
 In 2013 Facebook released ReactJS, which has gained attraction in the web development community. ReactJS was compatible with all browsers, 
-was developed to simplify the process of building web applications. The community grew as libraries and tools
-were popping up, making developers' lives easier.
+was developed to simplify the process of building web applications. The community grew as libraries, tools, design patterns
+were released, making developers' lives easier.
 
 Around the same time, Google released Polymer. A web components library that required a polyfill whose browser support was very minimal.
 
@@ -22,7 +21,7 @@ Here is a great video how to create a web component.
 ## Light Weight & Fast
 
 To run web components, no extra library is needed to run components on the browser. Just import the module
-to your project and use it as a regular html element. Web components run natively on the browser as suppose to React.js requires
+to your project and use it as a regular html element. Web components run natively on the browser as suppose to ReactJS requires
 a javascript library to be imported.
 
 With ReactJS, an extra layer of code needs to be executed. ReactJS does not work with Real DOMs. Instead, 
@@ -34,17 +33,19 @@ Web components can be imported and used in any web framework, Angular, Svelte, R
 to use web components for creating UI kits that can be imported in any project or framework. 
 
 [Ionic Framework](https://ionicframework.com/) is one example using Web Components in their UI kit components. The previous versions, UI components were all based on 
-Angular modules which were strictly made for Angular apps. Eventually in later versions all the UI components switched to Web Components which opened up the doors for developers like
+Angular modules which were strictly made for Angular apps. Eventually, in later versions, all the UI components switched to Web Components which opened up the doors for developers like
 ReactJS, Vue and native JavaScript apps.
 
 [Astro](https://astro.build/) is another framework allows developers to easily integrate web components in the framework easily to build simple sites and CMS.
- 
+
+If all your components or app architecture is based ReactJS then your stuck with ReactJS unless you convert all your components.
+
 ## Styles are Encapsulated
 
-Web components use shadow DOM. Basically all styles for that component are encapsulated in that component. Any css in your project with the same style class name will not overwite
+Web components use Shadow DOM. All styles for that component are encapsulated in that component. Any CSS in your project with the same style class name will not overwrite
 the components styles. This allows developers the need not to worry about styling and debugging issues that might come up.
 
-ReactJS does not have shadow dom. There are other alternatives wiith 3rd party packages are needed to be installed.
+ReactJS does not have shadow dom. There are other alternatives 3rd party packages are needed to be installed.
 
 ## Slots
 
@@ -90,10 +91,9 @@ List of tools and libraries that allows you to do this.
 
 ## Conclusion
 
-As you can see, web components have come a long way and growing in populartity. Developers should begin embracing them
+As you can see, web components have come a long way and growing in populartity. Developers should begin to embrace them
 as it will push the web to it's limits.
 
-Currently ReactJS is used in alot of projects but Web components will take over and leave ReactJS they way the web left JQuery behind. When 
-begining a new prject think about the future not what library is trending.
+I feel eventually the rate that Web components are heading, it will take over ReactJS and leave it behind they way the Web left JQuery.
 
 export default ({ children }) => <BlogLayout meta={meta['reactjs-vs-web-components']}>{children}</BlogLayout>
