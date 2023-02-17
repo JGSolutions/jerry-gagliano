@@ -5,6 +5,23 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/sections/work",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/sections/about",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/posts/[id]",
+        "destination": "/",
+        "type": 301
+      }
     ]
   }
 }
