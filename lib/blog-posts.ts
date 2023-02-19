@@ -97,5 +97,16 @@ export const meta = {
         author: 'Jerry Gagliano',
         picture: '',
         path: '/posts/reactjs-vs-web-components/',
+    },
+    'site-architecture-between-spa-mpa-ssg': {
+        title: 'When To Use the right development strategies SPA over SSG or MPA',
+        description: 'Learn about SPAs, when of the three app development strategies is ideal for your next web app development. Read Now.',
+        coverImage: '/posts/web-reactjs.jpeg',
+        tags: 'Web',
+        date: '2023-02-22T12:30:07.322Z',
+        updateDate: '2023-02-22T12:30:07.322Z',
+        author: 'Jerry Gagliano',
+        picture: '',
+        path: '/posts/site-architecture-between-spa-mpa-ssg/',
     }
 }
