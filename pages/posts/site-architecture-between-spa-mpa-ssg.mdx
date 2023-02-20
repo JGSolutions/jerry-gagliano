@@ -1,15 +1,71 @@
 import {meta} from '../../lib/blog-posts'
 import BlogLayout from '../../components/blog-layout/blog-layout'
-import SyntaxHighlighter from 'react-syntax-highlighter';
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 
-I recently came across an article about [Why I'm not the biggest fan of Single Page Applications](https://www.matuzo.at/blog/2023/single-page-applications-criticism/). 
+I recently came across an article, [Why I'm not the biggest fan of Single Page Applications](https://www.matuzo.at/blog/2023/single-page-applications-criticism/). 
+Interesting article about criticising single page applications and Javascript being evil. I agree and disagree with
+certain points.
 
-As I am a big fan os SPAs and one of the main reasons for me becoming more a front-end developer. I love develop SPA applications as there is more 
-complexity I do agree on certain points that the author mentions but some I totally disagree. SPAs has its place and need to be smart when to use this
-development strategy
+Overview topics I will be discussing about
+
+- [What is SPAs](#user-content-low-row)
+- [When To Create Single Page Website](#user-content-low-row)
+- [Don't use Single Page Pattern](#user-content-low-row)
+- [Using ReactJS or Javascript Frameworks](#user-content-low-row)
+- [Performance Issues & Solutions](#user-content-low-row)
+
+## What is SPA?
+
+SPA stands for (single page application)! Here is a quick description from Wikipedia.
+
+> "A single-page application (SPA) is a web application or website that interacts with the user by dynamically rewriting the current web page with new data from the web server, instead of the default method of a web browser loading entire new pages. The goal is faster transitions that make the website feel more like a native app. "
+
+> "In a SPA, a page refresh never occurs; instead, all necessary HTML, JavaScript, and CSS code is either retrieved by the browser with a single page load,[1] or the appropriate resources are dynamically loaded and added to the page as necessary, usually in response to user actions."
+
+Not clear enough?
+
+<LiteYouTubeEmbed id="xfGciVdbktI" title="What Is A Single Page Application?" />
+
+## When To Use SPAs?
+
+As mentioned in the article Meta (Facebook) marketed the library in a particular way where developers can go ahead and develop
+components. Actually I even wrote an article about why we should choose [Web Components Over ReactJS](https://jgsolutions.ca/posts/reactjs-vs-web-components/)
+
+Going blindy and develop you whole site in ReactJS with a SPA architecture is JUST WRONG!
+
+Basically any type of ecommernce, blog or business website. These sites need to be fully rendered with proper
+HTML document. When view sourcing the page (by right clicking and select view source) you should see a fully html document rendered.
+
+If your developing a complex web application which requires users to authenticate, SPAs can be the right strategy to use. Users will instantly get the views
+and data that they need when they navigate through the app. It will provide a basically a native web app experience
+
+## Advantages of SPA Architecture
+
+Giving the user mobile UX experience. Views or section switch quickly providing the information the user needs
+
+## DisAdvantage of SPA 
+
+SPAs are not SEO friendly. When the app is loaded the content is injected using Javascript. When you view source, the code between your body
+tag will probably contain some empty htmll elements with Javascript.
+
+When search engines crawls the site they can't execute Javascript and 
+
+## Performance
+
+The article mentions about performance issues with SPAs. How the initial loading of Javascript on the frontend can slow down the loading
+times. Which is 100% correct! There are ways to overcome this problem by loading the javascipt that is needed only
+## Should You Use ReactJS?
+
+## Not SEO friendly
 
 
 ## Conclusion
-
+I strongly believe SPAs still has its place. We should continue to use this strategy in web development, which can push the
+web platform to its limits.
+ 
+For myself, I' m a big fan on SPAs and one of the main reasons I became a front-end developer through my career. 
+I love the technical complexity that comes with developing SPAs as it's heavy development on Javascript which requires
+good programming knowledge. But as a developer we need to be smart when to use SPA architecture which can ruin a user's UX experience.
 
 export default ({ children }) => <BlogLayout meta={meta['site-architecture-between-spa-mpa-ssg']}>{children}</BlogLayout>
