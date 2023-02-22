@@ -33,56 +33,62 @@ A clear explanation if more info needed?
 <LiteYouTubeEmbed id="xfGciVdbktI" title="What Is A Single Page Application?" />
 
 <div id="learn-html">
-    ## Learn Basics of HTML, CSS, JS First
+    ## Learn HTML, CSS, JS First!
 </div>
 
-As mentioned in the article, Meta (Facebook) marketed the library in a particular way where developers went away created a bunch of
-components. The community is great and components are abundant but are heavily dependant on Javascript.
+As mentioned in the article, Meta (Facebook) marketed the library in a particular way where developers went crazy  and created 
+a bunch of components. The community is great and components are abundant but are heavily dependant on Javascript.
 
 ReactJS uses JSX, which kinda looks like HTML, but it’s not really HTML because it’s a mix of HTML with component tags and fake attributes. A ReactJS
 developer will learn and use className to add a specific style class but in the real HTMl world it's just call 'class'!
 
-Actually I even wrote an article about why we should choose [Web Components Over ReactJS](https://jgsolutions.ca/posts/reactjs-vs-web-components/). Web
-components are more native to the browser and might require less Javascript depending how complexity of the component. But JSX is 100% javascript that needs
+Actually, I wrote an article about why we should choose [Web Components Over ReactJS](https://jgsolutions.ca/posts/reactjs-vs-web-components/). Web
+components are more native to the browser and require less Javascript depending how complexity of the component. But JSX is 100% javascript that needs
 to be rendered and executed.
 
-For all developers, please learn HTML, CSS and JavaScript first! Don't jump into ReactJS and be convinced that ReactJS is the way to go! 
+For all developers, I recommend to learn HTML, CSS and JavaScript first! Don't jump in the bag wagon with ReactJS 
+and build simple sites as single page app! 
 
-For business owners be careful what kind of freelance developer you choose for your website. If you think ReactJS developer is the right way,
+For business owners be careful when choosing a freelance developer for your website. If you think ReactJS is the right way,
 you might run into suprises that can costly heavily in the long run.
 
 <div id="when">
     ## When To Use SPAs?
 </div>
 
-The question that you might have is 'When do we use SPAs?' If your developing a complex web application which requires users to authenticate, SPAs can be the right strategy to use. Users will instantly get the views
-and data that they need when they navigate through the app. It will provide a basically a native web app experience. 
+The question your probably asking yourself is 'When do we use SPAs?' 
 
-Examples of web apps based on single page application:
+Simple! If your developing a complex web application or some tool which requires users to authenticate. Examples of web apps based on single page application:
 
-- gmail
+- Gmail
 - Google Analytics
 - Twitter
 - Figma
+- Google Maps
+- Netflix
 
-
-But if you ecommernce, blog or basic business website. Going blindy and develop the site in ReactJS with a SPA architecture is JUST WRONG!
-
-These sites need to be fully rendered with proper
-HTML document. When view sourcing the page (by right clicking and select view source) you should see a fully html document rendered.
+On the otherhand, if your developing an ecommerce, blog or basic business website, then stick with the traditional way of serving
+websites from the server or use a static server generator frameworks. I will explain more of this in the SEO section.
 
 ## Advantages of SPA Architecture
 
-Giving the user mobile UX experience. Views or section switch quickly providing the information the user needs
+Users will instantly get the view and data renderd as they navigate across a SPA, providing a
+a native mobile app experience.
 
-## DisAdvantage of SPA 
+Hosting SPAs are just static files like CSS, JS and HTML that can be hosted in serverless cloud
 
-SPAs are not SEO friendly. When the app is loaded the content is injected using Javascript. When you view source, the code between your body
-tag will probably contain some empty htmll elements with Javascript.
+- All resources loaded initially
 
-When search engines crawls the site they can't execute Javascript and 
+## Not SEO Friendly 
 
-## Not SEO friendly
+One huge disadvantage of SPAs, they are not SEO friendly. Usually SPAs content are rendered within the browser using Javascript.
+Google search engine crawlers can't execute and crawl that particular content properly. By manually viewing source the code from the browser, the body
+tag usually contains some empty div HTML elements and the views are injected in those elements. Since routing is not native the search engines can't 
+crawl throughout the other pages. 
+
+If SEO is not that important and your web app and authentication is needed, then don't worry about it. Think of it this way, would it be neccessary for 
+search engines crawling your Gmail or Netflix account? Probably not!
+
 
 ## Performance
 The article mentions about performance issues with SPAs. How the initial loading of Javascript on the frontend can slow down the loading
@@ -90,8 +96,12 @@ times. Which is 100% correct! There are ways to overcome this problem by loading
 
 Talk about Graph QL. How executing code should be on the server
 
+I gotten good scores with lighthouse. Yes you might get some critial warnings and have to workaround it but it's possible.
+
 ## Should You Use ReactJS?
 
+Not saying you need to completely ditch ReactJS. Developers have to be more clever how it's used! Don't go crazy and develop components all over your site and loading kilobytes of Javascript through the network! 
+If your in love with ReactJS and really needs to be used, there are frameworks like Next.js, Astro that help you manage ReactJS. 
 
 
 
