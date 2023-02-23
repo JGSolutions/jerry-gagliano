@@ -81,28 +81,38 @@ Hosting SPAs are just static files like CSS, JS and HTML that can be hosted in s
 
 ## Not SEO Friendly 
 
-One huge disadvantage of SPAs, they are not SEO friendly. Usually SPAs content are rendered within the browser using Javascript.
-Google search engine crawlers can't execute and crawl that particular content properly. By manually viewing source the code from the browser, the body
-tag usually contains some empty div HTML elements and the views are injected in those elements. Since routing is not native the search engines can't 
-crawl throughout the other pages. 
+One huge disadvantage of SPAs, they're not SEO friendly. Usually SPAs all resources are initially loaded and content are rendered with Javascript.
+Google search engine crawlers can't execute and crawl these the of pages properly. By manually viewing the source code from the browser, the body
+tag usually contains some empty div HTML elements which the views are injected in those elements. 
 
-If SEO is not that important and your web app and authentication is needed, then don't worry about it. Think of it this way, would it be neccessary for 
-search engines crawling your Gmail or Netflix account? Probably not!
+Since routing is not native the search engines can't crawl the other pages. Title and meta description tags are also not updated. 
 
+If SEO is not that important asepect for your web project which also may require you to be authenticated, then don't focus on SEO and all
+the negative aspects of SPAs. Just focus on the UX experience that your users will enjoy and make your product successful!
 
 ## Performance
-The article mentions about performance issues with SPAs. How the initial loading of Javascript on the frontend can slow down the loading
-times. Which is 100% correct! There are ways to overcome this problem by loading the javascipt that is needed only
+The article mentions about performance issues with SPAs. How the initial loading of Javascript on the frontend can be slow on the inital load. 
+It can be a main issue but there are ways to overcome this problem by lazy loading or using tree shaking. Only loaded the Javascript modules that 
+are needed.  I also ran my small projects using Lighthouse and gotten high scores for performance 85 and above.
 
+Talk about service workers
 Talk about Graph QL. How executing code should be on the server
 
 I gotten good scores with lighthouse. Yes you might get some critial warnings and have to workaround it but it's possible.
 
-## Should You Use ReactJS?
+## Should You Use A Javascript Library?
 
-Not saying you need to completely ditch ReactJS. Developers have to be more clever how it's used! Don't go crazy and develop components all over your site and loading kilobytes of Javascript through the network! 
-If your in love with ReactJS and really needs to be used, there are frameworks like Next.js, Astro that help you manage ReactJS. 
+You shouldn't completely ignore JS libraries. Developers just have to be clever how to use it properly! Don't go crazy 
+and develop components all over your site and loading KBs of Javascript! 
 
+If your in love with ReactJS or some other library and need to use it, there are frameworks like Next.js, Astro that help you
+manage the load of Javascript being loaded by the client.
+
+These frameworks allow you develop on any type of library you your comfortable with. For example, 
+with Astro, you can develop with Lit HTML, Vue.js or ReactJS. Huge advatage as you can create resuable components within your site.
+You thenbuild, compile and export all your pages into static HTML pages. 
+
+If 
 
 
 ## Conclusion

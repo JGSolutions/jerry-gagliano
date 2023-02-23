@@ -99,8 +99,8 @@ export const meta = {
         path: '/posts/reactjs-vs-web-components/',
     },
     'site-architecture-between-spa-mpa-ssg': {
-        title: 'Why Choose SPA Web Development Strategy over SSG or MPA',
-        description: 'Learn when to use single page app development pattern when it\'s time for your next project.',
+        title: 'Why Choosing SPAs Web Development Strategy over SSG or MPA',
+        description: 'Learn when to use SPAs (single page app) development pattern when for your next project.',
         coverImage: '/posts/web-reactjs.jpeg',
         tags: 'Web',
         date: '2023-02-22T12:30:07.322Z',
