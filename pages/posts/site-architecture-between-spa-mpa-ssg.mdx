@@ -87,18 +87,31 @@ tag usually contains some empty div HTML elements which the views are injected i
 
 Since routing is not native the search engines can't crawl the other pages. Title and meta description tags are also not updated. 
 
-If SEO is not that important asepect for your web project which also may require you to be authenticated, then don't focus on SEO and all
-the negative aspects of SPAs. Just focus on the UX experience that your users will enjoy and make your product successful!
+If SEO is not important for your web project then don't focus on SEO and worry about the negative aspects of SPAs. Focus on the UX experience that
+your users will enjoy and grow your product successfully!
 
 ## Performance
 The article mentions about performance issues with SPAs. How the initial loading of Javascript on the frontend can be slow on the inital load. 
-It can be a main issue but there are ways to overcome this problem by lazy loading or using tree shaking. Only loaded the Javascript modules that 
-are needed.  I also ran my small projects using Lighthouse and gotten high scores for performance 85 and above.
+It could be problematic especially if your trying to accomplish a good score on Lighthouse. There are ways to overcome this problem.
 
-Talk about service workers
-Talk about Graph QL. How executing code should be on the server
+**Lazy Load or Tree Shaking**
+SPAs initially loads, it begins with a specific route. It maybe a login, dashboard, registration screen. You will have initial Javascript code that will
+need to execute for inital app. Once that is loaded, only then the Javascript for that specific view is rendered. All your other views will not be loaded on the client
+side until they request that view! Frameworks like Angular CLI, Vue.js and React Routing offer this pattern. With Lighthouse, I was able to reach scores
+for performance 90 and above.
 
-I gotten good scores with lighthouse. Yes you might get some critial warnings and have to workaround it but it's possible.
+**Service Workers**
+One key point that was never mentioned in the article were Service Workers. Service Workers are another great way to improve performance on SPAs.
+I wrote an article on [Current State of Progressive Web Apps](https://jgsolutions.ca/posts/current-state-of-pwa/). I provided a quick overview on the state of PWAs and how
+it's transforming the web.
+
+Service workers, allow you to cache your static files like JS, CSS, images etc. When users loads the app, the inital load and response times are quicker. 
+Service workers also handle situations for offline usage if the user comes across a flaky connection. That is a whole other topic but overall service workers
+have lots of other great features to enhance your SPAs especially converting your app into a PWA. 
+
+If your site is architected the traditional way, then service workers can't be used. As every interaction the user performs, page reloads will occur
+and the service worker will restart and re-initialize. I can be totally wrong about this but from my experince I never saw this. If anyone has any good solutions to this please email!
+
 
 ## Should You Use A Javascript Library?
 
@@ -110,10 +123,7 @@ manage the load of Javascript being loaded by the client.
 
 These frameworks allow you develop on any type of library you your comfortable with. For example, 
 with Astro, you can develop with Lit HTML, Vue.js or ReactJS. Huge advatage as you can create resuable components within your site.
-You thenbuild, compile and export all your pages into static HTML pages. 
-
-If 
-
+You then build, compile and export all your pages into static HTML pages. 
 
 ## Conclusion
 I strongly believe SPAs still has its place. We should continue to use this strategy in web development, which can push the
