@@ -73,12 +73,15 @@ websites from the server which is (MPSa) or use a static server generator framew
     ## Advantages of SPAs
 </div>
 
-Users will instantly get the view and data renderd as they navigate across a SPA, providing a
-a native mobile app experience.
+With SPAs, all static files (CSS, Javascript) are loaded on the inital load. Users will instantly render views with data
+as they navigate through the app. It is the perfect choice for creating apps with a rich user interface like mobile native apps
+and delightful features.
 
-Hosting SPAs are just static files like CSS, JS and HTML that can be hosted in serverless cloud
+One other great advantage is the hosting costs and speed to deploy your SPAs. You can simply deploy your app to any global static CDN server. 
+No need for a backend server to render your pages like traditional websites like PHP or Python. Since your SPA is a separate
+layer and you can request your data through another microservice which will require less execution and more speed.
 
-- All resources loaded initially
+Here is an article I wrote about  [Choosing Mircoservice over Monolithic Architecture](https://jgsolutions.ca/posts/microservices-architecture-over-monolithic/)
 
 <div id="seo">
     ## Not SEO Friendly 
@@ -88,8 +91,8 @@ One huge disadvantage of SPAs, they're not SEO friendly. Usually SPAs static fil
 Google search engine crawlers can't execute and crawl these pages properly. By manually viewing the source code from the browser, the body
 tag usually contains some empty div HTML elements which the views are injected in those elements. 
 
-Since routing is not native the search engines can't crawl the other pages. Title and meta description tags are also not updated as navigating to 
-other pages. 
+Since routing is not native the search engines can't crawl the other pages. Title and meta description tags are also not updated as navigating between 
+pages. 
 
 If SEO is not important for your web project then don't focus on SEO and worry about the negative aspects of SPAs. Focus on the UX experience that
 your users will enjoy and grow your product successfully!
@@ -102,8 +105,8 @@ The article mentions about performance issues with SPAs. How the initial load of
 It could be problematic especially if your trying to accomplish a high score on Lighthouse. There are ways to solve this issue.
 
 **Lazy Load or Tree Shaking**  
-Usuallu SPAs initial load begins with a specific route. It maybe a /login, /dashboard, /registration etc. You will have initial Javascript code that will
-execute theinital app. Once that is loaded, only then the Javascript for that specific view is rendered. All your other views will not be loaded on the client
+Usually, SPAs initial load begins with a specific route. It may be a /login, /dashboard, /registration etc. The initial Javascript code that will
+execute the inital app. Once that is loaded, only then the Javascript for that specific view is rendered. All your other views will not be loaded on the client
 side until they navigate to that view! Frameworks like Angular CLI, Vue.js and React Routing offer this pattern. With Lighthouse, I was able to reach scores
 for performance over 90 and above.
 
