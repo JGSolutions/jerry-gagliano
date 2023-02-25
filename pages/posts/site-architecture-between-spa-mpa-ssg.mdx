@@ -107,17 +107,18 @@ It could be problematic especially if your trying to accomplish a high score on 
 **Lazy Load or Tree Shaking**  
 Usually, SPAs initial load begins with a specific route. It may be a /login, /dashboard, /registration etc. The initial Javascript code that will
 execute the inital app. Once that is loaded, only then the Javascript for that specific view is rendered. All your other views will not be loaded on the client
-side until they navigate to that view! Frameworks like Angular CLI, Vue.js and React Routing offer this pattern. With Lighthouse, I was able to reach scores
-for performance over 90 and above.
+side until they navigate to that view! Frameworks like Angular CLI, Vue.js and React Routing offer this pattern. Using Angular, I was able to reach scores
+performance over 90 and above.
 
 **Service Workers**  
-One key point that was never mentioned in the article were Service Workers. Service Workers are another great way to improve performance on SPAs.
-I wrote an article on [Current State of Progressive Web Apps](https://jgsolutions.ca/posts/current-state-of-pwa/). I provided a quick overview on the state of PWAs and how
-it's transforming the web.
+One key point that was never mentioned in the article was Service Workers. Service Workers are another great way to improve performance on SPAs.
 
 Service workers, allow you to cache your static files like JS, CSS, images etc. When users loads the app, the inital load and response times are quicker. 
 Service workers also handle situations for offline usage if the user comes across a flaky connection. That is a whole other topic but overall service workers
-have lots of other great features to enhance your SPAs especially converting your app into a PWA. 
+have lots of other great features to enhance your SPAs especially converting your app into a PWA.
+
+I wrote an article on [Current State of Progressive Web Apps](https://jgsolutions.ca/posts/current-state-of-pwa/). I provided a quick overview on the state of PWAs and how
+it's transforming the web.
 
 If your site is architected the traditional way, then service workers can't be used. As every interaction the user performs, page reloads will occur
 and the service worker will restart and re-initialize. I can be totally wrong about this but from my experince I never saw this. If anyone has any
