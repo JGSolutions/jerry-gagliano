@@ -100,7 +100,7 @@ export const meta = {
     },
     'site-architecture-between-spa-mpa-ssg': {
         title: 'Why Single Page Apps Can Be Better than SSG or MPA',
-        description: 'Learn correctly to use SPAs architecture pattern for your next project.',
+        description: 'Learn when to correctly use SPAs architecture for web applications. SPAs can be daunting to implement but can be more better for user experience.',
         coverImage: '/posts/blog-spa-min.jpeg',
         tags: 'Web',
         date: '2023-02-22T12:30:07.322Z',
