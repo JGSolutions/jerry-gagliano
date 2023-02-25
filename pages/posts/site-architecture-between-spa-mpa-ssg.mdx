@@ -64,7 +64,7 @@ Simple! If your developing a complex web application or some tool which requires
 - Netflix
 
 On the other hand, if you're developing an e-commerce, blog or basic business website, then stick with the traditional way of serving
-websites from the server which is (MPSa) or use a static server generator framework as I will explain below.
+websites from the server which is (MPAs) or use a static server generator framework as I will explain below.
 
 <div id="advantages">
     ## Advantages of SPAs
@@ -125,28 +125,34 @@ good solutions to this please email!
     ## Should I Use A Javascript Library?
 </div>
 
-You shouldn't completely ignore JS libraries or frameworks. Developers just have to be clever how to use it properly! Don't go crazy 
-and develop components all over your site and loading kilobytes of Javascript! 
+My answer is ys and you shouldn't completely ignore JS libraries or frameworks. Developers have to be clever how to use it properly! Don't go crazy 
+and develop tonnes of components your site and loading kilobytes of Javascript! 
 
-If love your ReactJS or some other library and need to use it, then their are frameworks like Next.js, Astro that help you
+If love your ReactJS or some other library and need to use it, then their are full flege frameworks like Next.js, Astro that help you
 manage the load of Javascript being loaded by the client.
 
 These frameworks allow you develop on any type of library your comfortable with. For example, with Astro, you can
-use Web components, Lit, Vue.js or ReactJS. Huge advantage as you can create resuable components within your site.
-You then build, compile and export all your pages into static HTML pages. 
+use Web components, Lit, Vue.js or ReactJS. For simple sites as blogs or business sites you build, compile and export 
+all your pages into static HTML pages. 
 
 <div id="conclusion">
     ## Conclusion
 </div>
 
 I am not hating JS frameowrks like ReactJS or Angular. These are wonderful tools and communities helping developers building single page
-apps quickly. But we developers have to be smart on how to use these tools properly. 
+apps quickly. But we developers have to be smart on how and when to use these tools properly. 
 
 I totally disagree with the article and developers shouldn't have that mindeset. I strongly believe SPAs has its place as we should continue
 to use this strategy in web development, and push the web platform to its limits.
  
 For myself, I' m a big fan on SPAs and one of the main reasons I became a front-end developer through my career. 
-I love the technical complexity that comes with developing SPAs with Javascript which requires
+There are challenges to SPAS but I love the technical complexity that comes with developing SPAs with Javascript which requires
 good programming knowledge.
+
+I will finish off with a saying with two types of developers.
+
+> “The average SPA sucks? Well okay, I should stop building SPAs then. Problem solved.” – Exhausted developer
+
+> “The average SPA sucks? That’s just because people haven’t tried hard enough! I can think of 10 ways to fix it.” – Clever developer
 
 export default ({ children }) => <BlogLayout meta={meta['site-architecture-between-spa-mpa-ssg']}>{children}</BlogLayout>
