@@ -9,8 +9,8 @@ Interesting article about criticising and potiential problems with single page a
 Overview of topics I will be discussing about:
 
 - [What is SPAs](#what-spa)
-- [Learn HTML First](#learn-html)
-- [When To Create Single Page Website](#when)
+- [Learn HTML & JavaScript First](#learn-html)
+- [When To Use SPAs](#when)
 - [Advantages of SPAs](#advantages)
 - [Not SEO Friendly](#seo)
 - [Performance](#performance)
@@ -70,15 +70,14 @@ websites from the server which is (MPAs) or use a static server generator framew
     ## Advantages of SPAs
 </div>
 
-With SPAs, all static files (CSS, Javascript) are loaded on the initally. Views will be rendered with data
-as they navigate through the app. It's the perfect choice for creating apps with a rich user interface like mobile native apps
-and delightful features.
+With SPAs, JavaScript, CSS, and HTML are only loaded once throughout the lifespan of the application. Views will be rendered with data
+as they navigate through the app. It's the perfect choice for creating apps with a rich user interface like mobile native apps.
 
 One other great advantage is the hosting costs and speed to deploy your SPAs. You can simply deploy your app to any global static CDN server. 
 No need for a backend server to render your pages like traditional websites like PHP or Python. Since the app is a separate
 layer, you can request your data through another microservice which will require less execution and more speed.
 
-Here is an article I wrote about  [Choosing Mircoservice over Monolithic Architecture](https://jgsolutions.ca/posts/microservices-architecture-over-monolithic/)
+Here is an article I wrote about  [Choosing Mircoservice over Monolithic Architecture](https://jgsolutions.ca/posts/microservices-architecture-over-monolithic/ "microservices vs monolithic")
 
 <div id="seo">
     ## Not SEO Friendly 
@@ -102,7 +101,7 @@ The article mentions about performance issues with SPAs. How the initial load of
 It could be problematic especially if your trying to accomplish a high score on Lighthouse. There are ways to solve this issue.
 
 **Lazy Load or Tree Shaking**  
-Usually, SPAs initial load begins with a specific route. It may be a /login, /dashboard, /registration etc. The initial Javascript code that will
+Usually, SPAs initial load begins with a specific route. It may be a '/login', '/dashboard', '/registration' etc. The initial Javascript code that will
 execute the inital app. Once that is loaded, only then the Javascript for that specific view is rendered. All your other views will not be loaded on the client
 side until they navigate to that view! Frameworks like Angular CLI, Vue.js and React Routing offer this pattern. Using Angular, I was able to reach scores
 performance over 90 and above.
@@ -114,7 +113,7 @@ Service workers, allow you to cache your static files like JS, CSS, images etc. 
 Service workers also handle situations for offline usage if the user comes across a flaky connection. That is a whole other topic but overall service workers
 have lots of other great features to enhance your SPAs especially converting your app into a PWA.
 
-I wrote an article on [Current State of Progressive Web Apps](https://jgsolutions.ca/posts/current-state-of-pwa/). I provided a quick overview on the state of PWAs and how
+I wrote an article on [Current State of Progressive Web Apps](https://jgsolutions.ca/posts/current-state-of-pwa/ "State of Progressive Web Apps"). I provided a quick overview on the state of PWAs and how
 it's transforming the web.
 
 If your site is architected the traditional way, then service workers can't be used. As every interaction the user performs, page reloads will occur
