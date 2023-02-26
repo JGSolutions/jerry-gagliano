@@ -18,6 +18,11 @@
         "type": 301
       },
       {
+        "source": "/sections/contact",
+        "destination": "/",
+        "type": 301
+      },
+      {
         "source": "/posts/[id]",
         "destination": "/",
         "type": 301
