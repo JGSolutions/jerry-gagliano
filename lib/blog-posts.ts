@@ -98,8 +98,8 @@ export const meta = {
         picture: '',
         path: '/posts/reactjs-vs-web-components/',
     },
-    'site-architecture-between-spa-mpa-ssg': {
-        title: 'Why Single Page Apps Are Better than SSG or MPA',
+    'when-to-use-single-page-applications': {
+        title: 'When to Use Single Page Applications',
         description: 'Learn when to correctly use SPAs architecture for web applications. SPAs can be daunting to implement but can provide a better user experience.',
         coverImage: '/posts/blog-spa-min.jpeg',
         tags: 'Web',
@@ -107,6 +107,6 @@ export const meta = {
         updateDate: '2023-02-28T12:30:07.322Z',
         author: 'Jerry Gagliano',
         picture: '',
-        path: '/posts/site-architecture-between-spa-mpa-ssg/',
+        path: '/posts/when-to-use-single-page-applications/',
     }
 }
