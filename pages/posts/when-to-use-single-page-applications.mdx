@@ -101,10 +101,10 @@ The article mentions about performance issues with SPAs. How the initial load of
 It could be problematic especially if your trying to accomplish a high score on Lighthouse. There are ways to solve this issue.
 
 **Lazy Load or Tree Shaking**  
-Usually, SPAs initial load begins with a specific route. It may be a '/login', '/dashboard', '/registration' etc. The initial Javascript code that will
-execute the inital app. Once that is loaded, only then the Javascript for that specific view is rendered. All your other views will not be loaded on the client
-side until they navigate to that view! Frameworks like Angular CLI, Vue.js and React Routing offer this pattern. Using Angular, I was able to reach scores
-performance over 90 and above.
+Usually, SPAs initial load begins with a specific route. It may be '/login', '/dashboard', '/registration' etc. The initial bootstrap code will
+execute. Once the route loaded, only then, the Javascript for that specific view is rendered. All other views will not be loaded on the client
+until the user navigates to that view. Frameworks like Angular CLI, Vue.js and React Routing offer this pattern. With Angular, I was able to reach scores
+performance over 90 and above in Lighthouse.
 
 **Service Workers**  
 One key point that was never mentioned in the article was Service Workers. Service Workers are another great way to improve performance on SPAs.
