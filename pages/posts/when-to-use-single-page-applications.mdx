@@ -21,13 +21,13 @@ Overview of topics I will be discussing about:
     ## What is SPA?
 </div>
 
-SPA stands for (single-page application). Here is a quick description from Wikipedia.
+SPA stands for (single-page application). Here is a explaination from Wikipedia.
 
 > "A single-page application (SPA) is a web application or website that interacts with the user by dynamically rewriting the current web page with new data from the web server, instead of the default method of a web browser loading entire new pages. The goal is faster transitions that make the website feel more like a native app. "
 
 > "In a SPA, a page refresh never occurs; instead, all necessary HTML, JavaScript, and CSS code is either retrieved by the browser with a single page load,[1] or the appropriate resources are dynamically loaded and added to the page as necessary, usually in response to user actions."
 
-A clear explanation if more info needed.
+And a video...
 
 <LiteYouTubeEmbed id="xfGciVdbktI" title="What Is A Single Page Application?" />
 
@@ -35,26 +35,27 @@ A clear explanation if more info needed.
     ## Learn HTML, CSS, JS First!
 </div>
 
-As mentioned in the article, Meta (Facebook) marketed the library in a particular way where developers went crazy and created 
-lots of components.
+As mentioned in the article, Meta (Facebook) marketed the library in a particular way that  the community grew quickly and beginner and advanced
+developers learned ReactJS.
 
 ReactJS uses JSX, which kinda looks like HTML, but it’s not really HTML because it’s a mix of HTML with component tags and fake attributes. For 
 example a ReactJS developer will learn and use className to add a specific style class but in the real HTMl world it's just call 'class'!
 
-For developers, I recommend learning HTML, CSS and JavaScript first! Learn the ins and outs of native Javascript and performance techniques. 
-Don't jump in the bag wagon with ReactJS and begin building simple websites as single-page app architecture.
+This was a bad practice way of learning. Developers should learn HTML, CSS and JavaScript first. Learn the ins and outs of native Javascript 
+and performance techniques. Don't jump in the bag wagon with ReactJS and especially begin building simple websites as single-page app architecture which 
+makes Javascript look evil.
 
-Actually, I wrote an article about why we should choose [Web Components Over ReactJS](https://jgsolutions.ca/posts/reactjs-vs-web-components/). Web
-components are more native to the browser and require less Javascript depending on the complexity of the component. But JSX is 100% Javascript that needs
-to be rendered and executed.
+I wrote an article about why we should choose [Web Components Over ReactJS](https://jgsolutions.ca/posts/reactjs-vs-web-components/). Web
+components execute natively to the browser and require less Javascript depending on the complexity of the component.
 
 <div id="when">
     ## When To Use SPAs?
 </div>
 
-The question your probably asking yourself 'When do we use SPAs?'.
+The question your probably asking yourself 'So when do we use SPAs?'.
 
-Simple! If your developing a complex web application or some tool which requires users to authenticate. Here are some examples of SPAs:
+Simple! If your developing a complex web application or some tool which requires users to authenticate and provide a smooth UX experience. 
+Here are some examples of SPAs:
 
 - Gmail
 - Google Analytics
@@ -73,8 +74,8 @@ websites from the server which is (MPAs) or use a static server generator framew
 With SPAs, JavaScript, CSS, and HTML are only loaded once throughout the lifespan of the application. Views will be rendered with data
 as they navigate through the app. It's the perfect choice for creating apps with a rich user interface like mobile native apps.
 
-One other great advantage is the hosting cost effectiveness and speed to deploy your SPAs. You can simply deploy your app to any global static CDN server. 
-No need for a backend server to render your pages like traditional websites like PHP or Python. Since the app is a separate
+Another advantage is the hosting cost-effectiveness and speed to deploy your SPAs. You can simply deploy your app to any global static CDN server which
+doesn't require a backend server to render your pages like traditional websites like PHP or Python. Since the app is a separate
 layer, you can request your data through another microservice which will require less execution and more speed.
 
 Here is an article I wrote about  [Choosing Mircoservice over Monolithic Architecture](https://jgsolutions.ca/posts/microservices-architecture-over-monolithic/ "microservices vs monolithic")
@@ -83,14 +84,14 @@ Here is an article I wrote about  [Choosing Mircoservice over Monolithic Archite
     ## Not SEO Friendly 
 </div>
 
-One huge disadvantage of SPAs, they're not SEO friendly. Usually SPAs static files are initially loaded and content are rendered with Javascript.
+A huge disadvantage of SPAs, they're not SEO-friendly. SPAs' static files are initially loaded once and then content is rendered by Javascript.
 Google search engine crawlers can't execute and crawl these pages properly. By manually viewing the source code from the browser, the body
-tag usually contains some empty div HTML elements which the views are injected in those elements. 
+tag usually contains some empty div HTML elements and the views are injected in those elements. 
 
 Since routing is not native the search engines can't crawl the other pages. Title and meta description tags are also not updated as navigating between 
 pages. 
 
-If SEO is not important for your web project then don't focus on SEO and worry about the negative aspects of SPAs. Focus on the UX experience that
+If SEO is not important for your web project then don't focus on SEO and worry about the negative aspects of SPAs. Focus on the smooth UX experience that
 your users will enjoy and grow your product successfully!
 
 <div id="performance">
@@ -101,54 +102,54 @@ The article mentions about performance issues with SPAs. How the initial load of
 It could be problematic especially if your trying to accomplish a high score on Lighthouse. There are ways to solve this issue.
 
 **Lazy Load or Tree Shaking**  
-Usually, SPAs initial load begins with a specific route. It may be '/login', '/dashboard', '/registration' etc. The initial bootstrap code will
-execute. Once the route loaded, only then, the Javascript for that specific view is rendered. All other views will not be loaded on the client
-until the user navigates to that view. Frameworks like Angular CLI, Vue.js and React Routing offer this pattern. With Angular, I was able to reach scores
+Usually, SPAs' initial load begins with a specific route. It may be '/login', '/dashboard', '/registration' etc. The initial app bootstrap code will
+execute first. Once the route loaded, only then, the Javascript module for that specific view is loaded and rendered. Other views will not be loaded on the client
+until the user navigates to that view. Frameworks like Angular CLI, Vue.js and React Routing offer this pattern. With Angular CLI, I was able to reach scores
 performance over 90 and above in Lighthouse.
 
 **Service Workers**  
-One key point that was never mentioned in the article was Service Workers. Service Workers are another great way to improve performance on SPAs.
+One key point that was never mentioned in the article were Service Workers. Service Workers are another great way to improve performance on SPAs.
 
-Service workers, allow you to cache your static files like JS, CSS, images etc. When users loads the app, the inital load and response times are quicker. 
-Service workers also handle situations for offline usage if the user comes across a flaky connection. That is a whole other topic but overall service workers
-have lots of other great features to enhance your SPAs especially converting your app into a PWA.
+Service workers, allow you to cache your static files like JS, CSS, images etc. When revisit your app, the inital load and response times are quicker. 
+Service workers also handle situations for offline usage, if the user lands across a flaky connection. That's a whole other topic but overall service workers
+have of other great features to enhance your SPAs especially converting your app into a PWA.
 
-I wrote an article on [Current State of Progressive Web Apps](https://jgsolutions.ca/posts/current-state-of-pwa/ "State of Progressive Web Apps"). I provided a quick overview on the state of PWAs and how
-it's transforming the web.
+I wrote an article on [Current State of Progressive Web Apps](https://jgsolutions.ca/posts/current-state-of-pwa/ "State of Progressive Web Apps"). I provided
+a quick overview on the state of PWAs and how it's transforming the web.
 
-If your site is architected the traditional way, then service workers can't be used. As every interaction the user performs, page reloads will occur
-and the service worker will restart and re-initialize. I can be totally wrong about this but from my experince I never saw this. If anyone has any
-good solutions to this please email!
+If your site is architected the traditional way, then service workers can't be used. With every interaction the user performs, a page reload will occur
+and the service worker will restart and re-initialize. I can be wrong about this but from my experince I never done this. If anyone has any
+good solutions, I would like ot hear it!
 
 <div id="use-js">
     ## Should I Use A Javascript Library?
 </div>
 
-My answer is ys and you shouldn't completely ignore JS libraries or frameworks. Developers have to be clever how to use it properly! Don't go crazy 
-and develop tonnes of components your site and loading kilobytes of Javascript! 
+My answer is yes and you shouldn't completely ignore JS libraries or frameworks. Developers have to be clever about how to use it properly. Don't go crazy 
+and develop tonnes of components on your site which leads to loading kilobytes of Javascript! 
 
 If love your ReactJS or some other library and need to use it, then their are full flege frameworks like Next.js, Astro that help you
 manage the load of Javascript being loaded by the client.
 
-These frameworks allow you develop on any type of library your comfortable with. For example, with Astro, you can
-use Web components, Lit, Vue.js or ReactJS. For simple sites as blogs or business sites you build, compile and export 
+These frameworks allow you to develop on any type of library you comfortable with. For example, with Astro, you can
+use Web components, Lit, Vue.js or ReactJS. For simple sites such as blogs or business sites, you build, compile and export 
 all your pages into static HTML pages. 
 
 <div id="conclusion">
     ## Conclusion
 </div>
 
-I am not hating JS frameowrks like ReactJS or Angular. These are wonderful tools and communities helping developers building single page
-apps quickly. But we developers have to be smart on how and when to use these tools properly. 
+We should enbrace SPAs and JS frameowrks like ReactJS or Angular. These are wonderful tools and communities helping developers build single page
+apps quickly. Developers just have to be smarter on how and when to use these tools properly. 
 
-I totally disagree with the article and developers shouldn't have that mindeset. I strongly believe SPAs has its place as we should continue
+I totally disagree with the article and developers shouldn't have that mindeset. I strongly believe SPAs have their place as we should continue
 to use this strategy in web development, and push the web platform to its limits.
  
 For myself, I' m a big fan on SPAs and one of the main reasons I became a front-end developer through my career. 
-There are challenges to SPAS but I love the technical complexity that comes with developing SPAs with Javascript which requires
+There are challenges in developing a SPAS but I love the technical complexity that comes with developing SPAs which requires
 good programming knowledge.
 
-Here is a saying with two types of developers.
+Here is an interesting saying with two different types of developers.
 
 > “The average SPA sucks? Well okay, I should stop building SPAs then. Problem solved.” – Exhausted developer
 
