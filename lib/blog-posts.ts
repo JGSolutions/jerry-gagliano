@@ -97,5 +97,16 @@ export const meta = {
         author: 'Jerry Gagliano',
         picture: '',
         path: '/posts/reactjs-vs-web-components/',
+    },
+    'when-to-use-single-page-applications': {
+        title: 'When to Use Single Page Applications',
+        description: 'Learn when to correctly use SPAs architecture for web applications. SPAs can be daunting to implement but can provide a better user experience.',
+        coverImage: '/posts/blog-spa-min.jpeg',
+        tags: 'Web',
+        date: '2023-02-28T12:30:07.322Z',
+        updateDate: '2023-02-28T12:30:07.322Z',
+        author: 'Jerry Gagliano',
+        picture: '',
+        path: '/posts/when-to-use-single-page-applications/',
     }
 }
