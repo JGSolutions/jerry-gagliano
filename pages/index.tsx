@@ -39,19 +39,19 @@ export default function Home({ getRecentPosts }) {
     <div>
       <Head>
         <title>Jerry Gagliano - Front-end Web Developer from Montreal</title>
-        <meta name="description" content="A passionate front-end Web Developer building the Frontend of Websites and Web Applications that brings ideas to reality." />
+        <meta name="description" content="A passionate front-end and PWA develop. Building regular websites and Progressive Web Applications that brings ideas to reality." />
         <link rel="canonical" href="https://jgsolutions.ca/" />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://jgsolutions.ca/" />
-        <meta property="og:title" content="Front-end Web Developer" />
-        <meta property="og:description" content="A passionate front-end Web Developer building the Frontend of Websites and Web Applications that brings ideas to reality." />
+        <meta property="og:title" content="Front-end & PWA Web Developer" />
+        <meta property="og:description" content="A passionate front-end and PWA develop. Building regular websites and Progressive Web Applications that brings ideas to reality." />
         <meta name="image" property="og:image" content="https://jgsolutions.ca/jerry-pic.jpeg" itemProp="image"/>
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://jgsolutions.ca/" />
         <meta name="twitter:title" content="Front-end Web Developer" />
-        <meta name="twitter:description" content="A passionate front-end Web Developer building the Frontend of Websites and Web Applications that brings ideas to reality." />
+        <meta name="twitter:description" content="A passionate front-end and PWA develop. Building regular websites and Progressive Web Applications that brings ideas to reality." />
         <meta name="twitter:image" content="https://jgsolutions.ca/jerry-pic.jpeg" />
         <meta name="twitter:creator" content="@JGSolutions"></meta>
       </Head>
@@ -95,7 +95,7 @@ export default function Home({ getRecentPosts }) {
                   <h3 className={styles.skillHeader}>UX/UI</h3>
                   <p className={utilStyles.paragraph}>
                     Not 100% designer but understand the design patterns. Capable of designing an
-                    interface and bringing those ideas on a canvas.
+                    interface bringing ideas on a canvas.
                   </p>
                 </div>
               </div>
@@ -103,8 +103,8 @@ export default function Home({ getRecentPosts }) {
                 <div className={styles.skillContainer}>
                   <h3 className={styles.skillHeader}>Front-end</h3>
                   <p className={utilStyles.paragraph}>
-                    Building client-side applications with modern features and maintain semantic coding style
-                    among other best practices for SEO optimisation.
+                    Building SPA client-side applications with modern features like PWAs and while maintaining 
+                    semantic coding style among other best practices for SEO optimization.
                   </p>
                 </div>
               </div>
@@ -139,24 +139,24 @@ export default function Home({ getRecentPosts }) {
               </div>
             </div>
             <div className="row">
-              <div className="col-xs-6 col-md-6 col-lg-4">
+              <div className="col-xs-6 col-md-6 col-lg-6">
                 <TechStackItem name="Angular" image="angular-logo.svg" description="Front-end framework creating spa complex web apps." url="https://angular.io" level="90"/>
               </div>
-              <div className="col-xs-6 col-md-6 col-lg-4">
+              <div className="col-xs-6 col-md-6 col-lg-6">
                 <TechStackItem name="Firebase" image="firebase-logo.svg" description="Platform for hosting web apps and NoSQL data management." url="https://firebase.google.com" level="95"/>
               </div>
-              <div className="col-xs-6 col-md-6 col-lg-4">
+              <div className="col-xs-6 col-md-6 col-lg-6">
                 <TechStackItem name="Node.js" image="nodejs-logo.svg" description="Create apis, manage data with heavy logic computations. " url="https://nodejs.org" level="90"/>
               </div>
-              <div className="col-xs-6 col-md-6 col-lg-4">
+              {/* <div className="col-xs-6 col-md-6 col-lg-4">
                 <TechStackItem 
                 name="RxJS" 
                 image="rxjs.svg" 
                 description="Reactive programming using observables. Easier to compose asynchronous calls." 
                 url="https://rxjs.dev/" 
                 level="90"/>
-              </div>
-              <div className="col-xs-6 col-md-6 col-lg-4">
+              </div> */}
+              <div className="col-xs-6 col-md-6 col-lg-6">
                 <TechStackItem 
                 name="Next.js" 
                 image="next-js.svg" 

@@ -1,13 +1,12 @@
 .section {
     width: 100%;
-    max-width: 500px;
     height: auto;
     display: flex;
     flex-direction: column;
     border-radius: 6px;
     background-color: var(--secondary-background);
     padding: 24px;
-    margin-bottom: 6px;
+    margin-bottom: 24px;
 }
 
 .description {
