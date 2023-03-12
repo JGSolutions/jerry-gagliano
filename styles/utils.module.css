@@ -34,7 +34,6 @@ a.back:hover {
 }
 
 .topSection {
-  background-color: var(--secondary-background);
   width: 100%;
   height: auto;
   position: relative;

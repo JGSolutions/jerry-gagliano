@@ -5,6 +5,8 @@
     align-items: flex-start;
     padding-bottom: 70px;
     padding-top: 100px;
+
+    background: radial-gradient(50% 50% at 50% 50%, rgba(240, 104, 23, 0.22) 0%, rgba(18, 17, 17, 0) 100%);
 }
 
 .headingsWrapper {
