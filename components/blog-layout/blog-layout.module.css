@@ -4,6 +4,10 @@
     background-color: var(--primary-background);
 }
 
+.secondaryBG {
+    background-color: var(--secondary-background);
+}
+
 .headerPageSection { 
     padding: 65px 0 160px 0;
 }

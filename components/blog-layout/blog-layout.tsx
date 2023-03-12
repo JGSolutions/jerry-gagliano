@@ -45,7 +45,7 @@ export default function BlogLayout({ meta, children }) {
 
       </Head>
       
-      <div className={utilStyles.topSection}>
+      <div className={`${styles.secondaryBG} ${utilStyles.topSection}` }>
         <div className="container-lg">
           <Header/>
           <section className={styles.headerPageSection}>

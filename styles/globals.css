@@ -1,7 +1,8 @@
 :root {
   --primary: #F06817;
   --secondary: #21201F;
-
+  --primary-border: #c74f0a;
+  
   --primary-background: #21201F;
   --secondary-background: #121111;
   --third-background: #312E2E;
