@@ -3,8 +3,9 @@ import styles from './blog.module.css';
 import Head from 'next/head'
 import Header  from '../../components/header/header';
 import Footer  from '../../components/footer/footer';
-import BlogItem from '../../components/blog-item/blog-item';
+import SimpleBlogItem from '../../components/simple-blog-item/simple-blog-item';
 import { getSortedPostsData } from '../../lib/posts';
+import Link from 'next/link';
 
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData();
@@ -54,16 +55,17 @@ export default function Blog({ allPostsData }) {
                 <div className="container-lg">
                     <div className="row">
                     {allPostsData.map(({ id, date, updateDate, title, tags, author, description, coverImage }) => (
-                        <div className={`col col-12 ${styles.column}`} key={id}>
-                            <BlogItem 
+                        <div className={`col col-md-6 col-lg-4 col-xl-4 col-12 ${styles.column}`} key={id}>
+                            <Link href={`/posts/${id}`} className={utilStyles.blogItem}>
+                                <SimpleBlogItem 
                                 id={id}
                                 image={coverImage}
-                                title={title} 
                                 author={author}
-                                description={description}
+                                title={title}
                                 tags={tags}
-                                date={date}
-                                updatedDate={updateDate} />
+                                description={description}
+                                date={updateDate} />
+                            </Link>
                         </div>
                     ))}
                     </div>

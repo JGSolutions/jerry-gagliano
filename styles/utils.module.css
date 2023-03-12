@@ -51,3 +51,8 @@ a.back:hover {
   font-weight: var(--fw-regular);
   font-size: clamp(12px, 3.5vw, var(--fs-regular));
 }
+
+.blogItem {
+  color: white;
+  text-decoration: none;
+}

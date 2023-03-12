@@ -39,11 +39,6 @@
   color: var(--primary);
 }
 
-.blogItem {
-  color: white;
-  text-decoration: none;
-}
-
 .col {
   margin-bottom: 24px;
 }

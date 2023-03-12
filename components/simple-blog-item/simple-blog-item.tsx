@@ -3,7 +3,7 @@ import FormatDate from '../date';
 import TagItem from '../tag/tag';
 import Image from 'next/image';
 
-export default function SimpleBlogItem({title, description, image, date, tags, id}) {
+export default function SimpleBlogItem({title, description, image, date, tags, author, id}) {
     const tagItems = tags.split(',').map((string, index) =>
         <TagItem string={string} key={index}/>
     );
@@ -21,7 +21,7 @@ export default function SimpleBlogItem({title, description, image, date, tags, i
                     {tagItems}
                 </div>
                 <div className={styles.date}>
-                    <FormatDate dateString={date} />
+                    {author} - <FormatDate dateString={date} />
                 </div>
             </div>
         </div>

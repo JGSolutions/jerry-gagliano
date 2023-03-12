@@ -177,14 +177,15 @@ export default function Home({ getRecentPosts }) {
             </div>
 
             <div className="row">
-              {getRecentPosts.map(({ id, date, title, description, coverImage, tags }) => (
+              {getRecentPosts.map(({ id, date, title, description, author, coverImage, tags }) => (
                 <div className={`col col-lg-4 col-xl-4 col-12 ${styles.col}`} key={id}>
-                  <Link href={`/posts/${id}`} className={styles.blogItem}>
+                  <Link href={`/posts/${id}`} className={utilStyles.blogItem}>
                     <SimpleBlogItem 
                       id={id}
                       image={coverImage}
                       title={title}
                       tags={tags}
+                      author={author}
                       description={description}
                       date={date} />
                   </Link>
