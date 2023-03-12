@@ -26,6 +26,21 @@
         "source": "/posts/[id]",
         "destination": "/",
         "type": 301
+      },
+      {
+        "source": "https://www.jgsolutions.ca/",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "http://jgsolutions.ca/",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "http://www.jgsolutions.ca/",
+        "destination": "/",
+        "type": 301
       }
     ]
   }
