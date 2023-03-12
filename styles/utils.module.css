@@ -15,6 +15,23 @@ a.button:hover {
   text-decoration: underline;
 }
 
+a.buttonSolid {
+  border: 1px solid var(--primary-border);
+  background-color: var(--primary);
+  padding: 6px 24px;
+  border-radius: 4px;
+  color: white;
+  font-size: var( --fs-small);
+  font-weight: var(--fw-regular);
+  text-decoration: none;
+}
+
+a.buttonSolid:hover {
+  color: var(--primary-background);
+  font-weight: var(--fw-medium);
+  text-decoration: underline;
+}
+
 a.back {
   font-size: 18px;
   text-decoration: none;
