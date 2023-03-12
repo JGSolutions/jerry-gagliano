@@ -93,7 +93,7 @@ export const meta = {
         coverImage: '/posts/web-reactjs.jpeg',
         tags: 'Web',
         date: '2023-02-06T12:30:07.322Z',
-        updateDate: '2023-02-06T12:30:07.322Z',
+        updateDate: '2023-03-14T12:30:07.322Z',
         author: 'Jerry Gagliano',
         picture: '',
         path: '/posts/reactjs-vs-web-components/',

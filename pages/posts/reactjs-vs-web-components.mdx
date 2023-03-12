@@ -22,19 +22,21 @@ Here's a great video on how to create a web component.
 <LiteYouTubeEmbed id="2I7uX8m0Ta0" title="Learn Web Components In 25 Minutes" />
     
 ## Smaller Footprint & Fast
-Using web components, no extra library is needed to run components on the browser and prefer to stick with to the platform. 
-Web components use template literals even better because they're simple and they don't require transpilation. Just import the module
-to your project and use it as a regular HTML element.
+Using web components, no extra library is needed to run components on the browser and prefer to stick with the platform. 
+Web components use [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) 
+even better because they're simple and they don't require transpilation. Just import the module  to your project and
+use it as a regular HTML element.
 
 Web components run natively on the browser as suppose to ReactJS, which requires a javascript library to be imported. 
-ReactJS does not work with Real DOMs. Instead, it has a Virtual DOM, a lightweight representation of the Real DOMs in JavaScript.
+ReactJS does not work with Real DOMs. Instead, it has a Virtual DOM, a lightweight representation of the Real DOMs
+in JavaScript.
 
-JSX syntax example
+JSX syntax
 <SyntaxHighlighter language="javascript">
     {`
       render() {
         return (
-          <span part="base" class="style" role="status">
+          <span className="styleName" role="status">
             <slot />
           </span>
         );
@@ -42,18 +44,23 @@ JSX syntax example
     `}
 </SyntaxHighlighter>
 
-Template literals example
+Template literals
 <SyntaxHighlighter language="javascript">
   {`
     render() {
       return html\`
-        <span class="style"  role="status">
+        <span class="style" role="status">
           <slot />
         </span>
       \`;
     }
   `}
 </SyntaxHighlighter>
+
+As you see, the syntax are so similar why even bother using ReactJs. As discussed an interesting article by Cory LaViska, a developer
+[Moving from Stencil to LitElement](https://www.abeautifulsite.net/posts/moving-from-stencil-to-lit-element/). 
+Even if Stencil.js is another library  which compiles to web components but works similar to ReactJS. He pin points out flaws about
+these libraries.
 
 ## Agnostic
 
