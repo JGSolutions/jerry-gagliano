@@ -7,7 +7,7 @@ import HeroSection from '../components/hero/hero'
 import TechStackItem from '../components/tech-stack-item/tech-stack-item'
 import Footer from '../components/footer/footer'
 import { getRecentBlogs } from '../lib/posts'
-import SimpleBlogItem from '../components/simple-blog-item/simple-blog-item'
+import BlogItem from '../components/simple-blog-item/blog-item'
 // import { useRef, useEffect, useState } from 'react';
 
 export async function getStaticProps() {
@@ -180,7 +180,7 @@ export default function Home({ getRecentPosts }) {
               {getRecentPosts.map(({ id, date, title, description, author, coverImage, tags }) => (
                 <div className={`col col-lg-4 col-xl-4 col-12 ${styles.col}`} key={id}>
                   <Link href={`/posts/${id}`} className={utilStyles.blogItem}>
-                    <SimpleBlogItem 
+                    <BlogItem 
                       id={id}
                       image={coverImage}
                       title={title}
