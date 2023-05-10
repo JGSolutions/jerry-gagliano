@@ -78,7 +78,7 @@ Here we import the directive using the hostDirectives property
     hostDirectives: [DestroyedDirective]
   })
   export class ComponentName implements OnInit {
-    private untilDestroyed = new inject(DestroyedDirective).pipe;
+    private untilDestroyed = inject(DestroyedDirective).pipe;
 
     constructor() {
       AnyObservable$.pipe(
