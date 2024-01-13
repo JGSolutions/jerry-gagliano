@@ -5,6 +5,7 @@ const withMDX = require('@next/mdx')({
 })
 
 module.exports = withMDX({
+  output: 'export',
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   // remarkPlugins: [],
   // rehypePlugins: [],
