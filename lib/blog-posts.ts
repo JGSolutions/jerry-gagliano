@@ -44,12 +44,12 @@ export const meta = {
         path: '/posts/current-state-of-pwa/',
     },
     'fitvitfitness-portfolio': {
-        title: 'My Side FitVitFitness.com',
+        title: 'Side Project FitVitFitness.com',
         description: 'Side project about a personal certified trainer. Providing workout programs and writing blogs. Motivating people to have healthy life style.',
         coverImage: '/posts/fitvit/fitvit.jpeg',
         tags: 'Projects',
         date: '2023-01-04T12:30:07.322Z',
-        updateDate: '2023-01-04T12:30:07.322Z',
+        updateDate: '2024-04-24T12:30:07.322Z',
         author: 'Jerry Gagliano',
         picture: '',
         path: '/posts/fitvitfitness-portfolio/'
